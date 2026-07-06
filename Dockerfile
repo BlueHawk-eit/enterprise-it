@@ -18,7 +18,7 @@ RUN composer install --no-dev --optimize-autoloader --ignore-platform-reqs
 
 # Ensure correct permissions for Laravel storage, cache, and vendor directories using UID 9999
 RUN chown -R 9999:9999 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/vendor \
-    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+    && chmod -R 777 /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Expose the HTTP port
 EXPOSE 8080
