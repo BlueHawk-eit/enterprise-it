@@ -160,7 +160,7 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="fcopy">© 2025 enterprise IT Pty Ltd · All rights reserved · ABN XX XXX XXX XXX</div>
+          <div class="fcopy">© 2025 enterprise IT Pty Ltd · All rights reserved</div>
           <div class="fcerts">
             <span class="fcert">ISO</span>
             <span class="fcert">NIST 800-88</span>

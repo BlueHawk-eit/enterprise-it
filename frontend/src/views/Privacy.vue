@@ -59,7 +59,7 @@
           <div class="pol-section" id="who-we-are">
             <h2 class="pol-h2"><span class="sec-num">1</span>Who We Are</h2>
             <p class="pol-p">
-              <strong>enterprise IT Pty Ltd</strong> (ABN XX XXX XXX XXX) ("<strong>enterprise IT</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") is an information technology services company headquartered in Adelaide CBD, South Australia. We provide ICT lifecycle management, certified IT asset disposition (ITAD), cybersecurity operations, data governance, and related enterprise technology services.
+              <strong>enterprise IT Pty Ltd</strong> ("<strong>enterprise IT</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") is an information technology services company headquartered in Adelaide CBD, South Australia. We provide ICT lifecycle management, certified IT asset disposition (ITAD), cybersecurity operations, data governance, and related enterprise technology services.
             </p>
             <p class="pol-p">
               We are a South Australian owned and operated business. Our registered address is Adelaide CBD, South Australia 5000, Australia.
@@ -79,7 +79,7 @@
             <h3 class="pol-h3">Contact and identity information</h3>
             <ul class="pol-ul">
               <li>Full name and job title</li>
-              <li>Organisation name and ABN/ACN</li>
+              <li>Organisation name</li>
               <li>Work email address and phone number</li>
               <li>Physical or postal address (for logistics, ITAD collection, and account setup)</li>
             </ul>
