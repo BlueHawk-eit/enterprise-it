@@ -10,6 +10,14 @@ backend/.env
 frontend/.env
 backend/database/database.sqlite
 
+# Never commit build artifacts / archives - these have previously leaked a
+# live .env (DB credentials, APP_KEY) and log files into git history.
+*.zip
+backend/storage/logs/
+backend/storage/framework/cache/
+backend/storage/framework/sessions/
+backend/storage/framework/views/*.php
+
 # System and editor files
 .DS_Store
 .vscode/
