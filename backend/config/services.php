@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'azure' => [
+        // Microsoft Entra ID (Azure AD) app registration, used to verify OIDC
+        // ID tokens on /api/auth/login. Client-portal login is refused until
+        // both of these are set - see App\Services\OidcTokenVerifier.
+        'tenant_id' => env('AZURE_TENANT_ID'),
+        'client_id' => env('AZURE_CLIENT_ID'),
+    ],
+
 ];

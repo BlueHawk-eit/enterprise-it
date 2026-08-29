@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 use App\Models\User;
 use App\Models\OnboardingRequest;
+use App\Services\OidcTokenVerifier;
 
 class AuthController extends Controller
 {
@@ -25,44 +26,54 @@ class AuthController extends Controller
         $idToken = $request->input('id_token');
         $email = $request->input('email');
 
-        // In production, the backend would verify the OIDC signature using Entra ID openid-configuration keys.
-        // E.g., using firebase/php-jwt and caching the keys from:
-        // https://login.microsoftonline.com/common/discovery/v2.0/keys
-        
         Log::info("Validating OIDC Authorization Code Flow ID Token for user: {$email}");
 
-        // Here we simulate validation of the token (in this case, checking if it is non-empty)
-        if (str_starts_with($idToken, 'mock-id-token-') || count(explode('.', $idToken)) === 3) {
-            // Find the client user locally
-            $user = User::where('email', $email)->first();
+        // Verify the token's RS256 signature against Microsoft's published JWKS, plus
+        // standard issuer/audience/expiry checks. This has no bypass path: if
+        // AZURE_TENANT_ID / AZURE_CLIENT_ID aren't configured, or the token doesn't
+        // verify, login is refused.
+        $claims = OidcTokenVerifier::verify($idToken);
 
-            if (!$user) {
-                return response()->json([
-                    'success' => false,
-                    'message' => 'Account not found. Please contact support to provision your client portal account.'
-                ], 401);
-            }
-
-            // Log the user in to create a secure Laravel session.
-            // Laravel handles session state using encrypted, HttpOnly cookies automatically.
-            Auth::login($user);
-
+        if (!$claims) {
             return response()->json([
-                'success' => true,
-                'message' => 'OIDC token validated, session established.',
-                'user' => [
-                    'name' => $user->name,
-                    'email' => $user->email,
-                    'organisation' => $user->organisation,
-                    'account_type' => $user->account_type,
-                ]
-            ]);
+                'success' => false,
+                'message' => 'Invalid ID token or OIDC verification failed.'
+            ], 401);
         }
 
+        // The verified token's own email/UPN claim must match what was submitted,
+        // so a valid token for one account can't be replayed against another email.
+        $tokenEmail = $claims['email'] ?? $claims['preferred_username'] ?? $claims['upn'] ?? null;
+        if (!$tokenEmail || strcasecmp($tokenEmail, $email) !== 0) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Token identity does not match the submitted email.'
+            ], 401);
+        }
+
+        $user = User::where('email', $email)->first();
+
+        if (!$user) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Account not found. Please contact support to provision your client portal account.'
+            ], 401);
+        }
+
+        // Log the user in to create a secure Laravel session.
+        // Laravel handles session state using encrypted, HttpOnly cookies automatically.
+        Auth::login($user);
+
         return response()->json([
-            'success' => false,
-            'message' => 'Invalid ID token or OIDC verification failed.'
-        ], 401);
+            'success' => true,
+            'message' => 'OIDC token validated, session established.',
+            'user' => [
+                'name' => $user->name,
+                'email' => $user->email,
+                'organisation' => $user->organisation,
+                'account_type' => $user->account_type,
+            ]
+        ]);
     }
 
     /**

@@ -75,7 +75,7 @@
             <!-- ARTICLE TEXT -->
             <div class="post-content">
               <!-- Render paragraphs dynamically -->
-              <p v-for="(p, i) in paragraphs" :key="i" v-html="p"></p>
+              <p v-for="(p, i) in paragraphs" :key="i">{{ p }}</p>
             </div>
 
             <!-- TAGS -->
