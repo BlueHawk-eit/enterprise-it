@@ -565,35 +565,6 @@
             </div>
           </div>
 
-          <!-- Compliance Standards Status -->
-          <div class="document-list-table bg-white border-light p-4 mb-5">
-            <h3 class="mb-4 font-bold" style="font-size:15px; color:#002366;">Standard Alignments &amp; Certifications</h3>
-            <div class="table-responsive">
-              <table class="w-100 text-left">
-                <thead>
-                  <tr class="border-bottom">
-                    <th class="pb-2 text-xs font-bold text-slate-dark uppercase-heading">Compliance Standard</th>
-                    <th class="pb-2 text-xs font-bold text-slate-dark uppercase-heading">Auditor</th>
-                    <th class="pb-2 text-xs font-bold text-slate-dark uppercase-heading">Coverage</th>
-                    <th class="pb-2 text-xs font-bold text-slate-dark uppercase-heading">Last Audited</th>
-                    <th class="pb-2 text-xs font-bold text-slate-dark text-right uppercase-heading">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr v-for="std in complianceStandards" :key="std.name" class="border-bottom-row">
-                    <td class="py-3 text-sm font-bold text-navy" style="max-width:300px;">{{ std.name }}</td>
-                    <td class="py-3 text-sm text-slate-dark">{{ std.auditor }}</td>
-                    <td class="py-3 text-sm text-slate-dark font-bold">{{ std.coverage }}</td>
-                    <td class="py-3 text-sm text-slate-dark">{{ std.lastAudit }}</td>
-                    <td class="py-3 text-right">
-                      <span class="badge badge-active">{{ std.status }}</span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
           <!-- Security Alert Box -->
           <div class="alert-box-premium p-4 border-light d-flex align-center gap-3">
             <i class="ti ti-shield-lock" style="font-size: 32px; color: #002366;" aria-hidden="true"></i>
@@ -748,14 +719,6 @@ const assets = ref([
   { id: 'AST-2911', name: 'Cisco Catalyst 9300 Switch', type: 'Network', serial: 'S/N: 7P8Q9R0', location: 'Adelaide HQ', status: 'In Transit' },
   { id: 'AST-1034', name: 'Latitude 7420 Laptop', type: 'Laptop', serial: 'S/N: 1A2B3C4', location: 'Remote Work', status: 'Eradicating' },
   { id: 'AST-0992', name: 'OptiPlex 7080 Desktop', type: 'Desktop', serial: 'S/N: 5D6E7F8', location: 'Adelaide HQ', status: 'Retired' }
-]);
-
-// Compliance Standards State
-const complianceStandards = ref([
-  { name: 'NIST SP 800-88 Rev 1 Guidelines for Media Sanitisation', status: 'Compliant', coverage: '100%', lastAudit: '2026-05-15', auditor: 'SA Cyber Defence Trust' },
-  { name: 'ISO/IEC 27001 Information Security Management', status: 'Compliant', coverage: '100%', lastAudit: '2026-04-10', auditor: 'Global Standards Certifications' },
-  { name: 'ISO 14001 Environmental Management Systems', status: 'Compliant', coverage: '98%', lastAudit: '2026-05-02', auditor: 'Green Audit Australia' },
-  { name: 'ISO 9001 Quality Management Systems', status: 'Compliant', coverage: '100%', lastAudit: '2026-04-12', auditor: 'Global Standards Certifications' }
 ]);
 
 // Fallback Documents List

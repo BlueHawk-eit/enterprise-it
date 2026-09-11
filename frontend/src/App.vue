@@ -156,16 +156,16 @@
               <router-link to="/resources/sustainability" class="flink">Sustainability</router-link>
               <router-link to="/resources/blog" class="flink">Blog &amp; News</router-link>
               <router-link to="/privacy" class="flink">Privacy Policy</router-link>
+              <router-link to="/terms" class="flink">Terms of Service</router-link>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="fcopy">© 2025 enterprise IT Pty Ltd · All rights reserved</div>
+          <div class="fcopy">© {{ currentYear }} ENTERPRISE IT PTY LTD · ABN 33 701 700 478 · All rights reserved</div>
           <div class="fcerts">
             <span class="fcert">ISO</span>
             <span class="fcert">NIST 800-88</span>
             <span class="fcert">ESG</span>
-            <span class="fcert">ITAR</span>
           </div>
         </div>
       </div>
@@ -183,6 +183,9 @@ import { ref, onMounted, onUnmounted, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
+
+// Rendered into the footer copyright so it never goes stale.
+const currentYear = new Date().getFullYear();
 
 // Navigation state
 const servicesDropdownOpen = ref(false);

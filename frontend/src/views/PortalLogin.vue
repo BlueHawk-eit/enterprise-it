@@ -62,15 +62,15 @@
           <div class="session-info" aria-label="Security information">
             <div class="si-row">
               <i class="ti ti-shield-check" aria-hidden="true"></i>
-              <div class="si-text"><strong>Enterprise-grade security.</strong> Authentication via Microsoft Entra ID — your credentials are never stored by enterprise IT.</div>
+              <div class="si-text"><strong>Sign in with your work account.</strong> No separate password to create or remember — and enterprise IT never sees or stores your credentials.</div>
             </div>
             <div class="si-row">
-              <i class="ti ti-cookie" aria-hidden="true"></i>
-              <div class="si-text"><strong>HttpOnly session cookies.</strong> Your session is secured using server-side HttpOnly cookies — protected from XSS.</div>
+              <i class="ti ti-building" aria-hidden="true"></i>
+              <div class="si-text"><strong>Your organisation stays in control.</strong> If your IT team disables your account, access to this portal ends at the same moment.</div>
             </div>
             <div class="si-row">
-              <i class="ti ti-key" aria-hidden="true"></i>
-              <div class="si-text"><strong>OIDC + PKCE.</strong> OpenID Connect with Authorization Code Flow and PKCE — the highest available security standard.</div>
+              <i class="ti ti-lock" aria-hidden="true"></i>
+              <div class="si-text"><strong>Encrypted in transit.</strong> Every connection to this portal is protected with TLS encryption.</div>
             </div>
           </div>
 
@@ -208,8 +208,7 @@
       <!-- Security badges -->
       <div class="security-row" aria-label="Security certifications">
         <div class="sec-badge"><i class="ti ti-brand-windows" aria-hidden="true"></i>Microsoft Entra ID</div>
-        <div class="sec-badge"><i class="ti ti-shield-lock" aria-hidden="true"></i>OIDC + PKCE</div>
-        <div class="sec-badge"><i class="ti ti-cookie" aria-hidden="true"></i>HttpOnly Sessions</div>
+        <div class="sec-badge"><i class="ti ti-map-pin" aria-hidden="true"></i>Australian Owned</div>
         <div class="sec-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Compliant</div>
         <div class="sec-badge"><i class="ti ti-lock" aria-hidden="true"></i>TLS Encrypted</div>
       </div>
@@ -222,8 +221,9 @@
         <router-link to="/contact" class="pfl">Contact Support</router-link>
         <router-link to="/about" class="pfl">About Us</router-link>
         <router-link to="/privacy" class="pfl">Privacy Policy</router-link>
+        <router-link to="/terms" class="pfl">Terms of Service</router-link>
       </div>
-      <div class="portal-copy">© 2025 enterprise IT Pty Ltd · Adelaide CBD, South Australia · All rights reserved</div>
+      <div class="portal-copy">© {{ currentYear }} ENTERPRISE IT PTY LTD · ABN 33 701 700 478 · Adelaide CBD, South Australia · All rights reserved</div>
     </footer>
   </div>
 </template>
@@ -234,6 +234,9 @@ import { useRouter } from 'vue-router';
 import { API_BASE_URL } from '../config';
 
 const router = useRouter();
+
+// Rendered into the footer copyright so it never goes stale.
+const currentYear = new Date().getFullYear();
 
 const activeTab = ref('login');
 
@@ -707,6 +710,18 @@ onMounted(() => {
 .ob-input.error {
   border-color: #ef4444 !important;
   background: rgba(239, 68, 68, 0.05) !important;
+}
+/* The open <option> list is drawn by the operating system, which ignores the
+   translucent background above and falls back to a white surface. Without
+   this, the inherited color:#fff renders white text on white. color-scheme
+   makes the native popup dark; the explicit option colours are the fallback
+   for browsers that ignore it. */
+select.ob-input {
+  color-scheme: dark;
+}
+.ob-input option {
+  background-color: #0d1b3e;
+  color: #fff;
 }
 .form-label {
   display: block;

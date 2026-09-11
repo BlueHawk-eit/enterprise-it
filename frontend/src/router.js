@@ -10,6 +10,7 @@ import ResourcesBlog from './views/ResourcesBlog.vue';
 import ResourcesNews from './views/ResourcesNews.vue';
 import ResourcesBlogPost from './views/ResourcesBlogPost.vue';
 import Privacy from './views/Privacy.vue';
+import Terms from './views/Terms.vue';
 import CMSAdmin from './views/CMSAdmin.vue';
 import AdminLogin from './views/AdminLogin.vue';
 import NotFound from './views/NotFound.vue';
@@ -28,6 +29,7 @@ const routes = [
   { path: '/resources/blog/:slug', name: 'BlogPost', component: ResourcesBlogPost },
   { path: '/resources/news/:slug', name: 'NewsPost', component: ResourcesBlogPost },
   { path: '/privacy', name: 'Privacy', component: Privacy },
+  { path: '/terms', name: 'Terms', component: Terms },
   { path: '/cms-admin', name: 'CMSAdmin', component: CMSAdmin },
   { path: '/admin-login', name: 'AdminLogin', component: AdminLogin },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }

@@ -353,54 +353,6 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="testi-sec" aria-labelledby="testi-heading">
-      <div class="testi-in">
-        <p class="stag" style="color: rgba(255, 255, 255, 0.38)">Client Feedback</p>
-        <h2 class="sh2" style="color: #fff" id="testi-heading">
-          Trusted by enterprise teams<br />across Australia.
-        </h2>
-        <div class="testi-grid">
-          <article class="tcard fade-up">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
-              ><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
-              ><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">
-              "The ITAD process was seamless — certificates of destruction delivered same day, ESG
-              report ready within the week. Exactly what we needed for our compliance audit."
-            </blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">JM</div>
-              <div>
-                <div class="tcard-name">James M.</div>
-                <div class="tcard-role">IT Director · SA Government Agency</div>
-              </div>
-            </div>
-          </article>
-          <article class="tcard fade-up">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
-              ><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i
-              ><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">
-              "Our SOC deployment was up in days. The team's knowledge of SIEM and Sentinel is
-              exceptional — we finally have real visibility over our threat landscape."
-            </blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">SR</div>
-              <div>
-                <div class="tcard-name">Sarah R.</div>
-                <div class="tcard-role">CISO · National Logistics Group</div>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA BAND -->
     <div class="ctaband">
       <div class="ctaband-in">

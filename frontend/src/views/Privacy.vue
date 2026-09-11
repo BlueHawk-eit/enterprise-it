@@ -17,7 +17,7 @@
         </p>
         <div class="updated-badge">
           <i class="ti ti-calendar" aria-hidden="true"></i>
-          Last updated: 1 June 2025 &nbsp;·&nbsp; Effective: 1 June 2025
+          Last updated: 14 September 2026 &nbsp;·&nbsp; Effective: 14 September 2026
         </div>
       </div>
     </section>
@@ -59,7 +59,7 @@
           <div class="pol-section" id="who-we-are">
             <h2 class="pol-h2"><span class="sec-num">1</span>Who We Are</h2>
             <p class="pol-p">
-              <strong>enterprise IT Pty Ltd</strong> ("<strong>enterprise IT</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") is an information technology services company headquartered in Adelaide CBD, South Australia. We provide ICT lifecycle management, certified IT asset disposition (ITAD), cybersecurity operations, data governance, and related enterprise technology services.
+              <strong>ENTERPRISE IT PTY LTD</strong> (ABN 33 701 700 478, ACN 701 700 478) ("<strong>enterprise IT</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") is an information technology services company headquartered in Adelaide CBD, South Australia. We provide ICT lifecycle management, IT asset disposition (ITAD), cybersecurity operations, data governance, and related enterprise technology services.
             </p>
             <p class="pol-p">
               We are a South Australian owned and operated business. Our registered address is Adelaide CBD, South Australia 5000, Australia.
@@ -207,7 +207,7 @@
             </p>
             <ul class="pol-ul">
               <li>
-                <strong>IT service providers</strong> — including our cloud infrastructure provider (Microsoft Azure), email delivery service, and website hosting provider, who assist us in operating our systems. These providers are bound by confidentiality obligations and are not permitted to use your data for their own purposes.
+                <strong>IT service providers</strong> — including our website hosting provider (Vercel), application hosting provider (Render), managed database provider (Neon), Microsoft (for Client Portal authentication), and our email delivery service, who assist us in operating our systems. These providers are bound by confidentiality obligations and are not permitted to use your data for their own purposes.
               </li>
               <li>
                 <strong>Microsoft Corporation</strong> — for Client Portal authentication via Microsoft Entra ID External Identities. Microsoft's privacy practices are governed by the
@@ -240,7 +240,7 @@
             <div class="pol-callout green">
               <i class="ti ti-shield-check" aria-hidden="true"></i>
               <div class="pol-callout-text">
-                <strong>Our primary operations are Australian.</strong> Our servers, staff, and business operations are based in Australia. We select service providers with appropriate data handling agreements and security standards.
+                <strong>Our business is Australian.</strong> Our staff, management, and business operations are based in Adelaide, South Australia. Some of the infrastructure we rely on is operated by the overseas providers listed above. We select providers with appropriate data handling agreements and security standards.
               </div>
             </div>
           </div>
@@ -285,7 +285,7 @@
             </p>
             <h3 class="pol-h3">Portal data</h3>
             <p class="pol-p">
-              Documents accessible through the portal (certificates, reports, invoices) are stored securely on Australian-based infrastructure. Access is logged for security and audit purposes. Portal users are responsible for maintaining the confidentiality of their Microsoft account credentials.
+              Documents accessible through the portal (certificates, reports, invoices) are stored on infrastructure operated by the cloud providers listed in Section 5, which may be located in Australia or overseas. Access to the portal requires authentication through your Microsoft account. Portal users are responsible for maintaining the confidentiality of their Microsoft account credentials.
             </p>
           </div>
 
@@ -367,7 +367,7 @@
               </tbody>
             </table>
             <p class="pol-p">
-              Personal information is stored securely on Australian or Microsoft Azure infrastructure. When personal information is no longer required, it is securely deleted or de-identified using our certified data destruction processes.
+              Personal information is stored securely on infrastructure operated by the cloud providers listed in Section 5. When personal information is no longer required, it is securely deleted or de-identified using our documented data destruction processes.
             </p>
           </div>
 
@@ -438,10 +438,10 @@
             <h2 class="pol-h2"><span class="sec-num">14</span>Contact Us</h2>
             <p class="pol-p">For any privacy-related enquiries, access requests, corrections, or complaints, please contact our Privacy Officer:</p>
             <ul class="pol-ul">
-              <li><strong>Privacy Officer</strong> — enterprise IT Pty Ltd</li>
+              <li><strong>Privacy Officer</strong> — ENTERPRISE IT PTY LTD (ABN 33 701 700 478)</li>
               <li><strong>Email:</strong> <a href="mailto:privacy@enterpriseit.com.au">privacy@enterpriseit.com.au</a></li>
               <li><strong>Phone:</strong> +61 494 614 221 (Mon–Fri, 8am–6pm ACST)</li>
-              <li><strong>Post:</strong> Privacy Officer, enterprise IT Pty Ltd, Adelaide CBD, South Australia 5000</li>
+              <li><strong>Post:</strong> Privacy Officer, ENTERPRISE IT PTY LTD, Adelaide CBD, South Australia 5000</li>
             </ul>
             <p class="pol-p" style="margin-top: 14px">
               For general enquiries about our services, please use our <router-link to="/contact">contact page</router-link> or call our main number.
