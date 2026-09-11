@@ -530,63 +530,13 @@
                     <div class="flabel">
                       Body Content
                       <span class="flabel-hint"
-                        >{{ calculateReadTime(form.body) }} min read</span
+                        >{{ calculateReadTime(bodyPlain) }} min read</span
                       >
                     </div>
-                    <div class="ctb">
-                      <span
-                        style="
-                          font-size: 9px;
-                          font-weight: 700;
-                          color: var(--light);
-                          letter-spacing: 0.5px;
-                          margin-right: 3px;
-                        "
-                        >FORMAT</span
-                      >
-                      <button
-                        class="tbtn"
-                        @click="insertFormat('bold')"
-                        title="Bold"
-                        style="font-family: monospace; font-weight: 700"
-                      >
-                        B
-                      </button>
-                      <button
-                        class="tbtn"
-                        @click="insertFormat('italic')"
-                        title="Italic"
-                        style="font-family: monospace; font-style: italic"
-                      >
-                        I
-                      </button>
-                      <div class="tsep"></div>
-                      <button
-                        class="tbtn"
-                        @click="insertFormat('h2')"
-                        title="Heading 2"
-                        style="font-size: 10px; font-weight: 800"
-                      >
-                        H2
-                      </button>
-                      <button
-                        class="tbtn"
-                        @click="insertFormat('h3')"
-                        title="Heading 3"
-                        style="font-size: 10px; font-weight: 800"
-                      >
-                        H3
-                      </button>
-                    </div>
-                    <textarea
-                      id="f-content"
-                      v-model="form.body"
-                      class="content-editor"
-                      placeholder="Write your content here. Double-newline separates paragraphs."
-                    ></textarea>
+                    <RichEditor v-model="form.body" />
                     <div class="word-count">
-                      <span>{{ form.body.trim().split(/\s+/).filter(Boolean).length }} words</span>
-                      <span>{{ calculateReadTime(form.body) }} min read estimation</span>
+                      <span>{{ bodyPlain.trim().split(/\s+/).filter(Boolean).length }} words</span>
+                      <span>{{ calculateReadTime(bodyPlain) }} min read estimation</span>
                     </div>
                   </div>
                 </div>
@@ -634,14 +584,13 @@
                       <span class="pv-dot"></span>
                       <span>Today</span>
                       <span class="pv-dot"></span>
-                      <span>{{ calculateReadTime(form.body) }} min</span>
+                      <span>{{ calculateReadTime(bodyPlain) }} min</span>
                     </div>
                     <div class="pv-h">
                       {{ form.title || 'Your article title will appear here...' }}
                     </div>
-                    <div class="pv-ex">
-                      {{ form.body || 'Your text will show in preview here...' }}
-                    </div>
+                    <div class="pv-ex" v-if="form.body" v-html="safeBody"></div>
+                    <div class="pv-ex" v-else>Your text will show in preview here...</div>
                     <div class="pv-foot">
                       <div class="pv-author">
                         <div class="pv-av">AD</div>
@@ -675,6 +624,9 @@
                     </button>
                     <button class="btn btn-ghost" style="width: 100%; justify-content: center" @click="nav(editorPostType)">
                       Cancel
+                    </button>
+                    <button class="btn btn-ghost" style="width: 100%; justify-content: center" @click="openFullPreview" :disabled="!form.title && !form.body">
+                      <i class="ti ti-external-link"></i>Open full preview
                     </button>
                   </div>
                 </div>
@@ -877,6 +829,8 @@
 import { ref, computed, onMounted, watch } from 'vue';
 import { useRouter } from 'vue-router';
 import { API_BASE_URL } from '../config';
+import RichEditor from '../components/RichEditor.vue';
+import DOMPurify from 'dompurify';
 
 const router = useRouter();
 const adminUser = ref(null);
@@ -887,6 +841,11 @@ const adminInitials = computed(() => {
   }
   return 'AD';
 });
+
+// form.body is now HTML (from the rich editor); strip tags for word/'min read' counts.
+const bodyPlain = computed(() => (form.value.body || '').replace(/<[^>]*>/g, ' '));
+// Sanitised HTML for the inline preview card.
+const safeBody = computed(() => DOMPurify.sanitize(form.value.body || ''));
 
 const currentPage = ref('dashboard');
 const posts = ref([]);
@@ -901,7 +860,7 @@ const pendingOnboardCount = computed(() => {
 const fetchOnboardingRequests = async () => {
   loadingOnboard.value = true;
   try {
-    const response = await fetch(`${API_BASE_URL}/api/admin/onboard`);
+    const response = await fetch(`${API_BASE_URL}/api/admin/onboard`, { credentials: 'include' });
     if (response.ok) {
       const data = await response.json();
       onboardingRequests.value = data;
@@ -918,6 +877,7 @@ const approveRequest = async (id) => {
   try {
     const response = await fetch(`${API_BASE_URL}/api/admin/onboard/${id}/approve`, {
       method: 'POST',
+      credentials: 'include',
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -1135,6 +1095,7 @@ const savePost = async () => {
 
     const response = await fetch(url, {
       method,
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
@@ -1162,6 +1123,7 @@ const deletePost = async (id) => {
   try {
     const response = await fetch(`${API_BASE_URL}/api/resources/${id}`, {
       method: 'DELETE',
+      credentials: 'include',
       headers: {
         'Accept': 'application/json',
       },
@@ -1207,21 +1169,22 @@ const copyToClipboard = (txt) => {
   });
 };
 
-const insertFormat = (type) => {
-  const txtArea = document.getElementById('f-content');
-  if (!txtArea) return;
-  const start = txtArea.selectionStart;
-  const end = txtArea.selectionEnd;
-  const text = form.value.body;
-  const selected = text.substring(start, end);
-
-  let replacement = '';
-  if (type === 'bold') replacement = `**${selected || 'bold text'}**`;
-  else if (type === 'italic') replacement = `*${selected || 'italic text'}*`;
-  else if (type === 'h2') replacement = `\n\n## ${selected || 'Heading 2'}\n`;
-  else if (type === 'h3') replacement = `\n\n### ${selected || 'Heading 3'}\n`;
-
-  form.value.body = text.substring(0, start) + replacement + text.substring(end);
+const openFullPreview = () => {
+  // Hand the current draft to a standalone preview page via localStorage
+  // (a new tab does not share this component's state). Admin's own browser,
+  // transient — an appropriate use of localStorage.
+  try {
+    localStorage.setItem('cms_preview_draft', JSON.stringify({
+      title: form.value.title,
+      category: form.value.category,
+      body: DOMPurify.sanitize(form.value.body || ''),
+      image_url: form.value.image_url || '',
+      savedAt: Date.now(),
+    }));
+    window.open('/cms-preview', '_blank', 'noopener');
+  } catch (e) {
+    triggerToast('Could not open preview.', 'err');
+  }
 };
 
 const downloadJson = () => {
