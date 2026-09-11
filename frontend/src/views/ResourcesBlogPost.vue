@@ -73,10 +73,7 @@
             </div>
 
             <!-- ARTICLE TEXT -->
-            <div class="post-content">
-              <!-- Render paragraphs dynamically -->
-              <p v-for="(p, i) in paragraphs" :key="i">{{ p }}</p>
-            </div>
+            <div class="post-content" v-html="articleHtml"></div>
 
             <!-- TAGS -->
             <div class="post-tags" aria-label="Article tags">
@@ -176,6 +173,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { API_BASE_URL } from '../config';
+import DOMPurify from 'dompurify';
 
 const route = useRoute();
 const post = ref(null);
@@ -247,14 +245,23 @@ const formatTopicName = (topic) => {
   return cat ? cat.name : 'Cybersecurity';
 };
 
-const paragraphs = computed(() => {
-  if (!post.value || !post.value.body) return [];
-  // Split the body by double or single newlines
-  const rawParagraphs = post.value.body.split(/\n\n+/);
-  return rawParagraphs.map(p => {
-    // Basic rich formatting simulation: replace **text** with <strong>text</strong>
-    return p.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-  });
+const articleHtml = computed(() => {
+  const body = (post.value && post.value.body) || '';
+  if (!body) return '';
+  // New posts are stored as HTML (from the rich editor). Legacy posts are
+  // plain text: convert double-newlines to paragraphs and keep the old
+  // **bold** convention. Either way the result is sanitised before render.
+  const looksLikeHtml = /<\/?(p|h[1-6]|ul|ol|li|strong|em|u|a|blockquote|br)\b/i.test(body);
+  let html;
+  if (looksLikeHtml) {
+    html = body;
+  } else {
+    html = body
+      .split(/\n\n+/)
+      .map(par => '<p>' + par.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') + '</p>')
+      .join('');
+  }
+  return DOMPurify.sanitize(html, { ADD_ATTR: ['target', 'rel'] });
 });
 
 const copyLink = () => {
