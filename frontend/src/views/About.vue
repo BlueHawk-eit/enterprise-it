@@ -57,8 +57,8 @@
             <div class="ic-row">
               <div class="ic-icon"><i class="ti ti-shield-check" aria-hidden="true"></i></div>
               <div>
-                <div class="ic-label">Certifications</div>
-                <div class="ic-val">ISO · NIST 800-88 · ITAR<br>ESG Accredited</div>
+                <div class="ic-label">Standards Alignment</div>
+                <div class="ic-val">Aligned to ISO 27001 · NIST 800-88<br>ESG reporting frameworks</div>
               </div>
             </div>
             <div class="ic-row">
@@ -182,7 +182,7 @@
           <div class="val-card fade-up" style="transition-delay:0.12s;">
             <div class="val-icon slate"><i class="ti ti-certificate" aria-hidden="true"></i></div>
             <div class="val-title">Standards-first Excellence</div>
-            <p class="val-desc">ISO, NIST, ITAR, and premier cybersecurity frameworks are not marketing badges for us — they are the minimum benchmark against which we hold every service we deliver.</p>
+            <p class="val-desc">ISO 27001, NIST, and other recognised cybersecurity frameworks are not marketing badges for us — they are the benchmark against which we hold every service we deliver.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.2s;">
             <div class="val-icon navy"><i class="ti ti-users" aria-hidden="true"></i></div>
@@ -203,7 +203,6 @@
         <div class="strip-item"><i class="ti ti-certificate"></i>ISO 27001</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-shield"></i>NIST 800-88</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-file-certificate"></i>NIST CSF</div><div class="strip-sep"></div>
-        <div class="strip-item"><i class="ti ti-lock"></i>ITAR Compliant</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-leaf"></i>ESG Accredited</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-radar"></i>MITRE ATT&CK</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-users"></i>Zero Trust</div><div class="strip-sep"></div>
@@ -214,7 +213,6 @@
         <div class="strip-item"><i class="ti ti-certificate"></i>ISO 27001</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-shield"></i>NIST 800-88</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-file-certificate"></i>NIST CSF</div><div class="strip-sep"></div>
-        <div class="strip-item"><i class="ti ti-lock"></i>ITAR Compliant</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-leaf"></i>ESG Accredited</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-radar"></i>MITRE ATT&CK</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-users"></i>Zero Trust</div><div class="strip-sep"></div>
@@ -235,7 +233,7 @@
               <strong>enterprise IT operates to the highest available standards</strong> across every service pillar. Our commitment to compliance is not performative — it reflects a genuine belief that our clients' data, assets, and operations deserve nothing less than the most rigorous frameworks available.
             </p>
             <p>
-              We adhere to <strong>ISO 27001</strong> for information security management, <strong>NIST 800-88</strong> for media sanitisation, and the <strong>NIST Cybersecurity Framework</strong> for our SOC and cyber defence operations. Our data handling practices align with the <strong>Australian Privacy Act 1988</strong>, and our government and defence-adjacent engagements are conducted under <strong>ITAR compliance protocols</strong>.
+              Our practices are aligned to <strong>ISO 27001</strong> for information security management, <strong>NIST 800-88</strong> for media sanitisation, and the <strong>NIST Cybersecurity Framework</strong> for our SOC and cyber defence operations. Our data handling practices align with the <strong>Australian Privacy Act 1988</strong>.
             </p>
             <p>
               In addition, our SOC leverages the <strong>MITRE ATT&amp;CK framework</strong> for threat hunting and detection engineering, and our identity and access governance services are built on <strong>Zero Trust principles</strong> aligned to the <strong>ASD Information Security Manual (ISM)</strong>.
@@ -274,17 +272,7 @@
                   <div class="cert-full">Environmental &amp; Social Governance</div>
                 </div>
               </div>
-              <p class="cert-desc">Formally accredited ESG reporting aligned to Australian environmental frameworks.</p>
-            </div>
-            <div class="cert-card">
-              <div class="cert-card-top">
-                <div class="cert-badge-box slate"><i class="ti ti-lock" aria-hidden="true"></i></div>
-                <div>
-                  <div class="cert-name">ITAR Compliant</div>
-                  <div class="cert-full">Int'l Traffic in Arms Regulations</div>
-                </div>
-              </div>
-              <p class="cert-desc">Compliance protocols for defence-adjacent and government engagements.</p>
+              <p class="cert-desc">ESG reporting aligned to Australian environmental frameworks.</p>
             </div>
             <div class="cert-card">
               <div class="cert-card-top">
@@ -464,63 +452,6 @@
                 <span class="team-skill">ISO 27001</span>
                 <span class="team-skill">MDM</span>
               </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
-         CLIENT TESTIMONIALS
-    ============================================================ -->
-    <section class="sec sec-dark" aria-labelledby="testi-heading">
-      <div class="sec-in">
-        <p class="stag stag-light">Client Voices</p>
-        <h2 class="sh2 sh2-light" id="testi-heading">What our clients say.</h2>
-        <p class="sdesc sdesc-light" style="margin-bottom:0;">Trusted by enterprise teams across South Australia and the country.</p>
-
-        <div class="testi-grid">
-          <article class="tcard fade-up">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">"The ITAD process was seamless — certificates of destruction delivered same day, ESG report ready within the week. Exactly what we needed for our compliance audit."</blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">JM</div>
-              <div><div class="tcard-name">James M.</div><div class="tcard-role">IT Director · SA Government Agency</div></div>
-            </div>
-          </article>
-
-          <article class="tcard fade-up" style="transition-delay:0.1s;">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">"Our SOC deployment was up in days. The team's knowledge of SIEM and Sentinel is exceptional — we finally have real visibility over our threat landscape."</blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">SR</div>
-              <div><div class="tcard-name">Sarah R.</div><div class="tcard-role">CISO · National Logistics Group</div></div>
-            </div>
-          </article>
-
-          <article class="tcard fade-up" style="transition-delay:0.05s;">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">"What sets enterprise IT apart is that they're local — genuinely local. We can pick up the phone and speak to the same person every time. That accountability is rare."</blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">AP</div>
-              <div><div class="tcard-name">Amanda P.</div><div class="tcard-role">COO · South Australian Manufacturer</div></div>
-            </div>
-          </article>
-
-          <article class="tcard fade-up" style="transition-delay:0.15s;">
-            <div class="tcard-stars" aria-label="5 out of 5 stars">
-              <i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i><i class="ti ti-star-filled" aria-hidden="true"></i>
-            </div>
-            <blockquote class="tcard-quote">"The ESG reporting package alone justified the engagement. Our board now has clear, documented evidence of our technology sustainability commitments — and it's produced automatically."</blockquote>
-            <div class="tcard-author">
-              <div class="tcard-avatar" aria-hidden="true">DK</div>
-              <div><div class="tcard-name">David K.</div><div class="tcard-role">CFO · ASX-listed Professional Services Firm</div></div>
             </div>
           </article>
         </div>

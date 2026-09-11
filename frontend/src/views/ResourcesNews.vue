@@ -10,11 +10,11 @@
       </div>
     </nav>
 
-    <!-- BREAKING NEWS TICKER -->
-    <div class="ticker" role="marquee" aria-label="Breaking news">
+    <!-- CAPABILITY TICKER -->
+    <div class="ticker" aria-label="What enterprise IT does">
       <div class="ticker-in">
-        <span class="ticker-badge">Latest</span>
-        <span class="ticker-text">enterprise IT expands certified ITAD capacity at Adelaide CBD facility — June 2025 &nbsp;·&nbsp; New Microsoft Sentinel partnership announced for enterprise SOC clients &nbsp;·&nbsp; enterprise IT named finalist in SA Business Awards 2025</span>
+        <span class="ticker-badge">enterprise IT</span>
+        <span class="ticker-text">ICT lifecycle management, secure IT asset disposition and 24/7 cyber defence &nbsp;·&nbsp; South Australian owned and operated, servicing enterprise clients Australia-wide &nbsp;·&nbsp; Data sanitisation performed to NIST SP 800-88 standards &nbsp;·&nbsp; Every enquiry answered by a specialist within 24 business hours</span>
       </div>
     </div>
 
