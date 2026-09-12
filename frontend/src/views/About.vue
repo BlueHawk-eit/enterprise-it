@@ -82,11 +82,11 @@
     </section>
 
     <!-- TRUST BAR -->
-    <div class="tbar" aria-label="Accreditation and compliance">
+    <div class="tbar" aria-label="Standards and alignment">
       <div class="tbar-in">
-        <span class="tbar-label">Our Accreditations</span>
+        <span class="tbar-label">Standards We Align To</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO 27001-aligned</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -112,7 +112,7 @@
               "We don't just manage technology — we protect it, optimise it, and retire it responsibly."
             </div>
             <p>
-              What started as a focus on ICT asset management has grown into a comprehensive two-pillar service architecture: <strong>ICT Lifecycle &amp; Asset Sovereignty</strong> covering everything from device deployment and GPS-tracked logistics through to certified ITAD and ESG reporting, and <strong>Digital Intelligence &amp; Cyber Defence</strong> encompassing 24/7 SOC operations, identity governance, data security, compliance, and advanced analytics.
+              What started as a focus on ICT asset management has grown into a comprehensive two-pillar service architecture: <strong>ICT Lifecycle &amp; Asset Sovereignty</strong> covering everything from device deployment and GPS-tracked logistics through to secure ITAD and ESG reporting, and <strong>Digital Intelligence &amp; Cyber Defence</strong> encompassing 24/7 SOC operations, identity governance, data security, compliance, and advanced analytics.
             </p>
             <p>
               Today enterprise IT serves clients across every state and territory in Australia. We are proudly <strong>SA Owned and Operated</strong> — meaning our leadership, our team, and our decision-making remain rooted in South Australia, with the agility and accountability that only a local organisation can provide.
@@ -137,7 +137,7 @@
             <div class="story-stat-row">
               <div class="story-stat-card">
                 <div><span class="story-stat-num">NIST</span></div>
-                <div class="story-stat-label">800-88 compliant sanitisation — every single job</div>
+                <div class="story-stat-label">Sanitisation to NIST 800-88 — every single job</div>
               </div>
               <div class="story-stat-card">
                 <div><span class="story-stat-num">SA</span></div>
@@ -203,7 +203,7 @@
         <div class="strip-item"><i class="ti ti-certificate"></i>ISO 27001</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-shield"></i>NIST 800-88</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-file-certificate"></i>NIST CSF</div><div class="strip-sep"></div>
-        <div class="strip-item"><i class="ti ti-leaf"></i>ESG Accredited</div><div class="strip-sep"></div>
+        <div class="strip-item"><i class="ti ti-leaf"></i>ESG reporting</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-radar"></i>MITRE ATT&CK</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-users"></i>Zero Trust</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-database-lock"></i>ASD ISM</div><div class="strip-sep"></div>
@@ -213,7 +213,7 @@
         <div class="strip-item"><i class="ti ti-certificate"></i>ISO 27001</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-shield"></i>NIST 800-88</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-file-certificate"></i>NIST CSF</div><div class="strip-sep"></div>
-        <div class="strip-item"><i class="ti ti-leaf"></i>ESG Accredited</div><div class="strip-sep"></div>
+        <div class="strip-item"><i class="ti ti-leaf"></i>ESG reporting</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-radar"></i>MITRE ATT&CK</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-users"></i>Zero Trust</div><div class="strip-sep"></div>
         <div class="strip-item"><i class="ti ti-database-lock"></i>ASD ISM</div><div class="strip-sep"></div>
@@ -224,7 +224,7 @@
 
     <section class="sec sec-white" aria-labelledby="certs-heading">
       <div class="sec-in">
-        <p class="stag">Standards &amp; Certifications</p>
+        <p class="stag">Standards &amp; Alignment</p>
         <h2 class="sh2" id="certs-heading">Compliance isn't a checkbox.<br>It's our baseline.</h2>
 
         <div class="cert-layout">
@@ -268,7 +268,7 @@
               <div class="cert-card-top">
                 <div class="cert-badge-box green"><i class="ti ti-leaf" aria-hidden="true"></i></div>
                 <div>
-                  <div class="cert-name">ESG Accredited</div>
+                  <div class="cert-name">ESG reporting</div>
                   <div class="cert-full">Environmental &amp; Social Governance</div>
                 </div>
               </div>
@@ -317,8 +317,8 @@
               <div class="sustain-point fade-up">
                 <div class="sp-icon"><i class="ti ti-recycle" aria-hidden="true"></i></div>
                 <div>
-                  <div class="sp-title">Certified Sustainable Disposal</div>
-                  <p class="sp-desc">Every device we retire is processed through our certified ITAD workflow — maximising reuse, responsible recycling, and landfill diversion at every stage.</p>
+                  <div class="sp-title">Responsible Sustainable Disposal</div>
+                  <p class="sp-desc">Every device we retire is processed through our documented ITAD workflow — maximising reuse, responsible recycling, and landfill diversion at every stage.</p>
                 </div>
               </div>
               <div class="sustain-point fade-up" style="transition-delay:0.08s;">
@@ -339,7 +339,7 @@
                 <div class="sp-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
                 <div>
                   <div class="sp-title">Employee Purchase Programs (EPP)</div>
-                  <p class="sp-desc">Our EPP enables staff within client organisations to purchase certified, data-wiped devices at accessible prices — reducing e-waste while delivering real employee value.</p>
+                  <p class="sp-desc">Our EPP enables staff within client organisations to purchase securely data-wiped devices at accessible prices — reducing e-waste while delivering real employee value.</p>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-leaf" aria-hidden="true"></i></div>
               <div><span class="sm-num">100</span><span class="sm-unit">%</span></div>
-              <div class="sm-label">Of retired assets processed through certified sustainable disposal pathways</div>
+              <div class="sm-label">Of retired assets processed through documented sustainable disposal pathways</div>
             </div>
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-recycle" aria-hidden="true"></i></div>
@@ -375,8 +375,8 @@
           <div class="esg-card fade-up">
             <div class="esg-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
             <div class="esg-title">Environmental</div>
-            <p class="esg-desc">Certified sustainable disposal, zero landfill commitment, carbon offset tracking, and e-waste reduction embedded in every retirement workflow.</p>
-            <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>ISO &amp; ESG Compliant</div>
+            <p class="esg-desc">Responsible sustainable disposal, zero landfill commitment, carbon offset tracking, and e-waste reduction embedded in every retirement workflow.</p>
+            <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>ISO 27001 &amp; ESG aligned</div>
           </div>
           <div class="esg-card fade-up" style="transition-delay:0.08s;">
             <div class="esg-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
@@ -387,7 +387,7 @@
           <div class="esg-card fade-up" style="transition-delay:0.16s;">
             <div class="esg-icon"><i class="ti ti-clipboard-check" aria-hidden="true"></i></div>
             <div class="esg-title">Governance</div>
-            <p class="esg-desc">Comprehensive ESG reporting frameworks, audit-ready documentation, board-level sustainability evidence packs, and full compliance with Australian regulatory requirements.</p>
+            <p class="esg-desc">Comprehensive ESG reporting frameworks, audit-ready documentation, board-level sustainability evidence packs, and alignment with Australian regulatory requirements.</p>
             <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>Board-ready Reporting</div>
           </div>
         </div>
@@ -411,9 +411,9 @@
               <div class="team-role">Deployment · Logistics · ITAD</div>
             </div>
             <div class="team-card-body">
-              <p class="team-desc">Certified specialists in device provisioning, GPS-tracked logistics, and NIST 800-88 data sanitisation. Every technician is trained to military-grade eradication standards.</p>
+              <p class="team-desc">Specialists in device provisioning, GPS-tracked logistics, and NIST 800-88 data sanitisation. Every technician is trained to military-grade eradication standards.</p>
               <div class="team-skills">
-                <span class="team-skill">ITAD Certified</span>
+                <span class="team-skill">NIST 800-88 Trained</span>
                 <span class="team-skill">NIST 800-88</span>
                 <span class="team-skill">MDM/Autopilot</span>
                 <span class="team-skill">Chain of Custody</span>

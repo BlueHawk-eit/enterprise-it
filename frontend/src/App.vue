@@ -24,7 +24,7 @@
                   <div class="drop-section-label">Pillar 1 — ICT Lifecycle</div>
                   <router-link to="/services#deployment" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-device-laptop" aria-hidden="true"></i></div><div><div class="drop-item-name">Deployment &amp; Mobility</div><div class="drop-item-desc">Device imaging, zero-touch provisioning</div></div></router-link>
                   <router-link to="/services#logistics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-truck" aria-hidden="true"></i></div><div><div class="drop-item-name">Logistics &amp; Infrastructure</div><div class="drop-item-desc">GPS-tracked transit, relocations</div></div></router-link>
-                  <router-link to="/services#itad" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon slate"><i class="ti ti-recycle" aria-hidden="true"></i></div><div><div class="drop-item-name">Certified ITAD</div><div class="drop-item-desc">NIST 800-88, Certificates of Destruction</div></div></router-link>
+                  <router-link to="/services#itad" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon slate"><i class="ti ti-recycle" aria-hidden="true"></i></div><div><div class="drop-item-name">Secure ITAD</div><div class="drop-item-desc">NIST 800-88, Certificates of Destruction</div></div></router-link>
                   <router-link to="/services#esg" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon green"><i class="ti ti-leaf" aria-hidden="true"></i></div><div><div class="drop-item-name">Sustainability &amp; ESG</div><div class="drop-item-desc">ESG reporting, EPP, tech donation</div></div></router-link>
                 </div>
               </div>
@@ -87,7 +87,7 @@
         <div class="mob-sub" id="mob-svc-sub" :aria-hidden="!mobileServicesOpen" :class="{ open: mobileServicesOpen }">
           <router-link to="/services#deployment" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-device-laptop" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Deployment &amp; Mobility</div><div class="mob-sub-desc">Device imaging, provisioning</div></div></router-link>
           <router-link to="/services#logistics" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-truck" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Logistics &amp; Infrastructure</div><div class="mob-sub-desc">GPS-tracked transit, relocations</div></div></router-link>
-          <router-link to="/services#itad" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-recycle" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Certified ITAD</div><div class="mob-sub-desc">NIST 800-88, CoD issuance</div></div></router-link>
+          <router-link to="/services#itad" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-recycle" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Secure ITAD</div><div class="mob-sub-desc">NIST 800-88, CoD issuance</div></div></router-link>
           <router-link to="/services#esg" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-leaf" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Sustainability &amp; ESG</div><div class="mob-sub-desc">ESG reports, EPP, donation</div></div></router-link>
           <router-link to="/services#soc" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-radar" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">SOC Operations</div><div class="mob-sub-desc">24/7 managed detection</div></div></router-link>
           <router-link to="/services#iam" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-lock-access" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Identity &amp; Access</div><div class="mob-sub-desc">IAM, MFA, Zero Trust</div></div></router-link>
@@ -130,7 +130,7 @@
         <div class="footer-top">
           <div>
             <div class="flogo"><em>enterprise</em> <strong>IT</strong></div>
-            <p class="ftagline">SA Owned &amp; Operated. Servicing enterprise clients Australia-wide from our Adelaide CBD headquarters. ISO compliant. NIST 800-88 compliant.</p>
+            <p class="ftagline">SA Owned &amp; Operated. Servicing enterprise clients Australia-wide from our Adelaide CBD headquarters. Aligned to ISO 27001. Data sanitisation to NIST 800-88 standards.</p>
             <div class="fsocial">
               <a href="https://www.linkedin.com/company/enterpriseitau/" class="fsoc" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
             </div>

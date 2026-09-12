@@ -209,7 +209,7 @@
       <div class="security-row" aria-label="Security certifications">
         <div class="sec-badge"><i class="ti ti-brand-windows" aria-hidden="true"></i>Microsoft Entra ID</div>
         <div class="sec-badge"><i class="ti ti-map-pin" aria-hidden="true"></i>Australian Owned</div>
-        <div class="sec-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO Compliant</div>
+        <div class="sec-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO 27001-aligned</div>
         <div class="sec-badge"><i class="ti ti-lock" aria-hidden="true"></i>TLS Encrypted</div>
       </div>
     </main>

@@ -103,7 +103,7 @@
                 </div>
               </div>
               <p class="ab-bio" itemprop="description">
-                The enterprise IT team comprises certified specialists in asset management, cybersecurity, and ESG reporting. Operating from our Adelaide CBD facility, we deliver sovereign ITAD, secure shipping, certified lifecycle tracking, and 24/7 security monitoring services to corporate and government enterprises across Australia.
+                The enterprise IT team comprises specialists in asset management, cybersecurity, and ESG reporting. Operating from our Adelaide CBD facility, we deliver sovereign ITAD, secure shipping, documented lifecycle tracking, and 24/7 security monitoring services to corporate and government enterprises across Australia.
               </p>
             </div>
           </article>
@@ -157,8 +157,8 @@
     <div class="ctaband" aria-label="Call to action">
       <div class="ctaband-in">
         <div class="ctaband-left">
-          <h3>Need certified enterprise ICT services?</h3>
-          <p>enterprise IT provides fully compliant data sanitisation, secure logistics, and 24/7 cybersecurity operations.</p>
+          <h3>Need secure enterprise ICT services?</h3>
+          <p>enterprise IT provides secure, standards-aligned data sanitisation, secure logistics, and 24/7 cybersecurity operations.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote →</router-link>

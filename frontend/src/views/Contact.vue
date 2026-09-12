@@ -77,11 +77,11 @@
     </section>
 
     <!-- TRUST BAR -->
-    <div class="tbar" aria-label="Compliance and accreditation">
+    <div class="tbar" aria-label="Standards and alignment">
       <div class="tbar-in">
         <span class="tbar-label">Trusted by enterprise</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO 27001-aligned</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -463,7 +463,7 @@ const subServices = {
     { value: 'workspace-deployment',    label: 'Next-Gen Workspace Deployment' },
     { value: 'gps-logistics',           label: 'GPS-Tracked Logistics & Transit' },
     { value: 'relocation-storage',      label: 'Enterprise Relocations & Secure Storage' },
-    { value: 'itad-eradication',        label: 'Certified ITAD & Data Eradication (NIST 800-88)' },
+    { value: 'itad-eradication',        label: 'Secure ITAD & Data Eradication (NIST 800-88)' },
     { value: 'asset-audit',             label: 'ICT Asset Auditing & Lifecycle Management' },
     { value: 'esg-reporting',           label: 'ESG Reporting & Sustainability' },
     { value: 'epp-donation',            label: 'Employee Purchase Programs & Tech Donation' },

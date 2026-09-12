@@ -182,7 +182,7 @@
                 <div class="folder-icon"><i class="ti ti-certificate" aria-hidden="true"></i></div>
                 <div>
                   <div class="folder-title">Certificates of Destruction</div>
-                  <div class="folder-count">{{ activeDocs.certificates.length }} documents · NIST 800-88 Compliant</div>
+                  <div class="folder-count">{{ activeDocs.certificates.length }} documents · to NIST 800-88 standards</div>
                 </div>
               </div>
               <div class="folder-body" role="list" aria-label="Certificates of destruction">
@@ -208,7 +208,7 @@
                 <div class="folder-icon"><i class="ti ti-clipboard-check" aria-hidden="true"></i></div>
                 <div>
                   <div class="folder-title">Audit Reports</div>
-                  <div class="folder-count">{{ activeDocs.audits.length }} documents · ISO &amp; ESG Audited</div>
+                  <div class="folder-count">{{ activeDocs.audits.length }} documents · ISO 27001 &amp; ESG aligned</div>
                 </div>
               </div>
               <div class="folder-body" role="list" aria-label="Audit reports">
@@ -724,14 +724,14 @@ const assets = ref([
 // Fallback Documents List
 const mockDocuments = {
   certificates: [
-    { id: 'cert-101', name: 'CoD_AcmeCorp_Batch47_2025-06.pdf', size: '124.5 KB', date: '2026-06-14', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 47\nStandards: NIST 800-88 Rev 1 Compliant' },
-    { id: 'cert-102', name: 'CoD_AcmeCorp_Batch46_2025-04.pdf', size: '141.2 KB', date: '2026-04-03', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 46\nStandards: NIST 800-88 Rev 1 Compliant' },
-    { id: 'cert-103', name: 'CoD_AcmeCorp_Batch45_2025-01.pdf', size: '118.9 KB', date: '2026-01-18', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 45\nStandards: NIST 800-88 Rev 1 Compliant' }
+    { id: 'cert-101', name: 'CoD_AcmeCorp_Batch47_2025-06.pdf', size: '124.5 KB', date: '2026-06-14', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 47\nStandard applied: NIST 800-88 Rev 1' },
+    { id: 'cert-102', name: 'CoD_AcmeCorp_Batch46_2025-04.pdf', size: '141.2 KB', date: '2026-04-03', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 46\nStandard applied: NIST 800-88 Rev 1' },
+    { id: 'cert-103', name: 'CoD_AcmeCorp_Batch45_2025-01.pdf', size: '118.9 KB', date: '2026-01-18', content: 'CERTIFICATE OF DESTRUCTION\n\nClient: Acme Corp\nBatch: 45\nStandard applied: NIST 800-88 Rev 1' }
   ],
   audits: [
     { id: 'audit-201', name: 'ESG_Report_AcmeCorp_Q2-2025.pdf', size: '348.4 KB', date: '2026-06-10', content: 'ENVIRONMENTAL, SOCIAL, AND GOVERNANCE (ESG) DISPOSAL REPORT\n\nAcme Corp Q2 2025' },
     { id: 'audit-202', name: 'AssetAudit_AcmeCorp_2025-Q1.xlsx', size: '1.2 MB', date: '2026-04-02', content: 'ACME CORP HARDWARE INVENTORY AUDIT SPREADSHEET' },
-    { id: 'audit-203', name: 'ComplianceAudit_ISO27001_2024.pdf', size: '2.4 MB', date: '2025-12-15', content: 'ISO/IEC 27001:2022 INFORMATION SECURITY MANAGEMENT COMPLIANCE AUDIT' }
+    { id: 'audit-203', name: 'ISO27001_Controls_Alignment_2026.pdf', size: '2.4 MB', date: '2025-12-15', content: 'ISO/IEC 27001:2022 INFORMATION SECURITY — CONTROLS ALIGNMENT SUMMARY' }
   ],
   invoices: [
     { id: 'inv-301', name: 'INV-2025-0148_AcmeCorp.pdf', size: '18.9 KB', date: '2026-06-01', status: 'Pending', content: 'enterprise IT INVOICE\n\nInvoice: INV-2025-0148\nAmount: $4,582.00\nDue Date: 30 June 2026' },

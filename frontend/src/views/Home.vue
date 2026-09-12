@@ -91,7 +91,7 @@
             <div class="hc-icon"><i class="ti ti-shield-check" aria-hidden="true"></i></div>
             <div>
               <div class="hc-label">Data Sanitisation</div>
-              <div class="hc-sub">Certified ITAD processing</div>
+              <div class="hc-sub">Secure ITAD processing</div>
               <div class="hc-badge">
                 <span
                   style="width: 5px; height: 5px; border-radius: 50%; background: #4ade80"
@@ -119,11 +119,11 @@
     </section>
 
     <!-- TRUST BAR -->
-    <div class="tbar" aria-label="Compliance and accreditation">
+    <div class="tbar" aria-label="Standards and alignment">
       <div class="tbar-inner">
-        <span class="tbar-left">Compliance &amp; Accreditation</span>
+        <span class="tbar-left">Standards &amp; Alignment</span>
         <div class="tbar-badges">
-          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO Compliant</div>
+          <div class="tbadge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO 27001-aligned</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
           <div class="tbadge"><i class="ti ti-building-skyscraper" aria-hidden="true"></i>Adelaide CBD HQ</div>
           <div class="tbadge"><i class="ti ti-leaf" aria-hidden="true"></i>ESG Reporting</div>
@@ -184,7 +184,7 @@
                   logistics
                 </li>
                 <li class="svc-li">
-                  <i class="ti ti-recycle" aria-hidden="true"></i>Certified ITAD — military-grade
+                  <i class="ti ti-recycle" aria-hidden="true"></i>Secure ITAD — military-grade
                   data eradication
                 </li>
                 <li class="svc-li">
@@ -275,11 +275,11 @@
             <div class="why-ico"><i class="ti ti-leaf" aria-hidden="true"></i></div>
             <div class="why-title">Sustainable Legacy</div>
             <p class="why-desc">
-              Full ESG reporting, green technology donation programs, and certified sustainable
+              Full ESG reporting, green technology donation programs, and responsible sustainable
               disposal.
             </p>
             <div class="why-proof">
-              <i class="ti ti-check" aria-hidden="true"></i>Certified ESG reporting
+              <i class="ti ti-check" aria-hidden="true"></i>ESG reporting
             </div>
           </div>
           <div class="why-card fade-up">
@@ -307,7 +307,7 @@
               deliver.
             </p>
             <div class="why-proof">
-              <i class="ti ti-check" aria-hidden="true"></i>ISO &amp; NIST compliant
+              <i class="ti ti-check" aria-hidden="true"></i>ISO 27001 &amp; NIST aligned
             </div>
           </div>
         </div>

@@ -94,7 +94,7 @@
           </div>
         </div>
         <p class="pb-desc">
-          From device provisioning and GPS-tracked logistics to certified data destruction and ESG
+          From device provisioning and GPS-tracked logistics to secure data destruction and ESG
           reporting — complete control over your hardware lifecycle.
         </p>
         <div class="pb-badge">
@@ -335,17 +335,17 @@
     <!-- PILLAR 1 — CERTIFIED ITAD -->
     <section class="sec sec-alt" id="itad" aria-labelledby="itad-heading">
       <div class="sec-in">
-        <p class="stag">Certified ITAD &amp; Secure Retirement</p>
+        <p class="stag">Secure ITAD &amp; Asset Retirement</p>
         <h2 class="sh2" id="itad-heading">Military-grade data eradication &amp; asset disposition</h2>
         <p class="sdesc">
-          NIST 800-88 compliant data sanitisation, on-site destruction, and certified IT asset
+          Data sanitisation to NIST 800-88 standards, on-site destruction, and secure IT asset
           disposition — protecting your data through to end-of-life.
         </p>
 
         <div class="highlight-row fade-up" aria-label="ITAD key metrics">
           <div class="hl-item">
             <div><span class="hl-num">NIST</span></div>
-            <div class="hl-label">800-88 compliant<br />sanitisation standard</div>
+            <div class="hl-label">NIST 800-88<br />sanitisation standard</div>
           </div>
           <div class="hl-item">
             <div><span class="hl-num">On</span><span class="hl-unit">-site</span></div>
@@ -367,7 +367,7 @@
               <div class="svc-card-icon"><i class="ti ti-database-off" aria-hidden="true"></i></div>
               <div class="svc-card-title">Military-grade Data Eradication</div>
               <p class="svc-card-desc">
-                NIST 800-88 certified data sanitisation across all media types — HDD, SSD, NVMe,
+                NIST 800-88 data sanitisation across all media types — HDD, SSD, NVMe,
                 mobile, and tape — with full audit trails.
               </p>
             </div>
@@ -453,7 +453,7 @@
         <p class="stag">Sustainability &amp; ESG</p>
         <h2 class="sh2" id="esg-heading">Green practices &amp; ESG reporting</h2>
         <p class="sdesc">
-          Australia's green IT partner — certified sustainable disposal, ESG reporting, technology
+          Australia's green IT partner — responsible sustainable disposal, ESG reporting, technology
           donations, and Employee Purchase Programs that reduce e-waste and support your
           environmental commitments.
         </p>
@@ -507,7 +507,7 @@
               <div class="svc-card-title">Employee Purchase Programs &amp; Donations</div>
               <p class="svc-card-desc">
                 Give retired technology a second life — through staff purchase programs or
-                certified donation to community and educational organisations.
+                documented donation to community and educational organisations.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -519,7 +519,7 @@
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Technology donation coordination</strong> — certified data-wiped donations to nonprofits</span>
+                  ><span><strong>Technology donation coordination</strong> — securely data-wiped donations to nonprofits</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
@@ -551,7 +551,7 @@
         <div class="compliance-left">
           <div class="compliance-icon"><i class="ti ti-shield-check" aria-hidden="true"></i></div>
           <div class="compliance-text">
-            <strong>Certified compliance at every step</strong>
+            <strong>Documented and auditable at every step</strong>
             <span>Our operations comply with the highest international security standards.</span>
           </div>
         </div>
@@ -783,7 +783,7 @@
         <h2 class="sh2" id="forensics-heading">Rapid response, data recovery &amp; digital forensics</h2>
         <p class="sdesc">
           When the worst happens, we act fast. Malware containment, evidence-grade forensics, and
-          full data recovery — delivered by certified specialists.
+          full data recovery — delivered by experienced specialists.
         </p>
 
         <div class="svc-grid">
@@ -835,7 +835,7 @@
               <div class="svc-card-icon"><i class="ti ti-database-import" aria-hidden="true"></i></div>
               <div class="svc-card-title">Data Recovery &amp; Digital Forensics</div>
               <p class="svc-card-desc">
-                Court-admissible digital forensics and certified data recovery from failed,
+                Court-admissible digital forensics and professional data recovery from failed,
                 corrupted, or compromised storage media.
               </p>
             </div>
