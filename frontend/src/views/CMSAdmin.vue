@@ -69,6 +69,15 @@
           </div>
         </div>
         <div class="sb-sec">
+          <div class="sb-sec-label">Account</div>
+          <div
+            class="sb-item"
+            @click="router.push('/admin-security')"
+          >
+            <i class="ti ti-shield-lock"></i><span>Account Security</span>
+          </div>
+        </div>
+        <div class="sb-sec">
           <div class="sb-sec-label">Developer</div>
           <div
             class="sb-item"
@@ -880,7 +889,8 @@ const approveRequest = async (id) => {
       credentials: 'include',
       headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-EIT-CSRF': '1'
       }
     });
     const resData = await response.json();
@@ -1099,6 +1109,7 @@ const savePost = async () => {
       headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',
+        'X-EIT-CSRF': '1',
       },
       body: JSON.stringify(payload),
     });
@@ -1126,6 +1137,7 @@ const deletePost = async (id) => {
       credentials: 'include',
       headers: {
         'Accept': 'application/json',
+        'X-EIT-CSRF': '1',
       },
     });
     const data = await response.json();
