@@ -31,7 +31,7 @@
         <h1 class="card-title">Console Sign In</h1>
         <p class="card-sub">Authenticate using your administrator credentials to access the content management system panel.</p>
 
-        <form @submit.prevent="handleAdminLogin" class="login-form">
+        <form v-if="!twoFactorRequired" @submit.prevent="handleAdminLogin" class="login-form">
           <!-- Email Input -->
           <div class="form-group">
             <label class="form-label" for="admin-email">Administrator Email</label>
@@ -80,6 +80,38 @@
           </button>
         </form>
 
+        <!-- Two-factor step -->
+        <form v-else @submit.prevent="handleTwoFactor" class="login-form">
+          <div class="form-group">
+            <label class="form-label" for="admin-2fa">Authenticator code</label>
+            <div class="input-wrap">
+              <i class="ti ti-shield-lock input-icon" aria-hidden="true"></i>
+              <input
+                id="admin-2fa"
+                type="text"
+                inputmode="numeric"
+                autocomplete="one-time-code"
+                class="form-input"
+                v-model="code"
+                placeholder="6-digit code"
+                required
+                autofocus
+              />
+            </div>
+            <p style="font-size:12px;color:rgba(255,255,255,0.45);margin:2px 0 0;text-align:left;">
+              Enter the code from your authenticator app, or a recovery code if you've lost your device.
+            </p>
+          </div>
+          <button type="submit" class="submit-btn" :disabled="verifying">
+            <i v-if="verifying" class="ti ti-loader-2 spin-animation" aria-hidden="true"></i>
+            <i v-else class="ti ti-lock-check" aria-hidden="true"></i>
+            <span>{{ verifying ? 'Verifying…' : 'Verify &amp; Sign In' }}</span>
+          </button>
+          <button type="button" class="back-link" style="background:none;border:none;cursor:pointer;margin-top:4px;" @click="cancelTwoFactor">
+            Cancel
+          </button>
+        </form>
+
         <div class="card-footer">
           <p>This is a restricted administrative system. Unauthorized access attempts are logged and audited.</p>
           <router-link to="/login" class="back-link">Return to Client/Partner Portal</router-link>
@@ -100,6 +132,10 @@ const email = ref('');
 const password = ref('');
 const showPassword = ref(false);
 const loggingIn = ref(false);
+
+const twoFactorRequired = ref(false);
+const code = ref('');
+const verifying = ref(false);
 
 const toast = reactive({
   show: false,
@@ -140,7 +176,8 @@ const handleAdminLogin = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
       },
       credentials: 'include',
       body: JSON.stringify({
@@ -151,7 +188,11 @@ const handleAdminLogin = async () => {
 
     const resData = await response.json();
 
-    if (response.ok) {
+    if (response.ok && resData.two_factor_required) {
+      // Password accepted; prompt for the authenticator code.
+      twoFactorRequired.value = true;
+      code.value = '';
+    } else if (response.ok) {
       showToast("Access granted. Loading administration console...", "success");
       localStorage.setItem('auth_user', JSON.stringify(resData.user));
       setTimeout(() => {
@@ -166,6 +207,47 @@ const handleAdminLogin = async () => {
   } finally {
     loggingIn.value = false;
   }
+};
+
+const handleTwoFactor = async () => {
+  if (verifying.value) return;
+  verifying.value = true;
+  try {
+    const response = await fetch(`${API_BASE_URL}/api/auth/admin/login/2fa`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
+      },
+      credentials: 'include',
+      body: JSON.stringify({ code: code.value.trim() })
+    });
+    const resData = await response.json();
+    if (response.ok && resData.success) {
+      showToast("Access granted. Loading administration console...", "success");
+      localStorage.setItem('auth_user', JSON.stringify(resData.user));
+      setTimeout(() => { router.push('/cms-admin'); }, 1200);
+    } else {
+      showToast(resData.message || "Invalid code.", "error");
+      // If the challenge expired, return to the password step.
+      if (response.status === 401 && /expired/i.test(resData.message || '')) {
+        twoFactorRequired.value = false;
+        password.value = '';
+      }
+    }
+  } catch (error) {
+    console.error("2FA verification failed:", error);
+    showToast("Connection error during verification.", "error");
+  } finally {
+    verifying.value = false;
+  }
+};
+
+const cancelTwoFactor = () => {
+  twoFactorRequired.value = false;
+  code.value = '';
+  password.value = '';
 };
 </script>
 

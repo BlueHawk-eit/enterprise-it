@@ -14,6 +14,7 @@ import Terms from './views/Terms.vue';
 import CmsPreview from './views/CmsPreview.vue';
 import CMSAdmin from './views/CMSAdmin.vue';
 import AdminLogin from './views/AdminLogin.vue';
+import AdminSecurity from './views/AdminSecurity.vue';
 import NotFound from './views/NotFound.vue';
 
 const routes = [
@@ -34,6 +35,7 @@ const routes = [
   { path: '/cms-preview', name: 'CmsPreview', component: CmsPreview },
   { path: '/cms-admin', name: 'CMSAdmin', component: CMSAdmin },
   { path: '/admin-login', name: 'AdminLogin', component: AdminLogin },
+  { path: '/admin-security', name: 'AdminSecurity', component: AdminSecurity },
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
 ];
 
