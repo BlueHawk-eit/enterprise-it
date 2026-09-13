@@ -23,7 +23,7 @@ Route::middleware([
     \Illuminate\Cookie\Middleware\EncryptCookies::class,
     \Illuminate\Session\Middleware\StartSession::class,
 ])->group(function () {
-    Route::post('/auth/login', [AuthController::class, 'login'])->middleware('throttle:10,1');
+    Route::post('/auth/login', [AuthController::class, 'login'])->middleware(['csrfheader', 'throttle:10,1']);
     Route::post('/auth/admin/login', [AuthController::class, 'adminLogin'])->middleware(['csrfheader', 'throttle:10,1']);
     Route::post('/auth/admin/login/2fa', [AuthController::class, 'adminLoginTwoFactor'])->middleware(['csrfheader', 'throttle:10,1']);
     Route::get('/auth/user', [AuthController::class, 'user']);
