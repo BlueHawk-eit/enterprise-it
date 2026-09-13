@@ -74,27 +74,6 @@
             </div>
           </div>
 
-          <!-- Corporate Email Input -->
-          <div class="form-group" style="margin-bottom: 20px;">
-            <label class="form-label">Corporate Email Address <span class="req">*</span></label>
-            <div class="ob-input-wrap">
-              <input 
-                class="ob-input" 
-                :class="{ error: errors.loginEmail }"
-                type="email" 
-                v-model="loginEmail" 
-                placeholder="your.name@company.com.au" 
-                aria-label="Corporate Email Address" 
-                required
-                @input="errors.loginEmail = false"
-                @keydown.enter="handleMSLogin"
-              />
-            </div>
-            <div class="ob-error" :class="{ visible: errors.loginEmail }">
-              Please enter a valid registered corporate email address.
-            </div>
-          </div>
-
           <!-- Microsoft Sign-in Button -->
           <button class="ms-btn" :class="{ loading: loggingIn }" id="ms-signin-btn" @click="handleMSLogin" aria-label="Sign in with Microsoft" :disabled="loggingIn">
             <svg class="ms-logo" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -232,6 +211,7 @@
 import { ref, reactive, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { API_BASE_URL } from '../config';
+import { msalInstance, loginRequest, ensureMsalReady, msalConfigured } from '../auth/msal';
 
 const router = useRouter();
 
@@ -277,50 +257,59 @@ const isValidEmail = (emailStr) => {
 };
 
 const handleMSLogin = async () => {
-  if (!loginEmail.value.trim() || !isValidEmail(loginEmail.value.trim())) {
-    errors.loginEmail = true;
-    showToast("Please enter a valid registered corporate email address.", "error");
+  if (!msalConfigured) {
+    showToast("Microsoft sign-in isn't configured yet. Please contact support.", "error");
     return;
   }
 
   loggingIn.value = true;
 
   try {
+    // 1. Authenticate against Microsoft Entra ID (authorization code + PKCE via popup).
+    await ensureMsalReady();
+    const result = await msalInstance.loginPopup(loginRequest);
+    const idToken = result?.idToken;
+
+    if (!idToken) {
+      showToast("Microsoft did not return a valid token. Please try again.", "error");
+      return;
+    }
+
+    // 2. Exchange the verified ID token for a secure HttpOnly session.
+    //    Identity (email/name) is taken from the token by the backend — nothing else is sent.
     const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
       },
       credentials: 'include', // Crucial for HttpOnly session cookie transmission
-      body: JSON.stringify({
-        email: loginEmail.value.trim(),
-        id_token: `mock-id-token-${Math.random().toString(36).substring(2)}`
-      })
+      body: JSON.stringify({ id_token: idToken })
     });
 
     const resData = await response.json();
 
-    if (response.ok) {
+    if (response.ok && resData.success) {
       showToast("Sign in successful! Establishing secure session...", "success");
       localStorage.setItem('auth_user', JSON.stringify(resData.user));
       setTimeout(() => {
-        if (resData.user && resData.user.account_type === 'admin') {
-          router.push('/cms-admin');
-        } else {
-          router.push('/dashboard');
-        }
-      }, 1500);
+        router.push('/dashboard');
+      }, 1200);
+    } else if (response.status === 403) {
+      showToast(resData.message || "This account can't sign in here.", "error");
     } else {
-      if (response.status === 401) {
-        showToast("Account not found. Please contact support or use the New Account tab to provision your client portal access.", "error");
-      } else {
-        showToast(resData.message || "Authentication failed.", "error");
-      }
+      showToast(resData.message || "Authentication failed. Please contact support.", "error");
     }
   } catch (error) {
-    console.error("Login request failed:", error);
-    showToast("Connection error: Unable to reach the authentication server. Please ensure the backend is running.", "error");
+    // MSAL throws on user-cancelled popups and blocked popups.
+    const code = error?.errorCode || '';
+    if (code === 'user_cancelled' || code === 'popup_window_error' || code === 'empty_window_error') {
+      showToast("Sign-in was cancelled or the popup was blocked. Please allow popups and try again.", "error");
+    } else {
+      console.error("Microsoft sign-in failed:", error);
+      showToast("Microsoft sign-in failed. Please try again or contact support.", "error");
+    }
   } finally {
     loggingIn.value = false;
   }

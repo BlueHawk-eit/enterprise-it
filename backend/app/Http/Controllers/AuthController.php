@@ -23,19 +23,13 @@ class AuthController extends Controller
     {
         $request->validate([
             'id_token' => 'required|string',
-            'email' => 'required|email'
         ]);
-
-        $idToken = $request->input('id_token');
-        $email = $request->input('email');
-
-        Log::info("Validating OIDC Authorization Code Flow ID Token for user: {$email}");
 
         // Verify the token's RS256 signature against Microsoft's published JWKS, plus
         // standard issuer/audience/expiry checks. This has no bypass path: if
         // AZURE_TENANT_ID / AZURE_CLIENT_ID aren't configured, or the token doesn't
         // verify, login is refused.
-        $claims = OidcTokenVerifier::verify($idToken);
+        $claims = OidcTokenVerifier::verify($request->input('id_token'));
 
         if (!$claims) {
             return response()->json([
@@ -44,28 +38,54 @@ class AuthController extends Controller
             ], 401);
         }
 
-        // The verified token's own email/UPN claim must match what was submitted,
-        // so a valid token for one account can't be replayed against another email.
+        // Identity is taken SOLELY from the verified token — never from a
+        // client-supplied field — so a valid token can't be replayed against
+        // another email.
         $tokenEmail = $claims['email'] ?? $claims['preferred_username'] ?? $claims['upn'] ?? null;
-        if (!$tokenEmail || strcasecmp($tokenEmail, $email) !== 0) {
+        if (!$tokenEmail || !filter_var($tokenEmail, FILTER_VALIDATE_EMAIL)) {
             return response()->json([
                 'success' => false,
-                'message' => 'Token identity does not match the submitted email.'
+                'message' => 'The Microsoft token did not contain a usable email claim.'
             ], 401);
         }
+        $tokenEmail = strtolower(trim($tokenEmail));
+        $displayName = $claims['name'] ?? $tokenEmail;
 
-        $user = User::where('email', $email)->first();
+        Log::info("Validating OIDC ID token for portal user: {$tokenEmail}");
 
-        if (!$user) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Account not found. Please contact support to provision your client portal account.'
-            ], 401);
+        $user = User::whereRaw('LOWER(email) = ?', [$tokenEmail])->first();
+
+        if ($user) {
+            // The portal is for client/partner accounts only. Admins authenticate
+            // through the admin login (password + 2FA); an Entra token must never
+            // bypass that stronger flow, even if the email matches an admin.
+            if (!in_array($user->account_type, ['client', 'partner'], true)) {
+                Log::warning("Entra portal login refused for non-portal account: {$tokenEmail} ({$user->account_type})");
+                return response()->json([
+                    'success' => false,
+                    'message' => 'This account cannot sign in here.'
+                ], 403);
+            }
+        } else {
+            // Just-in-time provisioning: the Entra invitation (with "assignment
+            // required" on the Enterprise App) is the single gate for access, so a
+            // successfully verified token for a new user creates their local record
+            // on first sign-in. The password is random and unused — authentication
+            // is always via Entra.
+            $user = User::create([
+                'name' => $displayName,
+                'email' => $tokenEmail,
+                'organisation' => null,
+                'account_type' => 'client',
+                'password' => Hash::make(Str::random(64)),
+            ]);
+            Log::info("JIT-provisioned portal user on first Entra sign-in: {$tokenEmail}");
         }
 
-        // Log the user in to create a secure Laravel session.
+        // Establish a secure Laravel session; regenerate the ID to prevent fixation.
         // Laravel handles session state using encrypted, HttpOnly cookies automatically.
         Auth::login($user);
+        $request->session()->regenerate();
 
         return response()->json([
             'success' => true,
