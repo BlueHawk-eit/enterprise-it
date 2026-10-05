@@ -175,12 +175,16 @@
     <router-link v-if="showFloatingPortal" to="/login" class="portal-float" aria-label="Access the client portal">
       <i class="ti ti-lock" aria-hidden="true"></i>Client Portal Login
     </router-link>
+
+    <!-- Cookie / analytics consent notice -->
+    <ConsentBanner />
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted, onUnmounted, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
+import ConsentBanner from './components/ConsentBanner.vue';
 
 const route = useRoute();
 
