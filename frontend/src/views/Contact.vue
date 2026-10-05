@@ -423,6 +423,7 @@
 import { ref, reactive, computed, onMounted, nextTick } from 'vue';
 import { useRoute } from 'vue-router';
 import { API_BASE_URL } from '../config';
+import { trackLead } from '../analytics';
 
 const route = useRoute();
 
@@ -631,6 +632,8 @@ const submitForm = async () => {
       // Generate reference number
       referenceNumber.value = 'ENQ-' + Math.random().toString(36).substr(2, 6).toUpperCase();
       submitted.value = true;
+      // Fire the lead conversion (GA4 + Google Ads + LinkedIn) only on a real backend success.
+      trackLead({ service: payload.service_offering, category: payload.service_category });
       nextTick(() => {
         if (successRef.value) {
           successRef.value.focus();
