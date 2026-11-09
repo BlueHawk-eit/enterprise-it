@@ -17,7 +17,7 @@
         </p>
         <div class="updated-badge">
           <i class="ti ti-calendar" aria-hidden="true"></i>
-          Last updated: 14 September 2026 &nbsp;·&nbsp; Effective: 14 September 2026
+          Last updated: 9 November 2026 &nbsp;·&nbsp; Effective: 9 November 2026
         </div>
       </div>
     </section>
@@ -65,7 +65,7 @@
               We are a South Australian owned and operated business. Our registered address is Adelaide CBD, South Australia 5000, Australia.
             </p>
             <p class="pol-p">
-              This Privacy Policy applies to all personal information we collect through our website (<router-link to="/">enterpriseit.com.au</router-link>), our Client Portal, our contact forms, our newsletter subscription, and in connection with our service delivery.
+              This Privacy Policy applies to all personal information we collect through our website (<router-link to="/">enterpriseit.com.au</router-link>), our Client Portal, our contact forms, and in connection with our service delivery.
             </p>
           </div>
 
@@ -94,7 +94,7 @@
             <h3 class="pol-h3">Account and portal information</h3>
             <ul class="pol-ul">
               <li>
-                Microsoft account identity (email address and display name, via Microsoft Entra ID External Identities) for Client Portal access
+                Microsoft account identity (email address and display name, via Microsoft Entra ID) for Client Portal access
               </li>
               <li>Account provisioning request details (email, organisation, account type)</li>
               <li>Portal activity logs (document access and download records)</li>
@@ -132,11 +132,7 @@
               <tbody>
                 <tr>
                   <td>Contact &amp; Quote form</td>
-                  <td>Name, organisation, email, phone, address, service category, requirements</td>
-                </tr>
-                <tr>
-                  <td>Newsletter subscription</td>
-                  <td>Email address, organisation (optional)</td>
+                  <td>Name, organisation, email, phone, address (optional), service category, requirements</td>
                 </tr>
                 <tr>
                   <td>Client Portal onboarding</td>
@@ -144,7 +140,7 @@
                 </tr>
                 <tr>
                   <td>Client Portal login</td>
-                  <td>Microsoft account identity (via Entra ID — we receive only what Microsoft provides)</td>
+                  <td>Microsoft account identity (via Entra ID; we receive only what Microsoft provides)</td>
                 </tr>
                 <tr>
                   <td>Email correspondence</td>
@@ -173,25 +169,25 @@
             </p>
             <ul class="pol-ul">
               <li>
-                <strong>Responding to enquiries and quotes</strong> — to contact you about your service request and provide proposals
+                <strong>Responding to enquiries and quotes</strong>: to contact you about your service request and provide proposals
               </li>
               <li>
-                <strong>Delivering IT services</strong> — to provision, manage, and fulfil the services you have engaged us to provide
+                <strong>Delivering IT services</strong>: to provision, manage, and fulfil the services you have engaged us to provide
               </li>
               <li>
-                <strong>Client Portal access</strong> — to authenticate your identity and provide secure access to your documents, reports, and invoices
+                <strong>Client Portal access</strong>: to authenticate your identity and provide secure access to your documents, reports, and invoices
               </li>
               <li>
-                <strong>Newsletter and communications</strong> — to send you our newsletter and service updates, where you have subscribed or consented
+                <strong>Communications</strong>: to send you service updates or other communications, where you have consented
               </li>
               <li>
-                <strong>Legal and compliance obligations</strong> — including record-keeping, tax, contract management, and regulatory compliance
+                <strong>Legal and compliance obligations</strong>: including record-keeping, tax, contract management, and regulatory compliance
               </li>
               <li>
-                <strong>Improving our services</strong> — to analyse how our website and services are used to improve their quality
+                <strong>Improving our services</strong>: to analyse how our website and services are used to improve their quality
               </li>
               <li>
-                <strong>Security</strong> — to protect our systems, prevent fraud, and maintain the integrity of our IT infrastructure
+                <strong>Security</strong>: to protect our systems, prevent fraud, and maintain the integrity of our IT infrastructure
               </li>
             </ul>
             <p class="pol-p">
@@ -207,20 +203,20 @@
             </p>
             <ul class="pol-ul">
               <li>
-                <strong>IT service providers</strong> — including our website hosting provider (Vercel), application hosting provider (Render), managed database provider (Neon), Microsoft (for Client Portal authentication), and our email delivery service, who assist us in operating our systems. These providers are bound by confidentiality obligations and are not permitted to use your data for their own purposes.
+                <strong>IT service providers</strong>: including our website hosting provider (Vercel), application hosting provider (Render), managed database provider (Neon), Microsoft (for Client Portal authentication), and our email delivery service, who assist us in operating our systems. These providers are bound by confidentiality obligations and are not permitted to use your data for their own purposes.
               </li>
               <li>
-                <strong>Microsoft Corporation</strong> — for Client Portal authentication via Microsoft Entra ID External Identities. Microsoft's privacy practices are governed by the
+                <strong>Microsoft Corporation</strong>: for Client Portal authentication via Microsoft Entra ID. Microsoft's privacy practices are governed by the
                 <a href="https://privacy.microsoft.com" target="_blank" rel="noopener">Microsoft Privacy Statement</a>.
               </li>
               <li>
-                <strong>Analytics providers</strong> — website analytics services (see Section 9) operating in an anonymised or aggregated manner.
+                <strong>Analytics providers</strong>: website analytics services (see Section 9) operating in an anonymised or aggregated manner.
               </li>
               <li>
-                <strong>Professional advisers</strong> — including our legal advisers, accountants, and auditors, who are bound by professional confidentiality obligations.
+                <strong>Professional advisers</strong>: including our legal advisers, accountants, and auditors, who are bound by professional confidentiality obligations.
               </li>
               <li>
-                <strong>Law enforcement and regulators</strong> — where required by law, court order, or regulatory obligation.
+                <strong>Law enforcement and regulators</strong>: where required by law, court order, or regulatory obligation.
               </li>
             </ul>
             <p class="pol-p">
@@ -277,11 +273,11 @@
             </p>
             <h3 class="pol-h3">Authentication</h3>
             <p class="pol-p">
-              The portal integrates with <strong>Microsoft Entra ID</strong> (OIDC) with multi-factor authentication, keeping client documents secure. We do not store your Microsoft account credentials — these are managed entirely by Microsoft.
+              The portal integrates with <strong>Microsoft Entra ID</strong> (OIDC) with multi-factor authentication, keeping client documents secure. We do not store your Microsoft account credentials. These are managed entirely by Microsoft.
             </p>
             <h3 class="pol-h3">Session security</h3>
             <p class="pol-p">
-              Upon successful authentication, your session is secured using <strong>HttpOnly, Secure, SameSite=Strict cookies</strong>. This means session tokens are not accessible via JavaScript, reducing the risk of cross-site scripting attacks.
+              Upon successful authentication, your session is secured using <strong>HttpOnly, Secure cookies</strong>. This means session tokens are not accessible via JavaScript, reducing the risk of cross-site scripting attacks.
             </p>
             <h3 class="pol-h3">Portal data</h3>
             <p class="pol-p">
@@ -311,7 +307,12 @@
                 </tr>
                 <tr>
                   <td>Analytics cookies</td>
-                  <td>Anonymised usage data to understand site performance (page views, traffic sources)</td>
+                  <td>Usage data to understand site performance (page views, traffic sources), via Google Analytics</td>
+                  <td>Up to 2 years</td>
+                </tr>
+                <tr>
+                  <td>Advertising &amp; conversion cookies</td>
+                  <td>Measuring whether our Google Ads and LinkedIn ads lead to enquiries (Google Ads conversion tracking, LinkedIn Insight Tag)</td>
                   <td>Up to 2 years</td>
                 </tr>
                 <tr>
@@ -322,7 +323,7 @@
               </tbody>
             </table>
             <p class="pol-p">
-              You can control cookies through your browser settings. Note that disabling essential cookies may affect the functionality of our website and Client Portal. We do not use third-party advertising cookies or sell browsing data to advertisers.
+              You can decline analytics and advertising cookies using the cookie notice on our website, and you can also control cookies through your browser settings. Disabling essential cookies may affect the functionality of our website and Client Portal. We do not sell your personal information. Google and LinkedIn handle data collected through their tags under their own privacy policies, and you can manage your ad preferences in your Google and LinkedIn account settings.
             </p>
           </div>
 
@@ -357,10 +358,6 @@
                   <td>2 years</td>
                 </tr>
                 <tr>
-                  <td>Newsletter subscriptions</td>
-                  <td>Until unsubscribed, plus 1 year</td>
-                </tr>
-                <tr>
                   <td>Website analytics</td>
                   <td>Up to 2 years (anonymised)</td>
                 </tr>
@@ -393,7 +390,7 @@
               <div>
                 <div class="pol-dt">Opt-out of direct marketing</div>
                 <div class="pol-dd">
-                  You may opt out of receiving our newsletter and marketing communications at any time by clicking the unsubscribe link in any email, or by contacting us directly. We will process opt-out requests promptly.
+                  You may opt out of receiving marketing communications from us at any time by clicking the unsubscribe link in any email, or by contacting us directly. We will process opt-out requests promptly.
                 </div>
               </div>
               <div>
@@ -426,7 +423,7 @@
           <div class="pol-section" id="changes">
             <h2 class="pol-h2"><span class="sec-num">13</span>Changes to This Policy</h2>
             <p class="pol-p">
-              We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal obligations. When we make material changes, we will update the "Last updated" date at the top of this page and, where appropriate, notify registered portal users or newsletter subscribers.
+              We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal obligations. When we make material changes, we will update the "Last updated" date at the top of this page and, where appropriate, notify registered portal users.
             </p>
             <p class="pol-p">
               We encourage you to review this policy periodically. Your continued use of our website or services after any changes constitutes your acceptance of the updated policy.
@@ -438,7 +435,7 @@
             <h2 class="pol-h2"><span class="sec-num">14</span>Contact Us</h2>
             <p class="pol-p">For any privacy-related enquiries, access requests, corrections, or complaints, please contact our Privacy Officer:</p>
             <ul class="pol-ul">
-              <li><strong>Privacy Officer</strong> — ENTERPRISE IT PTY LTD (ABN 33 701 700 478)</li>
+              <li><strong>Privacy Officer</strong>: ENTERPRISE IT PTY LTD (ABN 33 701 700 478)</li>
               <li><strong>Email:</strong> <a href="mailto:privacy@enterpriseit.com.au">privacy@enterpriseit.com.au</a></li>
               <li><strong>Phone:</strong> +61 494 614 221 (Mon–Fri, 8am–6pm ACST)</li>
               <li><strong>Post:</strong> Privacy Officer, ENTERPRISE IT PTY LTD, Adelaide CBD, South Australia 5000</li>

@@ -29,9 +29,8 @@
           <span class="accent">Under one roof.</span>
         </h1>
         <p class="page-sub">
-          Two integrated service pillars — ICT Lifecycle &amp; Asset Sovereignty, and Digital
-          Intelligence &amp; Cyber Defence — designed to cover the full technology lifecycle for
-          Australian enterprise.
+          Two service pillars, ICT Lifecycle &amp; Asset Sovereignty and Digital Intelligence &amp;
+          Cyber Defence, covering the full technology lifecycle for Australian organisations.
         </p>
 
         <div class="hero-ctas">
@@ -40,8 +39,8 @@
             Quote</router-link
           >
           <router-link to="/contact#urgent" class="btn-amber"
-            ><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Data
-            Recovery</router-link
+            ><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Incident
+            Help</router-link
           >
         </div>
 
@@ -94,8 +93,8 @@
           </div>
         </div>
         <p class="pb-desc">
-          From device provisioning and GPS-tracked logistics to secure data destruction and ESG
-          reporting — complete control over your hardware lifecycle.
+          From device provisioning and tracked logistics to secure data sanitisation and ESG
+          reporting, so you stay in control of your hardware from start to finish.
         </p>
         <div class="pb-badge">
           <i class="ti ti-map-pin" aria-hidden="true"></i>Australia-wide delivery
@@ -109,8 +108,7 @@
         <p class="stag">Deployment &amp; Mobility</p>
         <h2 class="sh2" id="deploy-heading">Device provisioning &amp; workspace deployment</h2>
         <p class="sdesc">
-          Remote-ready end-user computing from first unbox to full productivity — anywhere in
-          Australia.
+          Devices that arrive ready to work, wherever your people are in Australia.
         </p>
 
         <div class="highlight-row fade-up" aria-label="Deployment key metrics">
@@ -128,7 +126,7 @@
           </div>
           <div class="hl-item">
             <div><span class="hl-num">24</span><span class="hl-unit"> hr</span></div>
-            <div class="hl-label">Quote response<br />guaranteed</div>
+            <div class="hl-label">Quote<br />response</div>
           </div>
         </div>
 
@@ -138,8 +136,8 @@
               <div class="svc-card-icon"><i class="ti ti-device-laptop" aria-hidden="true"></i></div>
               <div class="svc-card-title">Remote-Ready Provisioning</div>
               <p class="svc-card-desc">
-                Zero-touch device configuration and imaging so your workforce is productive from
-                day one — regardless of location.
+                Zero-touch device configuration and imaging, so your people are productive from day
+                one wherever they work.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -147,19 +145,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Device imaging</strong> — OS build, software stack, and policy deployment</span>
+                  ><span><strong>Device imaging</strong>: OS build, software stack, and policy deployment</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Zero-touch enrolment</strong> — Autopilot, Apple DEP, and ABM integration</span>
+                  ><span><strong>Zero-touch enrolment</strong>: Autopilot, Apple DEP, and ABM integration</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Secure configuration</strong> — CIS benchmarks and endpoint hardening</span>
+                  ><span><strong>Secure configuration</strong>: CIS benchmarks and endpoint hardening</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Asset tagging</strong> — RFID and barcode labelling for inventory control</span>
+                  ><span><strong>Asset tagging</strong>: RFID and barcode labelling for inventory control</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -180,8 +178,8 @@
               <div class="svc-card-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
               <div class="svc-card-title">Next-Gen Workspace Deployment</div>
               <p class="svc-card-desc">
-                End-to-end workspace rollouts for hybrid and remote teams — from hardware kitting
-                through to on-site technical setup.
+                Workspace rollouts for hybrid and remote teams, from hardware kitting through to
+                on-site setup.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -189,19 +187,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Bulk device kitting</strong> — staged preparation and multi-site rollout</span>
+                  ><span><strong>Bulk device kitting</strong>: staged preparation and multi-site rollout</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>On-site IT technical services</strong> — cabling, docking, peripheral setup</span>
+                  ><span><strong>On-site IT technical services</strong>: cabling, docking, peripheral setup</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Hybrid work enablement</strong> — VPN, VDI, and cloud workspace configuration</span>
+                  ><span><strong>Hybrid work enablement</strong>: VPN, VDI, and cloud workspace configuration</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>User handover documentation</strong> — guides and asset register delivery</span>
+                  ><span><strong>User handover documentation</strong>: guides and asset register delivery</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -223,20 +221,20 @@
     <section class="sec sec-white" id="logistics" aria-labelledby="logistics-heading">
       <div class="sec-in">
         <p class="stag">Logistics &amp; Infrastructure</p>
-        <h2 class="sh2" id="logistics-heading">Precision relocations &amp; GPS-tracked transit</h2>
+        <h2 class="sh2" id="logistics-heading">IT relocations &amp; tracked transit</h2>
         <p class="sdesc">
-          Enterprise-grade physical IT logistics with real-time asset visibility, insured transit,
-          and specialist handling from our Adelaide CBD hub.
+          Careful, documented movement of IT equipment, with tracking and chain of custody from
+          pickup to delivery.
         </p>
 
         <div class="highlight-row fade-up" aria-label="Logistics key metrics">
           <div class="hl-item">
-            <div><span class="hl-num">GPS</span></div>
-            <div class="hl-label">Real-time tracked<br />transit every shipment</div>
+            <div><span class="hl-num">Tracked</span></div>
+            <div class="hl-label">Transit for<br />every shipment</div>
           </div>
           <div class="hl-item">
-            <div><span class="hl-num">100</span><span class="hl-unit">%</span></div>
-            <div class="hl-label">Insured<br />freight handling</div>
+            <div><span class="hl-num">Signed</span></div>
+            <div class="hl-label">Handover at<br />every step</div>
           </div>
           <div class="hl-item">
             <div><span class="hl-num">AUS</span><span class="hl-unit">-wide</span></div>
@@ -244,7 +242,7 @@
           </div>
           <div class="hl-item">
             <div><span class="hl-num">SA</span></div>
-            <div class="hl-label">Adelaide CBD<br />secure storage hub</div>
+            <div class="hl-label">Based in<br />Adelaide CBD</div>
           </div>
         </div>
 
@@ -252,10 +250,10 @@
           <article class="svc-card fade-up">
             <div class="svc-card-head">
               <div class="svc-card-icon"><i class="ti ti-truck" aria-hidden="true"></i></div>
-              <div class="svc-card-title">GPS-Tracked Transit</div>
+              <div class="svc-card-title">Tracked Transit</div>
               <p class="svc-card-desc">
-                Every shipment tracked in real time — from our facility to any enterprise site in
-                Australia. Full chain-of-custody documentation on every job.
+                Every shipment is tracked from collection to delivery anywhere in Australia, with
+                chain-of-custody documentation on every job.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -263,24 +261,24 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Real-time GPS tracking</strong> — live visibility via client-facing dashboard</span>
+                  ><span><strong>Shipment tracking</strong>: status updates from pickup to delivery</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Chain-of-custody documentation</strong> — signed manifests at every handover</span>
+                  ><span><strong>Chain-of-custody documentation</strong>: signed manifests at every handover</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Specialist IT freight handling</strong> — vibration-controlled, anti-static packaging</span>
+                  ><span><strong>Specialist IT freight handling</strong>: vibration-controlled, anti-static packaging</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Australia-wide coverage</strong> — metro, regional, and remote sites</span>
+                  ><span><strong>Australia-wide coverage</strong>: metro, regional, and remote sites</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
-                <span class="svc-tag">GPS Tracked</span>
-                <span class="svc-tag">Insured Freight</span>
+                <span class="svc-tag">Tracked</span>
+                <span class="svc-tag">IT Freight</span>
                 <span class="svc-tag">Chain of Custody</span>
               </div>
               <router-link to="/contact#quote" class="svc-card-cta"
@@ -294,8 +292,8 @@
               <div class="svc-card-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
               <div class="svc-card-title">Enterprise Storage &amp; Relocations</div>
               <p class="svc-card-desc">
-                Precision office and data centre relocations, plus secure enterprise IT storage at
-                our Adelaide CBD facility.
+                Office and data centre relocations, plus secure storage options for IT assets
+                awaiting deployment or disposal.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -303,19 +301,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Office IT relocation</strong> — structured cabling, server, and AV equipment moves</span>
+                  ><span><strong>Office IT relocation</strong>: structured cabling, server, and AV equipment moves</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Data centre migration</strong> — rack-level planning, physical move, reconnection</span>
+                  ><span><strong>Data centre migration</strong>: rack-level planning, physical move, reconnection</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Secure bonded storage</strong> — temperature-controlled, access-logged IT asset storage</span>
+                  ><span><strong>Secure storage</strong>: access-controlled storage for assets in transition</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Asset collection services</strong> — scheduled pickup with verified custody transfer</span>
+                  ><span><strong>Asset collection services</strong>: scheduled pickup with verified custody transfer</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -336,10 +334,10 @@
     <section class="sec sec-alt" id="itad" aria-labelledby="itad-heading">
       <div class="sec-in">
         <p class="stag">Secure ITAD &amp; Asset Retirement</p>
-        <h2 class="sh2" id="itad-heading">Military-grade data eradication &amp; asset disposition</h2>
+        <h2 class="sh2" id="itad-heading">Verified data sanitisation &amp; asset disposition</h2>
         <p class="sdesc">
-          Data sanitisation to NIST 800-88 standards, on-site destruction, and secure IT asset
-          disposition — protecting your data through to end-of-life.
+          Data sanitisation to NIST 800-88, physical destruction where needed, and secure IT
+          asset disposition that protects your data right to the end.
         </p>
 
         <div class="highlight-row fade-up" aria-label="ITAD key metrics">
@@ -349,15 +347,15 @@
           </div>
           <div class="hl-item">
             <div><span class="hl-num">On</span><span class="hl-unit">-site</span></div>
-            <div class="hl-label">Data destruction<br />available</div>
+            <div class="hl-label">Destruction<br />on request</div>
           </div>
           <div class="hl-item">
             <div><span class="hl-num">CoD</span></div>
-            <div class="hl-label">Certificate of Destruction<br />issued every job</div>
+            <div class="hl-label">Certificate for every<br />data-bearing device</div>
           </div>
           <div class="hl-item">
-            <div><span class="hl-num">Zero</span></div>
-            <div class="hl-label">Breach record on<br />all retired assets</div>
+            <div><span class="hl-num">Full</span></div>
+            <div class="hl-label">Chain of custody<br />from pickup</div>
           </div>
         </div>
 
@@ -365,10 +363,10 @@
           <article class="svc-card fade-up">
             <div class="svc-card-head">
               <div class="svc-card-icon"><i class="ti ti-database-off" aria-hidden="true"></i></div>
-              <div class="svc-card-title">Military-grade Data Eradication</div>
+              <div class="svc-card-title">Verified Data Sanitisation</div>
               <p class="svc-card-desc">
-                NIST 800-88 data sanitisation across all media types — HDD, SSD, NVMe,
-                mobile, and tape — with full audit trails.
+                NIST 800-88 data sanitisation for HDD, SSD, NVMe, mobile and tape, with a full
+                audit trail.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -376,24 +374,24 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>NIST 800-88 wiping</strong> — DoD-grade multi-pass overwrite and cryptographic erase</span>
+                  ><span><strong>NIST 800-88 Clear and Purge</strong>: overwrite, secure erase and cryptographic erase, verified</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Physical destruction</strong> — degaussing and shredding for non-sanitisable media</span>
+                  ><span><strong>Physical destruction</strong>: degaussing and shredding for non-sanitisable media</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>On-site capability</strong> — mobile destruction unit for client-premises jobs</span>
+                  ><span><strong>On-site option</strong>: sanitisation or destruction at your premises on request</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Certificates of Destruction</strong> — serialised, auditable CoD per device or per batch</span>
+                  ><span><strong>Certificates of Destruction</strong>: serialised, auditable CoD per device or per batch</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
                 <span class="svc-tag">NIST 800-88</span>
-                <span class="svc-tag">DoD Grade</span>
+                <span class="svc-tag">Verified</span>
                 <span class="svc-tag">SSD / NVMe</span>
                 <span class="svc-tag">On-site</span>
                 <span class="svc-tag">CoD Issued</span>
@@ -409,8 +407,8 @@
               <div class="svc-card-icon"><i class="ti ti-clipboard-list" aria-hidden="true"></i></div>
               <div class="svc-card-title">ICT Asset Auditing &amp; Lifecycle Management</div>
               <p class="svc-card-desc">
-                End-to-end asset register management — from procurement through to secure
-                retirement — with detailed lifecycle reporting.
+                Asset register management from procurement through to secure retirement, with
+                clear lifecycle reporting.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -418,19 +416,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Asset discovery &amp; audit</strong> — full hardware and software inventory capture</span>
+                  ><span><strong>Asset discovery &amp; audit</strong>: full hardware and software inventory capture</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Lifecycle tracking</strong> — age, warranty, and refresh cycle reporting</span>
+                  ><span><strong>Lifecycle tracking</strong>: age, warranty, and refresh cycle reporting</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Retirement planning</strong> — schedule-driven decommission workflows</span>
+                  ><span><strong>Retirement planning</strong>: schedule-driven decommission workflows</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Client portal reporting</strong> — audit reports delivered to your secure portal</span>
+                  ><span><strong>Client portal reporting</strong>: audit reports delivered to your secure portal</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -453,9 +451,8 @@
         <p class="stag">Sustainability &amp; ESG</p>
         <h2 class="sh2" id="esg-heading">Green practices &amp; ESG reporting</h2>
         <p class="sdesc">
-          Australia's green IT partner — responsible sustainable disposal, ESG reporting, technology
-          donations, and Employee Purchase Programs that reduce e-waste and support your
-          environmental commitments.
+          Responsible disposal, ESG reporting, technology donation and Employee Purchase Programs
+          that cut e-waste and support your environmental commitments.
         </p>
 
         <div class="svc-grid">
@@ -464,8 +461,8 @@
               <div class="svc-card-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
               <div class="svc-card-title">ESG Reporting</div>
               <p class="svc-card-desc">
-                Detailed environmental, social, and governance reports documenting your technology
-                lifecycle outcomes — ready for board, audit, or regulatory submission.
+                Environmental, social and governance reports documenting your technology lifecycle
+                outcomes, ready for your board or auditors.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -473,19 +470,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Carbon offset calculations</strong> — CO₂ saved through responsible disposal</span>
+                  ><span><strong>Carbon offset calculations</strong>: CO₂ saved through responsible disposal</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Landfill diversion reporting</strong> — kg diverted per retirement cycle</span>
+                  ><span><strong>Landfill diversion reporting</strong>: kg diverted per retirement cycle</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Board-ready ESG documentation</strong> — branded, structured reports</span>
+                  ><span><strong>Board-ready ESG documentation</strong>: branded, structured reports</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Regulatory compliance support</strong> — aligned to Australian ESG frameworks</span>
+                  ><span><strong>Regulatory compliance support</strong>: aligned to Australian ESG frameworks</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -506,8 +503,8 @@
               </div>
               <div class="svc-card-title">Employee Purchase Programs &amp; Donations</div>
               <p class="svc-card-desc">
-                Give retired technology a second life — through staff purchase programs or
-                documented donation to community and educational organisations.
+                Give retired technology a second life through staff purchase programs or documented
+                donation to community and education organisations.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -515,19 +512,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Employee Purchase Programs (EPP)</strong> — graded, sanitised devices offered to staff</span>
+                  ><span><strong>Employee Purchase Programs (EPP)</strong>: graded, sanitised devices offered to staff</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Technology donation coordination</strong> — securely data-wiped donations to nonprofits</span>
+                  ><span><strong>Technology donation coordination</strong>: securely data-wiped donations to nonprofits</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Grading &amp; refurbishment</strong> — cosmetic and functional assessment pre-rehome</span>
+                  ><span><strong>Grading &amp; refurbishment</strong>: cosmetic and functional assessment pre-rehome</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Donation certificates</strong> — documentation for tax and ESG record purposes</span>
+                  ><span><strong>Donation certificates</strong>: documentation for tax and ESG record purposes</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -552,14 +549,13 @@
           <div class="compliance-icon"><i class="ti ti-shield-check" aria-hidden="true"></i></div>
           <div class="compliance-text">
             <strong>Documented and auditable at every step</strong>
-            <span>Our operations comply with the highest international security standards.</span>
+            <span>Our processes are aligned to recognised standards, and every job leaves a paper trail.</span>
           </div>
         </div>
         <div class="compliance-badges">
-          <span class="comp-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO 27001</span>
-          <span class="comp-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO 9001</span>
-          <span class="comp-badge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO 14001</span>
-          <span class="comp-badge"><i class="ti ti-certificate" aria-hidden="true"></i>AS/NZS 5377</span>
+          <span class="comp-badge"><i class="ti ti-shield-check" aria-hidden="true"></i>ISO 27001-aligned</span>
+          <span class="comp-badge"><i class="ti ti-shield-check" aria-hidden="true"></i>NIST 800-88</span>
+          <span class="comp-badge"><i class="ti ti-shield-check" aria-hidden="true"></i>Chain of custody</span>
         </div>
       </div>
     </div>
@@ -575,11 +571,11 @@
           </div>
         </div>
         <p class="pb-desc">
-          24/7 SOC detection, Microsoft Sentinel orchestration, phishing-resistant MFA, and
-          digital forensics — sovereign cyber defence operated from Adelaide.
+          Threat monitoring and response on Microsoft Sentinel, identity security, phishing-resistant
+          MFA and incident response, delivered from Adelaide.
         </p>
         <div class="pb-badge">
-          <i class="ti ti-shield-lock" aria-hidden="true"></i>Sovereign security monitoring
+          <i class="ti ti-shield-lock" aria-hidden="true"></i>Australian-based security team
         </div>
       </div>
     </div>
@@ -587,21 +583,21 @@
     <!-- PILLAR 2 — SOC OPERATIONS -->
     <section class="sec sec-alt" id="soc" aria-labelledby="soc-heading">
       <div class="sec-in">
-        <p class="stag">SOC Operations</p>
-        <h2 class="sh2" id="soc-heading">24/7 Managed Detection &amp; Response (MDR)</h2>
+        <p class="stag">Security Operations</p>
+        <h2 class="sh2" id="soc-heading">Managed Detection &amp; Response (MDR)</h2>
         <p class="sdesc">
-          Continuous threat hunting and rapid incident containment orchestrated from our secure
-          operations hub.
+          Always-on alerting in Microsoft Sentinel, with threat hunting and fast containment when
+          something needs action. Response hours are agreed in your service agreement.
         </p>
 
         <div class="svc-grid">
           <article class="svc-card fade-up">
             <div class="svc-card-head">
               <div class="svc-card-icon"><i class="ti ti-radar" aria-hidden="true"></i></div>
-              <div class="svc-card-title">24/7 Security Operations Centre</div>
+              <div class="svc-card-title">Managed Threat Monitoring</div>
               <p class="svc-card-desc">
-                Continuous threat monitoring, correlation, and response utilizing Microsoft Sentinel
-                and market-leading XDR platforms.
+                Threat monitoring, correlation and response using Microsoft Sentinel and Defender
+                XDR.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -609,23 +605,23 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>24/7/365 monitoring</strong> — vigilant analysts hunting threats around the clock</span>
+                  ><span><strong>Continuous alerting</strong>: Sentinel analytics rules watching your environment around the clock</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>SIEM management</strong> — Sentinel tuning, rule creation, and custom connectors</span>
+                  ><span><strong>SIEM management</strong>: Sentinel tuning, rule creation, and custom connectors</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Telemetry ingestion</strong> — endpoints, cloud, network, and identity log auditing</span>
+                  ><span><strong>Telemetry ingestion</strong>: endpoints, cloud, network, and identity log auditing</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Sovereign operations</strong> — Australian citizens, locally based data residency</span>
+                  ><span><strong>Australian data residency</strong>: logs kept in Australian Azure regions where available</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
-                <span class="svc-tag">24/7 SOC</span>
+                <span class="svc-tag">Monitoring</span>
                 <span class="svc-tag">MDR</span>
                 <span class="svc-tag">Sentinel</span>
                 <span class="svc-tag">Sovereign</span>
@@ -650,19 +646,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Proactive hunting</strong> — scanning endpoints and directories for IOCs</span>
+                  ><span><strong>Proactive hunting</strong>: scanning endpoints and directories for IOCs</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>XDR tuning</strong> — Defender for Endpoint and Defender for Cloud optimisation</span>
+                  ><span><strong>XDR tuning</strong>: Defender for Endpoint and Defender for Cloud optimisation</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Intel-driven audits</strong> — incorporating threat feeds specific to APAC</span>
+                  ><span><strong>Intel-driven audits</strong>: incorporating threat feeds specific to APAC</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Vulnerability scanning</strong> — identification of external attack surface exposures</span>
+                  ><span><strong>Vulnerability scanning</strong>: identification of external attack surface exposures</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -705,19 +701,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Joiner-mover-leaver automation</strong> — Entra ID and Active Directory provisioning</span>
+                  ><span><strong>Joiner-mover-leaver automation</strong>: Entra ID and Active Directory provisioning</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Privileged Access Management (PAM)</strong> — just-in-time access and PIM integration</span>
+                  ><span><strong>Privileged Access Management (PAM)</strong>: just-in-time access and PIM integration</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Access reviews &amp; recertification</strong> — scheduled reviews and attestation</span>
+                  ><span><strong>Access reviews &amp; recertification</strong>: scheduled reviews and attestation</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Role-based access control (RBAC)</strong> — least-privilege policy enforcement</span>
+                  ><span><strong>Role-based access control (RBAC)</strong>: least-privilege policy enforcement</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -738,7 +734,7 @@
               <div class="svc-card-title">Phishing-resistant MFA &amp; Conditional Access</div>
               <p class="svc-card-desc">
                 FIDO2 and certificate-based authentication paired with risk-adaptive conditional
-                access — eliminating credential-based attack vectors.
+                access, closing off the credential-based attacks behind most breaches.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -746,19 +742,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Phishing-resistant MFA</strong> — FIDO2, Windows Hello for Business, CBA</span>
+                  ><span><strong>Phishing-resistant MFA</strong>: FIDO2, Windows Hello for Business, CBA</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Conditional access policies</strong> — compliance, location, and risk-signal gating</span>
+                  ><span><strong>Conditional access policies</strong>: compliance, location, and risk-signal gating</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Zero Trust posture</strong> — never trust, always verify across all access requests</span>
+                  ><span><strong>Zero Trust posture</strong>: never trust, always verify across all access requests</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>ABAC enforcement</strong> — attribute-based access control for sensitive data</span>
+                  ><span><strong>ABAC enforcement</strong>: attribute-based access control for sensitive data</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -782,8 +778,8 @@
         <p class="stag">Incident Response &amp; Forensics</p>
         <h2 class="sh2" id="forensics-heading">Rapid response, data recovery &amp; digital forensics</h2>
         <p class="sdesc">
-          When the worst happens, we act fast. Malware containment, evidence-grade forensics, and
-          full data recovery — delivered by experienced specialists.
+          When the worst happens, we act fast: malware containment, forensic investigation and
+          data recovery to get you back on your feet.
         </p>
 
         <div class="svc-grid">
@@ -794,8 +790,8 @@
               </div>
               <div class="svc-card-title">Incident Response &amp; Malware Containment</div>
               <p class="svc-card-desc">
-                Rapid containment, eradication, and recovery from cyber incidents — minimising
-                dwell time, business disruption, and reputational damage.
+                Rapid containment, eradication and recovery from cyber incidents, keeping dwell time,
+                disruption and reputational damage to a minimum.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -803,23 +799,23 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Rapid containment</strong> — isolation of affected systems within hours</span>
+                  ><span><strong>Rapid containment</strong>: isolation of affected systems within hours</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Malware analysis &amp; eradication</strong> — root cause identification &amp; clean rebuild</span>
+                  ><span><strong>Malware analysis &amp; eradication</strong>: root cause identification &amp; clean rebuild</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Ransomware response</strong> — decryption assistance and recovery</span>
+                  ><span><strong>Ransomware response</strong>: decryption assistance and recovery</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Post-incident reporting</strong> — detailed timeline and recommendations</span>
+                  ><span><strong>Post-incident reporting</strong>: detailed timeline and recommendations</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
-                <span class="svc-tag">Urgent 24H</span>
+                <span class="svc-tag">Urgent</span>
                 <span class="svc-tag">Ransomware</span>
                 <span class="svc-tag">Containment</span>
                 <span class="svc-tag">IR Retainer</span>
@@ -835,8 +831,8 @@
               <div class="svc-card-icon"><i class="ti ti-database-import" aria-hidden="true"></i></div>
               <div class="svc-card-title">Data Recovery &amp; Digital Forensics</div>
               <p class="svc-card-desc">
-                Court-admissible digital forensics and professional data recovery from failed,
-                corrupted, or compromised storage media.
+                Forensically sound evidence handling and data recovery from failed, corrupted or
+                compromised storage media.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -844,19 +840,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Digital forensics</strong> — acquisition, custody chain, expert reporting</span>
+                  ><span><strong>Digital forensics</strong>: acquisition, custody chain, expert reporting</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Data recovery</strong> — HDD, SSD, RAID, and cloud storage recovery</span>
+                  ><span><strong>Data recovery</strong>: HDD, SSD, RAID, and cloud storage recovery</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>eDiscovery support</strong> — data collection for legal proceedings</span>
+                  ><span><strong>eDiscovery support</strong>: data collection for legal proceedings</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Breach investigation</strong> — timeline reconstruction and attribution</span>
+                  ><span><strong>Breach investigation</strong>: timeline reconstruction and attribution</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -880,8 +876,8 @@
         <p class="stag">Data Security &amp; Privacy</p>
         <h2 class="sh2" id="datasec-heading">Encryption, DLP &amp; access control</h2>
         <p class="sdesc">
-          End-to-end data protection — encryption at rest and in transit, data loss prevention,
-          and fine-grained access control to keep your sensitive data secured and compliant.
+          Encryption at rest and in transit, data loss prevention and fine-grained access control
+          to keep your sensitive data protected.
         </p>
 
         <div class="svc-grid">
@@ -890,8 +886,8 @@
               <div class="svc-card-icon"><i class="ti ti-lock" aria-hidden="true"></i></div>
               <div class="svc-card-title">Encryption &amp; Data Loss Prevention</div>
               <p class="svc-card-desc">
-                Military-grade encryption combined with policy-driven DLP to prevent sensitive data
-                from leaving your environment.
+                Strong encryption combined with policy-driven DLP to stop sensitive data leaving your
+                environment.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -899,19 +895,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Encryption</strong> — AES-256, BitLocker, and TLS enforcement</span>
+                  ><span><strong>Encryption</strong>: AES-256, BitLocker, and TLS enforcement</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Microsoft Purview DLP</strong> — data loss prevention across M365</span>
+                  ><span><strong>Microsoft Purview DLP</strong>: data loss prevention across M365</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Egress blocking</strong> — blocking sensitive data transfer across endpoints</span>
+                  ><span><strong>Egress blocking</strong>: blocking sensitive data transfer across endpoints</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Sensitivity labels</strong> — automated labeling applied to corporate data</span>
+                  ><span><strong>Sensitivity labels</strong>: automated labeling applied to corporate data</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -940,19 +936,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>RBAC design</strong> — role taxonomy, group policy, and inheritance</span>
+                  ><span><strong>RBAC design</strong>: role taxonomy, group policy, and inheritance</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>ABAC policies</strong> — attribute-based rules for sensitive data</span>
+                  ><span><strong>ABAC policies</strong>: attribute-based rules for sensitive data</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Admin isolation</strong> — privileged access workstation configurations</span>
+                  ><span><strong>Admin isolation</strong>: privileged access workstation configurations</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Duties segregation</strong> — avoiding conflicting system permissions</span>
+                  ><span><strong>Duties segregation</strong>: avoiding conflicting system permissions</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -976,7 +972,7 @@
         <p class="stag">Data Governance &amp; Compliance</p>
         <h2 class="sh2" id="gov-heading">Classification, MDM &amp; compliance auditing</h2>
         <p class="sdesc">
-          A complete data governance framework — from classification and labelling through to Master
+          A complete data governance framework, from classification and labelling through to Master
           Data Management and compliance auditing.
         </p>
 
@@ -986,8 +982,8 @@
               <div class="svc-card-icon"><i class="ti ti-tags" aria-hidden="true"></i></div>
               <div class="svc-card-title">Data Classification &amp; Labelling</div>
               <p class="svc-card-desc">
-                Automated and policy-driven data classification — ensuring your data is correctly
-                identified and handled.
+                Automated, policy-driven data classification so your data is correctly identified
+                and handled.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -995,19 +991,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Purview classification</strong> — automated data discovery and labeling</span>
+                  ><span><strong>Purview classification</strong>: automated data discovery and labeling</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Classification schemas</strong> — customized schemas for compliance frameworks</span>
+                  ><span><strong>Classification schemas</strong>: customized schemas for compliance frameworks</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Data quality profile</strong> — profiling, cleansing, and standardization</span>
+                  ><span><strong>Data quality profile</strong>: profiling, cleansing, and standardization</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Data lineage</strong> — end-to-end audit tracking of corporate data flows</span>
+                  ><span><strong>Data lineage</strong>: end-to-end audit tracking of corporate data flows</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -1036,19 +1032,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>MDM frameworks</strong> — golden record catalog design</span>
+                  ><span><strong>MDM frameworks</strong>: golden record catalog design</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Compliance audits</strong> — audits against ISO 27001, NIST, and Essential Eight</span>
+                  ><span><strong>Compliance audits</strong>: audits against ISO 27001, NIST, and Essential Eight</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Privacy alignment</strong> — compliance audits for GDPR and Australian Privacy Act</span>
+                  ><span><strong>Privacy alignment</strong>: compliance audits for GDPR and Australian Privacy Act</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Audit-ready packs</strong> — evidence packets structured for certification audits</span>
+                  ><span><strong>Audit-ready packs</strong>: evidence packets structured for certification audits</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -1072,8 +1068,8 @@
         <p class="stag">Data Insights &amp; Analytics</p>
         <h2 class="sh2" id="analytics-heading">Power BI, Tableau &amp; predictive analytics</h2>
         <p class="sdesc">
-          Turn your data into decisions — interactive KPI dashboards, predictive analytics models,
-          and structured reporting built by our data specialists.
+          Turn your data into decisions with interactive KPI dashboards, predictive models and
+          clear reporting.
         </p>
 
         <div class="svc-grid">
@@ -1082,8 +1078,8 @@
               <div class="svc-card-icon"><i class="ti ti-chart-bar" aria-hidden="true"></i></div>
               <div class="svc-card-title">Power BI &amp; Tableau Dashboards</div>
               <p class="svc-card-desc">
-                Custom-built interactive dashboards delivering real-time KPI visibility across your
-                business — from board-level reporting to operational metrics.
+                Custom interactive dashboards that show your KPIs in real time, from board-level
+                reporting down to operational metrics.
               </p>
             </div>
             <div class="svc-card-divider"></div>
@@ -1091,19 +1087,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Power BI development</strong> — semantic models, DAX, and embedded reports</span>
+                  ><span><strong>Power BI development</strong>: semantic models, DAX, and embedded reports</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Tableau dashboards</strong> — visual analytics, calculated fields, and connections</span>
+                  ><span><strong>Tableau dashboards</strong>: visual analytics, calculated fields, and connections</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>KPI frameworks</strong> — metric tracking and balanced scorecard visualisations</span>
+                  ><span><strong>KPI frameworks</strong>: metric tracking and balanced scorecard visualisations</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>BI enablement</strong> — training and documentation for internal enterprise teams</span>
+                  ><span><strong>BI enablement</strong>: training and documentation for internal enterprise teams</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -1132,19 +1128,19 @@
               <ul class="svc-feat-list">
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Predictive models</strong> — forecasting, anomaly detection, and trends</span>
+                  ><span><strong>Predictive models</strong>: forecasting, anomaly detection, and trends</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Data pipelines</strong> — ETL/ELT pipeline design using Azure Data Factory</span>
+                  ><span><strong>Data pipelines</strong>: ETL/ELT pipeline design using Azure Data Factory</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Warehouse design</strong> — star schema and lakehouse architecture design</span>
+                  ><span><strong>Warehouse design</strong>: star schema and lakehouse architecture design</span>
                 </li>
                 <li class="svc-feat">
                   <i class="ti ti-check" aria-hidden="true"></i
-                  ><span><strong>Executive reporting</strong> — structured insights and analytics presentations</span>
+                  ><span><strong>Executive reporting</strong>: structured insights and analytics presentations</span>
                 </li>
               </ul>
               <div class="svc-card-tags">
@@ -1166,11 +1162,11 @@
     <div class="ctaband">
       <div class="ctaband-in">
         <div class="ctaband-left">
-          <h3>Ready to talk to our team?</h3>
-          <p>Get a response from an enterprise IT specialist within 24 hours — guaranteed.</p>
+          <h3>Ready to talk?</h3>
+          <p>Tell us what you need and a specialist will reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
-          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote →</router-link>
+          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote</router-link>
           <router-link to="/contact" class="cta-outline">Contact Us</router-link>
         </div>
       </div>
@@ -1188,7 +1184,7 @@ const navLinks = [
   { anchor: 'logistics', label: 'Logistics', icon: 'ti ti-truck' },
   { anchor: 'itad', label: 'ITAD', icon: 'ti ti-recycle' },
   { anchor: 'esg', label: 'ESG', icon: 'ti ti-leaf' },
-  { anchor: 'soc', label: 'SOC', icon: 'ti ti-radar' },
+  { anchor: 'soc', label: 'Monitoring', icon: 'ti ti-radar' },
   { anchor: 'iam', label: 'IAM', icon: 'ti ti-users' },
   { anchor: 'forensics', label: 'Forensics', icon: 'ti ti-bug' },
   { anchor: 'data-security', label: 'Data Security', icon: 'ti ti-lock' },

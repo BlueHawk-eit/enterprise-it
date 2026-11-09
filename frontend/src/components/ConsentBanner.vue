@@ -2,7 +2,7 @@
   <transition name="cb-fade">
     <div v-if="show" class="cb" role="dialog" aria-label="Cookie notice">
       <div class="cb-text">
-        We use cookies to understand site traffic and improve your experience. See our
+        We use cookies to understand site traffic and measure how our ads perform. See our
         <router-link to="/privacy" class="cb-link">Privacy Policy</router-link>.
       </div>
       <div class="cb-actions">

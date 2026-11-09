@@ -14,7 +14,7 @@
     <div class="ticker" aria-label="What enterprise IT does">
       <div class="ticker-in">
         <span class="ticker-badge">enterprise IT</span>
-        <span class="ticker-text">ICT lifecycle management, secure IT asset disposition and 24/7 cyber defence &nbsp;·&nbsp; South Australian owned and operated, servicing enterprise clients Australia-wide &nbsp;·&nbsp; Data sanitisation performed to NIST SP 800-88 standards &nbsp;·&nbsp; Every enquiry answered by a specialist within 24 business hours</span>
+        <span class="ticker-text">ICT lifecycle management, secure IT asset disposition and cyber security &nbsp;·&nbsp; South Australian owned and operated, working with organisations across Australia &nbsp;·&nbsp; Data sanitisation to NIST SP 800-88 &nbsp;·&nbsp; Every enquiry answered by a specialist within 24 hours</span>
       </div>
     </div>
 
@@ -41,7 +41,7 @@
               <span class="accent">Stay informed.</span>
             </h1>
             <p class="page-sub">
-              Company announcements, industry developments, cybersecurity alerts, and enterprise technology news — direct from the enterprise IT team in Adelaide.
+              Company announcements, industry developments, security alerts and technology news, straight from enterprise IT in Adelaide.
             </p>
 
             <div class="hero-stats" aria-label="News statistics">
@@ -259,13 +259,10 @@
 
             <!-- Newsletter -->
             <div class="sb-nl">
-              <div class="sb-nl-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
-              <div class="sb-nl-title">Subscribe to updates</div>
-              <p class="sb-nl-desc">Get announcements and alerts direct to your inbox.</p>
-              <form @submit.prevent="handleNewsletter" class="sb-nl-form" aria-label="Newsletter form">
-                <input class="sb-nl-input" type="email" v-model="newsletterEmail" placeholder="your@company.com.au" required aria-label="Email address" />
-                <button class="sb-nl-btn" type="submit" :style="newsletterStatus.style">{{ newsletterStatus.text }}</button>
-              </form>
+              <div class="sb-nl-icon"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
+              <div class="sb-nl-title">Follow for updates</div>
+              <p class="sb-nl-desc">Announcements and security alerts on LinkedIn.</p>
+              <a class="sb-nl-btn" href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;width:100%;"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow on LinkedIn</a>
             </div>
           </aside>
         </div>

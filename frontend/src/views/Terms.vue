@@ -110,10 +110,10 @@
               <li>You must keep your account credentials confidential and must not share them with any other person.</li>
               <li>You must notify us promptly if you believe your account has been accessed without authorisation.</li>
               <li>You must only access documents and information relating to the organisation you represent.</li>
-              <li>You must notify us when a person who has Portal access no longer requires it — for example, when they leave your organisation.</li>
+              <li>You must notify us when a person who has Portal access no longer requires it, for example when they leave your organisation.</li>
             </ul>
             <p class="pol-p">
-              Documents made available through the Portal — including certificates of destruction, reports and invoices — are provided for your organisation's internal use. You may share them with your auditors and regulators as required.
+              Documents made available through the Portal, including certificates of destruction, reports and invoices, are provided for your organisation's internal use. You may share them with your auditors and regulators as required.
             </p>
           </div>
 

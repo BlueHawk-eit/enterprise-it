@@ -15,14 +15,14 @@
           <div>
             <div class="eyebrow">
               <span class="eyebrow-dot" aria-hidden="true"></span>
-              Proudly SA Owned &amp; Operated · Est. Adelaide CBD
+              Proudly SA Owned &amp; Operated · Adelaide CBD
             </div>
             <h1 class="page-h1" id="page-h1">
               Built in Adelaide.<br>
-              <span class="accent">Trusted across<br>Australia.</span>
+              <span class="accent">Working across<br>Australia.</span>
             </h1>
             <p class="page-sub">
-              enterprise IT is South Australia's premier full-spectrum technology partner — combining deep ICT lifecycle expertise with enterprise-grade cyber defence to serve organisations across the country. We are proudly local, uncompromisingly professional, and relentlessly committed to quality, security, and sustainability.
+              enterprise IT is an Adelaide technology company that looks after both sides of your IT: the devices your people use every day, and the security that protects them. We combine ICT lifecycle work with hands-on cyber security, and we take the same care with the paperwork as we do with the technology.
             </p>
             <div class="hero-actions">
               <router-link to="/contact" class="btn-white"><i class="ti ti-mail" aria-hidden="true"></i>Get in Touch</router-link>
@@ -30,8 +30,8 @@
             </div>
             <div class="hero-stats" aria-label="Company highlights">
               <div class="hstat"><div class="hstat-num">SA</div><div class="hstat-label">Owned &amp;<br>Operated</div></div>
-              <div class="hstat"><div class="hstat-num">24/7</div><div class="hstat-label">SOC &amp; Cyber<br>Operations</div></div>
-              <div class="hstat"><div class="hstat-num">ISO</div><div class="hstat-label">Compliant</div></div>
+              <div class="hstat"><div class="hstat-num">24 hr</div><div class="hstat-label">Enquiry<br>response</div></div>
+              <div class="hstat"><div class="hstat-num">ISO</div><div class="hstat-label">27001-aligned<br>practices</div></div>
               <div class="hstat"><div class="hstat-num">AUS</div><div class="hstat-label">-wide Service<br>Delivery</div></div>
             </div>
           </div>
@@ -51,7 +51,7 @@
               <div class="ic-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
               <div>
                 <div class="ic-label">Service Coverage</div>
-                <div class="ic-val">Australia-wide<br>All states &amp; territories</div>
+                <div class="ic-val">Australia-wide<br>On site and remote</div>
               </div>
             </div>
             <div class="ic-row">
@@ -62,11 +62,10 @@
               </div>
             </div>
             <div class="ic-row">
-              <div class="ic-icon"><i class="ti ti-radar" aria-hidden="true"></i></div>
+              <div class="ic-icon"><i class="ti ti-building" aria-hidden="true"></i></div>
               <div>
-                <div class="ic-label">SOC Operations</div>
-                <div class="ic-val">24/7 · 365 days</div>
-                <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>Monitoring active</div>
+                <div class="ic-label">Company Details</div>
+                <div class="ic-val">ENTERPRISE IT PTY LTD<br>ABN 33 701 700 478<br>ACN 701 700 478</div>
               </div>
             </div>
             <div class="ic-row">
@@ -106,38 +105,38 @@
         <div class="story-grid">
           <div class="story-body fade-up">
             <p>
-              <strong>enterprise IT was founded with a clear conviction:</strong> Australian enterprises deserve a technology partner that truly understands their environment — one built here, operating here, and accountable here. From our Adelaide CBD headquarters, we set out to build the kind of full-spectrum IT capability that was previously only accessible through large national firms disconnected from the businesses they served.
+              <strong>enterprise IT was founded on a simple idea:</strong> Australian organisations deserve a technology partner that is built here, works here and is accountable here. Too often the choice is between a large national firm that never learns your environment, or a handful of separate suppliers who each own one piece of the puzzle. We set out to be the alternative.
             </p>
             <div class="story-pull">
-              "We don't just manage technology — we protect it, optimise it, and retire it responsibly."
+              "We don't just manage technology. We protect it, improve it and retire it responsibly."
             </div>
             <p>
-              What started as a focus on ICT asset management has grown into a comprehensive two-pillar service architecture: <strong>ICT Lifecycle &amp; Asset Sovereignty</strong> covering everything from device deployment and GPS-tracked logistics through to secure ITAD and ESG reporting, and <strong>Digital Intelligence &amp; Cyber Defence</strong> encompassing 24/7 SOC operations, identity governance, data security, compliance, and advanced analytics.
+              Our work sits in two pillars. <strong>ICT Lifecycle &amp; Asset Sovereignty</strong> covers device deployment, tracked logistics, secure IT asset disposal and ESG reporting. <strong>Digital Intelligence &amp; Cyber Defence</strong> covers threat monitoring and response, identity and access, data security, compliance and analytics.
             </p>
             <p>
-              Today enterprise IT serves clients across every state and territory in Australia. We are proudly <strong>SA Owned and Operated</strong> — meaning our leadership, our team, and our decision-making remain rooted in South Australia, with the agility and accountability that only a local organisation can provide.
+              We are proudly <strong>SA Owned and Operated</strong>. Decisions about your work are made in Adelaide by the people doing it, and we deliver on site or remotely wherever you are in Australia.
             </p>
           </div>
 
           <div class="story-right fade-up" style="transition-delay:0.12s;">
             <div class="story-stat-card navy">
-              <div><span class="story-stat-num">200</span><span class="story-stat-unit">+</span></div>
-              <div class="story-stat-label">Enterprise clients served across Australia — from SA government agencies to national logistics groups</div>
+              <div><span class="story-stat-num">2</span><span class="story-stat-unit"> pillars</span></div>
+              <div class="story-stat-label">ICT lifecycle and cyber security, delivered by one accountable partner</div>
             </div>
             <div class="story-stat-row">
               <div class="story-stat-card">
-                <div><span class="story-stat-num">24</span><span class="story-stat-unit">/7</span></div>
-                <div class="story-stat-label">SOC coverage, 365 days per year</div>
+                <div><span class="story-stat-num">24</span><span class="story-stat-unit"> hr</span></div>
+                <div class="story-stat-label">Reply to every enquiry from a specialist</div>
               </div>
               <div class="story-stat-card">
-                <div><span class="story-stat-num">0</span><span class="story-stat-unit">%</span></div>
-                <div class="story-stat-label">Data breach rate on all managed &amp; retired assets</div>
+                <div><span class="story-stat-num">E8</span></div>
+                <div class="story-stat-label">ASD Essential Eight as our security baseline</div>
               </div>
             </div>
             <div class="story-stat-row">
               <div class="story-stat-card">
                 <div><span class="story-stat-num">NIST</span></div>
-                <div class="story-stat-label">Sanitisation to NIST 800-88 — every single job</div>
+                <div class="story-stat-label">Data sanitisation to NIST 800-88 on every job</div>
               </div>
               <div class="story-stat-card">
                 <div><span class="story-stat-num">SA</span></div>
@@ -162,32 +161,32 @@
           <div class="val-card fade-up">
             <div class="val-icon navy"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
             <div class="val-title">Security Without Compromise</div>
-            <p class="val-desc">We apply military-grade rigour to every engagement. From NIST 800-88 data eradication to 24/7 threat monitoring — security is never an afterthought. It is the foundation.</p>
+            <p class="val-desc">Security is the starting point, not an add-on. From NIST 800-88 data sanitisation to identity hardening and threat monitoring, it is built into every job.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.08s;">
             <div class="val-icon green"><i class="ti ti-leaf" aria-hidden="true"></i></div>
             <div class="val-title">Sustainable by Design</div>
-            <p class="val-desc">Environmental responsibility is embedded into our operations — not bolted on. We measure, report, and actively reduce the environmental footprint of every technology lifecycle we manage.</p>
+            <p class="val-desc">We plan for reuse from the start and report on what happens to every device, so you can show your board real outcomes rather than good intentions.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.16s;">
             <div class="val-icon navy"><i class="ti ti-building" aria-hidden="true"></i></div>
             <div class="val-title">Local Accountability</div>
-            <p class="val-desc">Being SA Owned and Operated means our decisions are made here — by people who understand the local enterprise landscape and are directly accountable to the clients they serve.</p>
+            <p class="val-desc">Being SA Owned and Operated means decisions are made here, by people who know the local landscape and answer directly to the clients they serve.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.04s;">
             <div class="val-icon amber"><i class="ti ti-clock" aria-hidden="true"></i></div>
             <div class="val-title">Relentless Responsiveness</div>
-            <p class="val-desc">A 24-hour quote guarantee is just the baseline. We operate with urgency across everything — from rapid incident response to same-day certificate delivery — because our clients cannot afford delays.</p>
+            <p class="val-desc">Every enquiry gets a reply within 24 hours. When something goes wrong, such as a security incident, we treat it as urgent because you can't afford to wait.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.12s;">
             <div class="val-icon slate"><i class="ti ti-certificate" aria-hidden="true"></i></div>
             <div class="val-title">Standards-first Excellence</div>
-            <p class="val-desc">ISO 27001, NIST, and other recognised cybersecurity frameworks are not marketing badges for us — they are the benchmark against which we hold every service we deliver.</p>
+            <p class="val-desc">ISO 27001, NIST and the ASD Essential Eight aren't badges for us. They're the benchmarks we measure our own work against.</p>
           </div>
           <div class="val-card fade-up" style="transition-delay:0.2s;">
             <div class="val-icon navy"><i class="ti ti-users" aria-hidden="true"></i></div>
             <div class="val-title">Partnership Over Transactions</div>
-            <p class="val-desc">We invest in understanding our clients' environments deeply. Every engagement is an ongoing relationship — not a one-off job. Our Client Portal, dedicated specialists, and proactive reporting reflect this commitment.</p>
+            <p class="val-desc">We take the time to understand your environment properly. We'd rather build a long-term relationship than do a one-off job, and our client portal and regular reporting are there to support that.</p>
           </div>
         </div>
       </div>
@@ -230,16 +229,16 @@
         <div class="cert-layout">
           <div class="cert-body fade-up">
             <p>
-              <strong>enterprise IT operates to the highest available standards</strong> across every service pillar. Our commitment to compliance is not performative — it reflects a genuine belief that our clients' data, assets, and operations deserve nothing less than the most rigorous frameworks available.
+              <strong>We build our services on recognised frameworks</strong> rather than our own rules. Your data, assets and operations deserve methods that an auditor will recognise and respect.
             </p>
             <p>
-              Our practices are aligned to <strong>ISO 27001</strong> for information security management, <strong>NIST 800-88</strong> for media sanitisation, and the <strong>NIST Cybersecurity Framework</strong> for our SOC and cyber defence operations. Our data handling practices align with the <strong>Australian Privacy Act 1988</strong>.
+              Our practices are aligned to <strong>ISO 27001</strong> for information security management, <strong>NIST 800-88</strong> for media sanitisation, and the <strong>NIST Cybersecurity Framework</strong> for our cyber security work. Our data handling practices align with the <strong>Australian Privacy Act 1988</strong>.
             </p>
             <p>
-              In addition, our SOC leverages the <strong>MITRE ATT&amp;CK framework</strong> for threat hunting and detection engineering, and our identity and access governance services are built on <strong>Zero Trust principles</strong> aligned to the <strong>ASD Information Security Manual (ISM)</strong>.
+              In addition, our threat monitoring uses the <strong>MITRE ATT&amp;CK framework</strong> for threat hunting and detection engineering, and our identity and access governance services are built on <strong>Zero Trust principles</strong> aligned to the <strong>ASD Information Security Manual (ISM)</strong>.
             </p>
             <p>
-              Every client engagement — from a single device retirement to a multi-site SOC deployment — is delivered against these standards. Our clients receive documented evidence of compliance as a matter of course, not on request.
+              Every engagement, from a single device retirement to a full security rollout, is delivered against these frameworks. You receive documented evidence of the work as standard, without having to ask for it. We are aligned to these frameworks rather than formally certified, and we're happy to walk you through exactly how.
             </p>
           </div>
 
@@ -262,7 +261,7 @@
                   <div class="cert-full">Media Sanitisation Guidelines</div>
                 </div>
               </div>
-              <p class="cert-desc">US federal standard for secure media sanitisation — applied to every device we retire.</p>
+              <p class="cert-desc">US federal guidelines for secure media sanitisation, applied to every device we retire.</p>
             </div>
             <div class="cert-card">
               <div class="cert-card-top">
@@ -282,7 +281,7 @@
                   <div class="cert-full">Adversarial Tactics &amp; Techniques</div>
                 </div>
               </div>
-              <p class="cert-desc">SOC detection engineering and threat hunting aligned to the global MITRE framework.</p>
+              <p class="cert-desc">Detection engineering and threat hunting mapped to the MITRE ATT&amp;CK framework.</p>
             </div>
             <div class="cert-card">
               <div class="cert-card-top">
@@ -305,12 +304,12 @@
     <section class="sustain-hero" aria-labelledby="sustain-heading">
       <div class="sustain-in">
         <p class="sustain-tag">Sustainability &amp; ESG</p>
-        <h2 class="sustain-h2" id="sustain-heading">Australia's green IT partner.<br>Responsible by design.</h2>
+        <h2 class="sustain-h2" id="sustain-heading">Greener IT, done properly.<br>Responsible by design.</h2>
 
         <div class="sustain-layout">
           <div>
             <p class="sustain-desc">
-              At enterprise IT, sustainability is not a marketing position — it is a structural commitment embedded across everything we do. We believe that technology lifecycle management carries a profound environmental responsibility. We take that responsibility seriously.
+              Every device that leaves your business has an environmental cost. Our job is to keep as much of it in use as possible, recycle the rest responsibly, and give you an honest record of the outcome.
             </p>
 
             <div class="sustain-points">
@@ -318,28 +317,28 @@
                 <div class="sp-icon"><i class="ti ti-recycle" aria-hidden="true"></i></div>
                 <div>
                   <div class="sp-title">Responsible Sustainable Disposal</div>
-                  <p class="sp-desc">Every device we retire is processed through our documented ITAD workflow — maximising reuse, responsible recycling, and landfill diversion at every stage.</p>
+                  <p class="sp-desc">Every device we retire goes through a documented ITAD workflow that puts reuse first and responsible recycling second.</p>
                 </div>
               </div>
               <div class="sustain-point fade-up" style="transition-delay:0.08s;">
                 <div class="sp-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
                 <div>
                   <div class="sp-title">ESG Reporting &amp; Carbon Tracking</div>
-                  <p class="sp-desc">We provide comprehensive ESG documentation for every retirement cycle — including CO₂ saved, landfill weight diverted, and device rehome outcomes for board-level reporting.</p>
+                  <p class="sp-desc">We can provide ESG documentation for each retirement cycle, covering estimated CO₂ saved, weight diverted from landfill and where devices ended up.</p>
                 </div>
               </div>
               <div class="sustain-point fade-up" style="transition-delay:0.16s;">
                 <div class="sp-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
                 <div>
                   <div class="sp-title">Technology Donation Programs</div>
-                  <p class="sp-desc">Sanitised, graded devices are donated to vetted community organisations and educational institutions — giving retired enterprise hardware a second life with those who need it most.</p>
+                  <p class="sp-desc">Sanitised, graded devices can be donated to community organisations and schools, giving retired hardware a second life where it's needed most.</p>
                 </div>
               </div>
               <div class="sustain-point fade-up" style="transition-delay:0.24s;">
                 <div class="sp-icon"><i class="ti ti-users" aria-hidden="true"></i></div>
                 <div>
                   <div class="sp-title">Employee Purchase Programs (EPP)</div>
-                  <p class="sp-desc">Our EPP enables staff within client organisations to purchase securely data-wiped devices at accessible prices — reducing e-waste while delivering real employee value.</p>
+                  <p class="sp-desc">An EPP lets your staff buy securely wiped devices at a fair price. Less e-waste, and a genuine benefit for your people.</p>
                 </div>
               </div>
             </div>
@@ -349,23 +348,23 @@
           <div class="sustain-metrics fade-up" style="transition-delay:0.1s;">
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-leaf" aria-hidden="true"></i></div>
-              <div><span class="sm-num">100</span><span class="sm-unit">%</span></div>
-              <div class="sm-label">Of retired assets processed through documented sustainable disposal pathways</div>
+              <div><span class="sm-num">Every</span></div>
+              <div class="sm-label">Retired asset has a recorded disposal pathway</div>
             </div>
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-recycle" aria-hidden="true"></i></div>
-              <div><span class="sm-num">Zero</span></div>
-              <div class="sm-label">Landfill disposal — every asset is reused, donated, recycled, or responsibly recovered</div>
+              <div><span class="sm-num">Reuse</span></div>
+              <div class="sm-label">First choice for every device, before recycling</div>
             </div>
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
               <div><span class="sm-num">ESG</span></div>
-              <div class="sm-label">Board-ready ESG reports issued for every client retirement cycle</div>
+              <div class="sm-label">Board-ready ESG reports available for each retirement cycle</div>
             </div>
             <div class="sm-card">
               <div class="sm-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
               <div><span class="sm-num">CoD</span></div>
-              <div class="sm-label">Certificate of Destruction issued for every data-bearing device — no exceptions</div>
+              <div class="sm-label">Certificate for every data-bearing device we sanitise or destroy</div>
             </div>
           </div>
         </div>
@@ -375,7 +374,7 @@
           <div class="esg-card fade-up">
             <div class="esg-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
             <div class="esg-title">Environmental</div>
-            <p class="esg-desc">Responsible sustainable disposal, zero landfill commitment, carbon offset tracking, and e-waste reduction embedded in every retirement workflow.</p>
+            <p class="esg-desc">Reuse-first disposal, landfill diversion, estimated carbon savings and e-waste reduction built into every retirement workflow.</p>
             <div class="esg-badge"><i class="ti ti-check" aria-hidden="true"></i>ISO 27001 &amp; ESG aligned</div>
           </div>
           <div class="esg-card fade-up" style="transition-delay:0.08s;">
@@ -399,22 +398,22 @@
     ============================================================ -->
     <section class="sec sec-alt" aria-labelledby="team-heading">
       <div class="sec-in">
-        <p class="stag">Our Team</p>
-        <h2 class="sh2" id="team-heading">Expert professionals.<br>Real accountability.</h2>
-        <p class="sdesc">Our team combines deep technical expertise across ICT lifecycle management, cybersecurity, data governance, and sustainability — all based here in South Australia.</p>
+        <p class="stag">Our Capability</p>
+        <h2 class="sh2" id="team-heading">Specialist skills.<br>Real accountability.</h2>
+        <p class="sdesc">We bring hands-on experience across ICT lifecycle management, cyber security, identity and data, all based here in South Australia.</p>
 
         <div class="team-grid">
           <article class="team-card fade-up">
             <div class="team-card-head">
               <div class="team-avatar" aria-hidden="true">IT</div>
-              <div class="team-name">ICT Lifecycle Team</div>
+              <div class="team-name">ICT Lifecycle</div>
               <div class="team-role">Deployment · Logistics · ITAD</div>
             </div>
             <div class="team-card-body">
-              <p class="team-desc">Specialists in device provisioning, GPS-tracked logistics, and NIST 800-88 data sanitisation. Every technician is trained to military-grade eradication standards.</p>
+              <p class="team-desc">Device provisioning with Intune and Autopilot, chain-of-custody logistics, and data sanitisation to NIST 800-88 with a certificate for every device.</p>
               <div class="team-skills">
-                <span class="team-skill">NIST 800-88 Trained</span>
                 <span class="team-skill">NIST 800-88</span>
+                <span class="team-skill">Intune</span>
                 <span class="team-skill">MDM/Autopilot</span>
                 <span class="team-skill">Chain of Custody</span>
               </div>
@@ -424,11 +423,11 @@
           <article class="team-card fade-up" style="transition-delay:0.1s;">
             <div class="team-card-head alt">
               <div class="team-avatar" aria-hidden="true">CS</div>
-              <div class="team-name">Cyber &amp; Security Team</div>
-              <div class="team-role">SOC · IAM · Incident Response</div>
+              <div class="team-name">Cyber Security &amp; Identity</div>
+              <div class="team-role">Monitoring · IAM · Incident Response</div>
             </div>
             <div class="team-card-body">
-              <p class="team-desc">24/7 threat analysts, identity architects, and forensic specialists protecting enterprise environments using Microsoft Sentinel, SIEM, and zero-trust frameworks.</p>
+              <p class="team-desc">Threat monitoring with Microsoft Sentinel and Defender, Entra ID identity hardening, phishing-resistant MFA, and incident response when things go wrong.</p>
               <div class="team-skills">
                 <span class="team-skill">Microsoft Sentinel</span>
                 <span class="team-skill">MITRE ATT&CK</span>
@@ -441,11 +440,11 @@
           <article class="team-card fade-up" style="transition-delay:0.2s;">
             <div class="team-card-head slate">
               <div class="team-avatar" aria-hidden="true">DA</div>
-              <div class="team-name">Data &amp; Analytics Team</div>
+              <div class="team-name">Data &amp; Analytics</div>
               <div class="team-role">Governance · Compliance · BI</div>
             </div>
             <div class="team-card-body">
-              <p class="team-desc">Data governance architects and Power BI/Tableau developers delivering classification frameworks, compliance audit support, and board-ready analytics for enterprise clients.</p>
+              <p class="team-desc">Data classification with Microsoft Purview, compliance audit support against ISO 27001 and Essential Eight, and Power BI reporting your board will actually read.</p>
               <div class="team-skills">
                 <span class="team-skill">Power BI</span>
                 <span class="team-skill">Tableau</span>
@@ -470,10 +469,10 @@
           <div>
             <div class="hq-body fade-up">
               <p>
-                <strong>enterprise IT is headquartered in Adelaide CBD, South Australia.</strong> Our central location gives us direct access to SA government, enterprise, and commercial clients — while our national logistics and remote service delivery capabilities extend our reach to every state and territory across Australia.
+                <strong>enterprise IT is headquartered in Adelaide CBD, South Australia.</strong> Our central location puts us close to South Australia's government, enterprise and commercial organisations, and we deliver remotely or on site to clients across Australia.
               </p>
               <p>
-                We are proudly SA Owned and Operated. Our leadership team, technical specialists, and operational staff are all based here — meaning the people making decisions about your technology environment are the same people you'll speak to, every time.
+                We are proudly SA Owned and Operated. The people making decisions about your technology are the same people you speak to, every time.
               </p>
             </div>
 
@@ -543,7 +542,7 @@
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Ready to work with us?</h3>
-          <p>Get a response from an enterprise IT specialist within 24 hours — guaranteed.</p>
+          <p>Tell us what you need and a specialist will reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/contact" class="cta-white">Request a Quote →</router-link>

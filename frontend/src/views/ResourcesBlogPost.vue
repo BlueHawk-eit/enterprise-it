@@ -98,12 +98,12 @@
               <div class="ab-header">
                 <div class="ab-avatar" aria-hidden="true">EI</div>
                 <div>
-                  <div class="ab-name" itemprop="name">enterprise IT Security &amp; ESG Team</div>
+                  <div class="ab-name" itemprop="name">enterprise IT</div>
                   <div class="ab-role">{{ formatTopicName(getTopic(post)) }} Practice · Adelaide CBD, South Australia</div>
                 </div>
               </div>
               <p class="ab-bio" itemprop="description">
-                The enterprise IT team comprises specialists in asset management, cybersecurity, and ESG reporting. Operating from our Adelaide CBD facility, we deliver sovereign ITAD, secure shipping, documented lifecycle tracking, and 24/7 security monitoring services to corporate and government enterprises across Australia.
+                enterprise IT is an Adelaide-based, SA owned company working across ICT lifecycle management, cyber security and ESG reporting. We help organisations across Australia deploy, secure and responsibly retire their technology.
               </p>
             </div>
           </article>
@@ -158,10 +158,10 @@
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Need secure enterprise ICT services?</h3>
-          <p>enterprise IT provides secure, standards-aligned data sanitisation, secure logistics, and 24/7 cybersecurity operations.</p>
+          <p>We provide standards-aligned data sanitisation, secure logistics and cyber security services. A specialist will reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
-          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote →</router-link>
+          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote</router-link>
           <router-link to="/services" class="cta-outline">Explore Services</router-link>
         </div>
       </div>

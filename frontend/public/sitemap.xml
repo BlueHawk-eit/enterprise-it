@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://enterpriseit.com.au/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://www.enterpriseit.com.au/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/services</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.enterpriseit.com.au/services</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/about</loc>
-    <lastmod>2026-07-09</lastmod>
+    <loc>https://www.enterpriseit.com.au/about</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/contact</loc>
-    <lastmod>2026-07-09</lastmod>
+    <loc>https://www.enterpriseit.com.au/contact</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://enterpriseit.com.au/resources/sustainability</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/resources/blog</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
+    <loc>https://www.enterpriseit.com.au/resources/sustainability</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/resources/news</loc>
-    <lastmod>2026-07-09</lastmod>
+    <loc>https://www.enterpriseit.com.au/resources/blog</loc>
+    <lastmod>2026-11-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/privacy</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.enterpriseit.com.au/resources/news</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/terms</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://www.enterpriseit.com.au/resources/blog/chain-of-custody-why-the-certificate-of-destruction-is-only-half-the-compliance-picture</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://enterpriseit.com.au/login</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.enterpriseit.com.au/privacy</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.enterpriseit.com.au/terms</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 </urlset>

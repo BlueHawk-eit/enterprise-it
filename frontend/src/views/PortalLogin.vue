@@ -19,7 +19,7 @@
 
     <main class="page-container" role="main">
       <!-- Logo -->
-      <router-link to="/" class="portal-logo" aria-label="enterprise IT — return to homepage">
+      <router-link to="/" class="portal-logo" aria-label="enterprise IT, return to homepage">
         <div class="logo-dot" aria-hidden="true"></div>
         <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
         <span class="logo-badge">Client Portal</span>
@@ -62,7 +62,7 @@
           <div class="session-info" aria-label="Security information">
             <div class="si-row">
               <i class="ti ti-shield-check" aria-hidden="true"></i>
-              <div class="si-text"><strong>Sign in with your work account.</strong> No separate password to create or remember — and enterprise IT never sees or stores your credentials.</div>
+              <div class="si-text"><strong>Sign in with your work account.</strong> No separate password to create or remember, and enterprise IT never sees or stores your credentials.</div>
             </div>
             <div class="si-row">
               <i class="ti ti-building" aria-hidden="true"></i>

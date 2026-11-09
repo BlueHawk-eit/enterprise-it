@@ -33,7 +33,7 @@
               <span class="accent">Straight from the<br>specialists.</span>
             </h1>
             <p class="page-sub">
-              Practical guidance on ICT lifecycle management, cybersecurity operations, data governance, ESG reporting, and sustainable IT practices — written by the enterprise IT team for Australian enterprise professionals.
+              Practical guidance on ICT lifecycle management, cyber security, data governance, ESG reporting and sustainable IT, written by enterprise IT for Australian organisations.
             </p>
 
             <!-- Search -->
@@ -42,7 +42,7 @@
                 class="search-input"
                 type="search"
                 v-model="searchQuery"
-                placeholder="Search articles — e.g. NIST 800-88, Microsoft Sentinel, ESG reporting…"
+                placeholder="Search articles, e.g. NIST 800-88, Microsoft Sentinel, ESG reporting…"
                 aria-label="Search blog articles"
                 autocomplete="off"
               />
@@ -80,12 +80,9 @@
               </div>
             </div>
             <div class="nl-mini">
-              <div class="nl-mini-title">Subscribe to insights</div>
-              <div class="nl-mini-sub">Monthly ITAD, ESG &amp; Security briefs.</div>
-              <form @submit.prevent="handleNewsletter" class="nl-mini-form" aria-label="Mini newsletter form">
-                <input class="nl-mini-input" type="email" v-model="newsletterEmail" placeholder="your@company.com" required aria-label="Email address" />
-                <button class="nl-mini-btn" type="submit" :style="newsletterStatus.style">{{ newsletterStatus.text }}</button>
-              </form>
+              <div class="nl-mini-title">Follow our insights</div>
+              <div class="nl-mini-sub">New articles and security alerts on LinkedIn.</div>
+              <a class="nl-mini-btn" href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;width:100%;"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow on LinkedIn</a>
             </div>
           </aside>
         </div>
@@ -292,7 +289,7 @@
                   <a href="#" @click.prevent="searchQuery = 'ESG'" class="sb-tag">ESG Reporting</a>
                   <a href="#" @click.prevent="searchQuery = 'Zero Trust'" class="sb-tag">Zero Trust</a>
                   <a href="#" @click.prevent="searchQuery = 'Data Governance'" class="sb-tag">Data Governance</a>
-                  <a href="#" @click.prevent="searchQuery = 'SOC'" class="sb-tag">SOC Operations</a>
+                  <a href="#" @click.prevent="searchQuery = 'Sentinel'" class="sb-tag">Threat Monitoring</a>
                   <a href="#" @click.prevent="searchQuery = 'Power BI'" class="sb-tag">Power BI</a>
                   <a href="#" @click.prevent="searchQuery = 'MFA'" class="sb-tag">Phishing-Resistant MFA</a>
                   <a href="#" @click.prevent="searchQuery = 'Compliance'" class="sb-tag">ISO 27001</a>
@@ -303,7 +300,7 @@
             <!-- Quote CTA -->
             <div class="sb-cta">
               <div class="sb-cta-title">Ready to talk to a specialist?</div>
-              <p class="sb-cta-desc">Get a 24-hour response from an enterprise IT expert — no bots, no queues.</p>
+              <p class="sb-cta-desc">A specialist will reply within 24 hours. No bots and no ticket queue.</p>
               <router-link to="/contact#quote" class="sb-cta-btn" aria-label="Request a quote">
                 <i class="ti ti-file-invoice" aria-hidden="true"></i>Request a 24-Hour Quote
               </router-link>
@@ -311,14 +308,10 @@
 
             <!-- Newsletter -->
             <div class="sb-newsletter">
-              <div class="sb-nl-icon"><i class="ti ti-mail" aria-hidden="true"></i></div>
-              <div class="sb-nl-title">Subscribe to the enterprise IT newsletter</div>
-              <p class="sb-nl-desc">Monthly insights on ICT lifecycle management, cybersecurity, and sustainable IT practices.</p>
-              <form @submit.prevent="handleNewsletter" class="sb-nl-form" aria-label="Newsletter form">
-                <input class="sb-nl-input" type="email" v-model="newsletterEmail" placeholder="your@company.com.au" required aria-label="Email address" />
-                <button class="sb-nl-btn" type="submit" :style="newsletterStatus.style">{{ newsletterStatus.text }}</button>
-              </form>
-              <p class="sb-nl-note">Monthly. No spam. Unsubscribe any time.</p>
+              <div class="sb-nl-icon"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
+              <div class="sb-nl-title">Follow enterprise IT on LinkedIn</div>
+              <p class="sb-nl-desc">New articles, security alerts and practical guidance on ICT lifecycle and cyber security.</p>
+              <a class="sb-nl-btn" href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;width:100%;"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow on LinkedIn</a>
             </div>
           </aside>
         </div>
@@ -361,34 +354,16 @@
       <div class="nl-band-in">
         <div class="nl-band-left">
           <div class="nl-band-tag">Stay Informed</div>
-          <h2 class="nl-band-h" id="nl-heading">The enterprise IT newsletter.</h2>
-          <p class="nl-band-sub">Monthly insights on cybersecurity, ICT lifecycle management, data governance, and ESG — delivered to 500+ enterprise professionals across Australia.</p>
+          <h2 class="nl-band-h" id="nl-heading">Follow enterprise IT on LinkedIn.</h2>
+          <p class="nl-band-sub">New articles, security alerts and practical guidance on cyber security, ICT lifecycle management, data governance and ESG.</p>
           <div class="nl-benefits">
-            <div class="nl-benefit"><i class="ti ti-check" aria-hidden="true"></i>Monthly — not weekly noise</div>
+            <div class="nl-benefit"><i class="ti ti-check" aria-hidden="true"></i>Practical, not promotional</div>
             <div class="nl-benefit"><i class="ti ti-check" aria-hidden="true"></i>Written by practitioners</div>
-            <div class="nl-benefit"><i class="ti ti-check" aria-hidden="true"></i>No spam, unsubscribe any time</div>
+            <div class="nl-benefit"><i class="ti ti-check" aria-hidden="true"></i>Security alerts that matter</div>
           </div>
         </div>
         <div class="nl-band-right">
-          <form @submit.prevent="handleNewsletter" aria-label="Newsletter subscription form">
-            <div class="nl-band-form">
-              <input
-                class="nl-band-input"
-                type="email"
-                v-model="newsletterEmail"
-                placeholder="your@company.com.au"
-                aria-label="Work email address for newsletter"
-                required
-              />
-              <button class="nl-band-btn" type="submit" :style="newsletterStatus.style">
-                {{ newsletterStatus.text }}
-              </button>
-            </div>
-            <div class="nl-band-note">
-              <i class="ti ti-lock" aria-hidden="true"></i>
-              Your email is never shared. Read our <router-link to="/privacy" style="color:rgba(255,255,255,0.5);text-decoration:underline;">Privacy Policy</router-link>.
-            </div>
-          </form>
+          <a class="nl-band-btn" href="https://www.linkedin.com/company/enterpriseitau/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;justify-content:center;gap:6px;text-decoration:none;padding:13px 22px;"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>Follow on LinkedIn</a>
         </div>
       </div>
     </section>
@@ -398,7 +373,7 @@
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Want expert advice for your specific environment?</h3>
-          <p>Talk to an enterprise IT specialist — ICT lifecycle, cybersecurity, data governance, or ESG. 24-hour response guaranteed.</p>
+          <p>Talk to a specialist about ICT lifecycle, cyber security, data governance or ESG. We reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/contact#quote" class="cta-white">Get a 24-Hour Quote →</router-link>

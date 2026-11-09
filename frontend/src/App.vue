@@ -2,7 +2,7 @@
   <div class="app-layout">
     <!-- Main Header / Navigation -->
     <nav v-if="showNav" class="nav" id="main-nav" aria-label="Main navigation" :class="{ 'nav-scrolled': isScrolled }">
-      <router-link to="/" class="logo" aria-label="enterprise IT — home" @click="closeMobileNav">
+      <router-link to="/" class="logo" aria-label="enterprise IT home page" @click="closeMobileNav">
         <div class="logo-dot" aria-hidden="true"></div>
         <div class="logo-text"><em>enterprise</em> <strong>IT</strong></div>
       </router-link>
@@ -21,17 +21,17 @@
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px;">
               <div>
                 <div class="drop-section">
-                  <div class="drop-section-label">Pillar 1 — ICT Lifecycle</div>
+                  <div class="drop-section-label">Pillar 1 · ICT Lifecycle</div>
                   <router-link to="/services#deployment" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-device-laptop" aria-hidden="true"></i></div><div><div class="drop-item-name">Deployment &amp; Mobility</div><div class="drop-item-desc">Device imaging, zero-touch provisioning</div></div></router-link>
-                  <router-link to="/services#logistics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-truck" aria-hidden="true"></i></div><div><div class="drop-item-name">Logistics &amp; Infrastructure</div><div class="drop-item-desc">GPS-tracked transit, relocations</div></div></router-link>
+                  <router-link to="/services#logistics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-truck" aria-hidden="true"></i></div><div><div class="drop-item-name">Logistics &amp; Infrastructure</div><div class="drop-item-desc">Tracked transit, relocations</div></div></router-link>
                   <router-link to="/services#itad" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon slate"><i class="ti ti-recycle" aria-hidden="true"></i></div><div><div class="drop-item-name">Secure ITAD</div><div class="drop-item-desc">NIST 800-88, Certificates of Destruction</div></div></router-link>
                   <router-link to="/services#esg" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon green"><i class="ti ti-leaf" aria-hidden="true"></i></div><div><div class="drop-item-name">Sustainability &amp; ESG</div><div class="drop-item-desc">ESG reporting, EPP, tech donation</div></div></router-link>
                 </div>
               </div>
               <div>
                 <div class="drop-section">
-                  <div class="drop-section-label">Pillar 2 — Cyber Defence</div>
-                  <router-link to="/services#soc" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-radar" aria-hidden="true"></i></div><div><div class="drop-item-name">SOC Operations</div><div class="drop-item-desc">24/7 managed detection, SIEM/SOAR</div></div></router-link>
+                  <div class="drop-section-label">Pillar 2 · Cyber Defence</div>
+                  <router-link to="/services#soc" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon navy"><i class="ti ti-radar" aria-hidden="true"></i></div><div><div class="drop-item-name">Threat Monitoring</div><div class="drop-item-desc">Managed detection, Microsoft Sentinel</div></div></router-link>
                   <router-link to="/services#iam" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon purple"><i class="ti ti-lock-access" aria-hidden="true"></i></div><div><div class="drop-item-name">Identity &amp; Access (IAM)</div><div class="drop-item-desc">Lifecycle management, MFA, Zero Trust</div></div></router-link>
                   <router-link to="/services#forensics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon amber"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div><div><div class="drop-item-name">Incident Response</div><div class="drop-item-desc">Forensics, data recovery, ransomware</div></div></router-link>
                   <router-link to="/services#analytics" class="drop-item" role="menuitem" @click="closeDropdowns"><div class="drop-item-icon teal"><i class="ti ti-chart-bar" aria-hidden="true"></i></div><div><div class="drop-item-name">Analytics &amp; Governance</div><div class="drop-item-desc">Power BI, Tableau, data governance</div></div></router-link>
@@ -86,10 +86,10 @@
         </button>
         <div class="mob-sub" id="mob-svc-sub" :aria-hidden="!mobileServicesOpen" :class="{ open: mobileServicesOpen }">
           <router-link to="/services#deployment" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-device-laptop" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Deployment &amp; Mobility</div><div class="mob-sub-desc">Device imaging, provisioning</div></div></router-link>
-          <router-link to="/services#logistics" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-truck" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Logistics &amp; Infrastructure</div><div class="mob-sub-desc">GPS-tracked transit, relocations</div></div></router-link>
+          <router-link to="/services#logistics" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-truck" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Logistics &amp; Infrastructure</div><div class="mob-sub-desc">Tracked transit, relocations</div></div></router-link>
           <router-link to="/services#itad" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-recycle" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Secure ITAD</div><div class="mob-sub-desc">NIST 800-88, CoD issuance</div></div></router-link>
           <router-link to="/services#esg" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-leaf" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Sustainability &amp; ESG</div><div class="mob-sub-desc">ESG reports, EPP, donation</div></div></router-link>
-          <router-link to="/services#soc" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-radar" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">SOC Operations</div><div class="mob-sub-desc">24/7 managed detection</div></div></router-link>
+          <router-link to="/services#soc" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-radar" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Threat Monitoring</div><div class="mob-sub-desc">Managed detection &amp; response</div></div></router-link>
           <router-link to="/services#iam" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-lock-access" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Identity &amp; Access</div><div class="mob-sub-desc">IAM, MFA, Zero Trust</div></div></router-link>
           <router-link to="/services#forensics" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-alert-triangle" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Incident Response</div><div class="mob-sub-desc">Forensics &amp; data recovery</div></div></router-link>
           <router-link to="/services#analytics" class="mob-sub-item" @click="closeMobileNav"><i class="ti ti-chart-bar" aria-hidden="true"></i><div class="mob-sub-item-text"><div class="mob-sub-name">Analytics &amp; Governance</div><div class="mob-sub-desc">Power BI, Tableau, MDM</div></div></router-link>
@@ -110,11 +110,12 @@
         <router-link to="/about" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-building" aria-hidden="true"></i>About Us</span></router-link>
         <router-link to="/contact" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-mail" aria-hidden="true"></i>Contact</span></router-link>
         <router-link to="/privacy" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-shield-check" aria-hidden="true"></i>Privacy Policy</span></router-link>
+        <router-link to="/terms" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-file-text" aria-hidden="true"></i>Terms of Service</span></router-link>
         <router-link to="/login" class="mob-link" @click="closeMobileNav"><span class="mob-link-inner"><i class="ti ti-lock" aria-hidden="true"></i>Client Portal</span></router-link>
 
         <div class="mob-ctas">
           <router-link to="/contact#quote" class="mob-cta-btn primary" @click="closeMobileNav"><i class="ti ti-file-invoice" aria-hidden="true"></i>Get a 24-Hour Quote</router-link>
-          <router-link to="/contact#urgent" class="mob-cta-btn amber" @click="closeMobileNav"><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Data Recovery</router-link>
+          <router-link to="/contact#urgent" class="mob-cta-btn amber" @click="closeMobileNav"><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Incident Help</router-link>
         </div>
       </div>
     </nav>
@@ -130,7 +131,12 @@
         <div class="footer-top">
           <div>
             <div class="flogo"><em>enterprise</em> <strong>IT</strong></div>
-            <p class="ftagline">SA Owned &amp; Operated. Servicing enterprise clients Australia-wide from our Adelaide CBD headquarters. Aligned to ISO 27001. Data sanitisation to NIST 800-88 standards.</p>
+            <p class="ftagline">SA owned and operated, based in Adelaide CBD and working with organisations across Australia. Practices aligned to ISO 27001, with data sanitisation to NIST 800-88.</p>
+            <div class="fentity">
+              <div class="fentity-name">ENTERPRISE IT PTY LTD</div>
+              <div>ABN 33 701 700 478</div>
+              <div>ACN 701 700 478</div>
+            </div>
             <div class="fsocial">
               <a href="https://www.linkedin.com/company/enterpriseitau/" class="fsoc" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
             </div>
@@ -139,16 +145,16 @@
             <div class="fctitle">Services</div>
             <router-link to="/services#deployment" class="flink">ICT Lifecycle</router-link>
             <router-link to="/services#itad" class="flink">Asset Disposition (ITAD)</router-link>
-            <router-link to="/services#soc" class="flink">Cyber Defence (SOC)</router-link>
+            <router-link to="/services#soc" class="flink">Cyber Security</router-link>
             <router-link to="/services#iam" class="flink">Identity &amp; Access (IAM)</router-link>
-            <router-link to="/services#data-security" class="flink">Data Governance</router-link>
+            <router-link to="/services#governance" class="flink">Data Governance</router-link>
             <router-link to="/services#analytics" class="flink">Analytics &amp; Reporting</router-link>
           </div>
           <div>
             <div class="fctitle">Contact</div>
             <div class="fcontact"><i class="ti ti-map-pin" aria-hidden="true"></i>Adelaide CBD, South Australia</div>
-            <div class="fcontact"><i class="ti ti-phone" aria-hidden="true"></i>+61 494 614 221</div>
-            <div class="fcontact"><i class="ti ti-mail" aria-hidden="true"></i>support@enterpriseit.com.au</div>
+            <a href="tel:+61494614221" class="fcontact"><i class="ti ti-phone" aria-hidden="true"></i>+61 494 614 221</a>
+            <a href="mailto:support@enterpriseit.com.au" class="fcontact"><i class="ti ti-mail" aria-hidden="true"></i>support@enterpriseit.com.au</a>
             <div class="fcontact"><i class="ti ti-world" aria-hidden="true"></i>enterpriseit.com.au</div>
             <div style="margin-top:18px;">
               <div class="fctitle">Company</div>
@@ -161,11 +167,11 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <div class="fcopy">© {{ currentYear }} ENTERPRISE IT PTY LTD · ABN 33 701 700 478 · All rights reserved</div>
+          <div class="fcopy">© {{ currentYear }} ENTERPRISE IT PTY LTD · ABN 33 701 700 478 · ACN 701 700 478 · All rights reserved</div>
           <div class="fcerts">
-            <span class="fcert">ISO</span>
+            <span class="fcert">ISO 27001-aligned</span>
             <span class="fcert">NIST 800-88</span>
-            <span class="fcert">ESG</span>
+            <span class="fcert">Essential Eight</span>
           </div>
         </div>
       </div>
@@ -939,6 +945,11 @@ onUnmounted(() => {
   gap: 8px;
   margin-bottom: 8px;
   text-align: left;
+  text-decoration: none;
+}
+
+a.fcontact:hover {
+  color: #fff;
 }
 
 .fcontact i {
@@ -954,8 +965,22 @@ onUnmounted(() => {
 }
 
 .fcopy {
-  color: rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.5);
   font-size: 11px;
+}
+
+.fentity {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 11.5px;
+  line-height: 1.6;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.fentity-name {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  letter-spacing: 0.4px;
 }
 
 .fcerts {
