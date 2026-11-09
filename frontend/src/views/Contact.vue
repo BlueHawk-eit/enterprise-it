@@ -15,17 +15,17 @@
           <div>
             <div class="eyebrow">
               <span class="eyebrow-dot" aria-hidden="true"></span>
-              Response guaranteed within 24 hours
+              We reply within 24 hours
             </div>
             <h1 class="page-h1" id="page-h1">
               Let's talk.<br>
               <span class="accent">We respond within<br>24 hours.</span>
             </h1>
-            <p class="page-sub">Whether you need a quote for ICT lifecycle services, cyber defence, or you're facing an urgent data recovery situation — our specialist team is ready. Fill in the form and we'll be in touch fast.</p>
+            <p class="page-sub">Whether you need a quote for ICT lifecycle services or cyber security, or you're dealing with a security incident right now, fill in the form and a specialist will be in touch fast.</p>
             <div class="hero-promise" aria-label="Response commitments">
               <div class="hp-item">
                 <div class="hp-num">24 hr</div>
-                <div class="hp-label">Guaranteed<br>quote response</div>
+                <div class="hp-label">Quote and<br>enquiry response</div>
               </div>
               <div class="hp-item">
                 <div class="hp-num">No bots</div>
@@ -33,7 +33,7 @@
               </div>
               <div class="hp-item">
                 <div class="hp-num">SA HQ</div>
-                <div class="hp-label">Adelaide CBD<br>based team</div>
+                <div class="hp-label">Based in<br>Adelaide CBD</div>
               </div>
             </div>
           </div>
@@ -45,15 +45,15 @@
               <div class="sla-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
               <div>
                 <div class="sla-label">24-Hour Quote Response</div>
-                <div class="sla-sub">Standard enquiries responded to within one business day</div>
-                <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>Guaranteed SLA</div>
+                <div class="sla-sub">Every enquiry gets a reply within 24 hours</div>
+                <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>Our commitment</div>
               </div>
             </div>
             <div class="sla-row">
               <div class="sla-icon amber-bg"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div>
               <div>
-                <div class="sla-label">Urgent Data Recovery</div>
-                <div class="sla-sub">Priority response — mark your enquiry as urgent for immediate escalation</div>
+                <div class="sla-label">Urgent Incident Help</div>
+                <div class="sla-sub">Mark your enquiry as urgent, or call us, and it goes to the top of the queue</div>
                 <div class="amber-pill"><span style="width:5px;height:5px;border-radius:50%;background:#fbbf24;" aria-hidden="true"></span>Priority escalation</div>
               </div>
             </div>
@@ -61,14 +61,14 @@
               <div class="sla-icon"><i class="ti ti-user-check" aria-hidden="true"></i></div>
               <div>
                 <div class="sla-label">Dedicated Specialist</div>
-                <div class="sla-sub">Every enquiry is reviewed by a qualified enterprise IT specialist — no automated responses</div>
+                <div class="sla-sub">Every enquiry is read and answered by a specialist, never an automated system</div>
               </div>
             </div>
             <div class="sla-row">
               <div class="sla-icon"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
               <div>
                 <div class="sla-label">Confidential &amp; Secure</div>
-                <div class="sla-sub">All submissions are handled with enterprise-grade confidentiality</div>
+                <div class="sla-sub">Your details are only used to respond to your enquiry</div>
               </div>
             </div>
           </aside>
@@ -123,26 +123,33 @@
                   <div class="info-ico"><i class="ti ti-mail" aria-hidden="true"></i></div>
                   <div>
                     <div class="info-label">Email</div>
-                    <div class="info-val">support@<br>enterpriseit.com.au</div>
+                    <div class="info-val"><a href="mailto:support@enterpriseit.com.au" style="color:inherit;text-decoration:none;">support@<br>enterpriseit.com.au</a></div>
                   </div>
                 </div>
                 <div class="info-row">
                   <div class="info-ico"><i class="ti ti-clock" aria-hidden="true"></i></div>
                   <div>
                     <div class="info-label">Business Hours</div>
-                    <div class="info-val">Mon–Fri, 8am–6pm ACST<br><span style="font-size:11px;color:#708090;">SOC: 24/7 · 365</span></div>
+                    <div class="info-val">Mon–Fri, 8am–6pm (Adelaide time)<br><span style="font-size:11px;color:#708090;">Urgent incidents are prioritised</span></div>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <div class="info-ico"><i class="ti ti-building" aria-hidden="true"></i></div>
+                  <div>
+                    <div class="info-label">Company</div>
+                    <div class="info-val">ENTERPRISE IT PTY LTD<br><span style="font-size:11px;color:#708090;">ABN 33 701 700 478 · ACN 701 700 478</span></div>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Urgent card -->
-            <button @click="triggerUrgentEscalation" class="urgent-card fade-up" style="transition-delay:.06s; width: 100%; border: none; text-align: left; cursor: pointer;" id="urgent" aria-label="Urgent data recovery contact">
+            <button @click="triggerUrgentEscalation" class="urgent-card fade-up" style="transition-delay:.06s; width: 100%; border: none; text-align: left; cursor: pointer;" id="urgent" aria-label="Urgent incident help">
               <div class="uc-top">
                 <div class="uc-icon"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div>
-                <div class="uc-title">Urgent Data Recovery</div>
+                <div class="uc-title">Urgent Incident Help</div>
               </div>
-              <p class="uc-desc">Experiencing a data loss incident or ransomware attack? Select "Urgent Data Recovery" in the form for immediate priority escalation to our incident response team.</p>
+              <p class="uc-desc">Dealing with ransomware, a compromised account or data loss? Tap here to flag your enquiry as urgent, or call +61 494 614 221 straight away.</p>
               <div class="uc-btn"><i class="ti ti-arrow-down" aria-hidden="true"></i>Go to urgent form</div>
             </button>
 
@@ -238,7 +245,7 @@
 
                 <!-- Address -->
                 <div class="form-group">
-                  <label class="form-label" for="f-address">Physical Address <span class="req">*</span></label>
+                  <label class="form-label" for="f-address">Business Address <span style="font-weight:400;color:#708090;">(optional)</span></label>
                   <input 
                     class="form-input" 
                     :class="{ error: errors.address }"
@@ -247,7 +254,6 @@
                     v-model="form.address" 
                     placeholder="Street, Suburb, State, Postcode" 
                     autocomplete="street-address" 
-                    required 
                     @input="clearError('address')"
                   />
                   <div class="field-error" :class="{ visible: errors.address }" id="err-address">Please enter your physical address.</div>
@@ -340,12 +346,17 @@
                 <button type="submit" class="form-submit" :class="{ loading: submitting }" id="submit-btn" :disabled="submitting">
                   <i v-if="submitting" class="ti ti-loader-2" style="animation:spin 0.8s linear infinite;" aria-hidden="true"></i>
                   <i v-else class="ti ti-send" aria-hidden="true"></i>
-                  {{ submitting ? 'Submitting…' : 'Submit Enquiry — We\'ll respond within 24 hours' }}
+                  {{ submitting ? 'Sending…' : 'Send Enquiry' }}
                 </button>
+
+                <div v-if="submitError" class="submit-error" role="alert">
+                  <i class="ti ti-alert-circle" aria-hidden="true"></i>
+                  <span>{{ submitError }} You can also email <a href="mailto:support@enterpriseit.com.au">support@enterpriseit.com.au</a> or call <a href="tel:+61494614221">+61 494 614 221</a>.</span>
+                </div>
 
                 <div class="privacy-note">
                   <i class="ti ti-lock" aria-hidden="true"></i>
-                  <span>Your information is handled with complete confidentiality. enterprise IT will never share your details with third parties. By submitting this form you agree to be contacted by our team regarding your enquiry.</span>
+                  <span>We only use your details to respond to your enquiry, and we never sell them. By submitting this form you agree to be contacted about your enquiry. See our <router-link to="/privacy" style="color:inherit;text-decoration:underline;">Privacy Policy</router-link>.</span>
                 </div>
               </form>
             </div>
@@ -355,8 +366,8 @@
               <div class="success-circle" aria-hidden="true">
                 <i class="ti ti-check" aria-hidden="true"></i>
               </div>
-              <div class="success-h">Enquiry Submitted</div>
-              <p class="success-msg">An enterprise IT representative will contact you within 24 hours. We look forward to speaking with you.</p>
+              <div class="success-h">Enquiry Received</div>
+              <p class="success-msg">Thanks. A specialist will be in touch within 24 hours, and we've sent a confirmation to your email.</p>
               <div class="success-ref">
                 <i class="ti ti-ticket" aria-hidden="true"></i>
                 Reference: <strong id="ref-num">{{ referenceNumber }}</strong>
@@ -383,18 +394,18 @@
         <div class="faq-grid">
           <div class="faq-card fade-up">
             <div class="faq-q"><i class="ti ti-help-circle" aria-hidden="true"></i>How quickly will I receive a response?</div>
-            <p class="faq-a">All standard enquiries are responded to within 24 business hours by a qualified enterprise IT specialist — not an automated system. For urgent data recovery situations, select the urgent option in the form for immediate priority escalation.</p>
+            <p class="faq-a">Every enquiry gets a reply within 24 hours from a specialist, not an automated system. If you're dealing with a live security incident, flag your enquiry as urgent or call us directly.</p>
           </div>
           <div class="faq-card fade-up" style="transition-delay:.08s;">
             <div class="faq-q"><i class="ti ti-help-circle" aria-hidden="true"></i>Do you service clients outside South Australia?</div>
-            <p class="faq-a">Yes. While we are proudly headquartered in Adelaide CBD, enterprise IT delivers services Australia-wide. Our logistics fleet, remote provisioning capabilities, and SOC operations cover all states and territories.</p>
+            <p class="faq-a">Yes. We're headquartered in Adelaide CBD and work with organisations across Australia. Most cyber security and provisioning work can be done remotely, and we arrange on-site and logistics work wherever it's needed.</p>
           </div>
           <div class="faq-card fade-up" style="transition-delay:.04s;">
             <div class="faq-q"><i class="ti ti-help-circle" aria-hidden="true"></i>What happens after I submit my enquiry?</div>
-            <p class="faq-a">A dedicated enterprise IT specialist will review your requirements and respond within 24 hours with a tailored proposal or a request for any additional information needed. You'll receive a reference number immediately on submission.</p>
+            <p class="faq-a">A specialist reviews your requirements and replies within 24 hours, either with a tailored proposal or a few questions to pin down the scope. You'll get a reference number and a confirmation email straight away.</p>
           </div>
           <div class="faq-card fade-up" style="transition-delay:.12s;">
-            <div class="faq-q"><i class="ti ti-help-circle" aria-hidden="true"></i>I'm an existing client — should I use this form?</div>
+            <div class="faq-q"><i class="ti ti-help-circle" aria-hidden="true"></i>I'm an existing client. Should I use this form?</div>
             <p class="faq-a">Existing clients are encouraged to use the Client Portal for ongoing requests, report access, and invoice queries. The portal provides direct access to your account team and all project documentation. New enquiries from existing clients are also welcome here.</p>
           </div>
         </div>
@@ -408,7 +419,7 @@
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Prefer to speak with someone directly?</h3>
-          <p>Call our Adelaide team on +61 494 614 221 — Mon–Fri, 8am–6pm ACST.</p>
+          <p>Call us on <a href="tel:+61494614221" style="color:inherit;">+61 494 614 221</a>, Monday to Friday, 8am to 6pm Adelaide time.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/login" class="cta-white">Access Client Portal →</router-link>
@@ -453,6 +464,7 @@ const emailErrorMsg = ref('Please enter a valid email address.');
 const phoneErrorMsg = ref('Please enter a valid phone number.');
 
 const submitting = ref(false);
+const submitError = ref('');
 const submitted = ref(false);
 const referenceNumber = ref('');
 const successRef = ref(null);
@@ -462,7 +474,7 @@ const subServices = {
   hardware: [
     { value: 'remote-provisioning',     label: 'Remote-Ready Provisioning & Device Imaging' },
     { value: 'workspace-deployment',    label: 'Next-Gen Workspace Deployment' },
-    { value: 'gps-logistics',           label: 'GPS-Tracked Logistics & Transit' },
+    { value: 'gps-logistics',           label: 'Tracked Logistics & Transit' },
     { value: 'relocation-storage',      label: 'Enterprise Relocations & Secure Storage' },
     { value: 'itad-eradication',        label: 'Secure ITAD & Data Eradication (NIST 800-88)' },
     { value: 'asset-audit',             label: 'ICT Asset Auditing & Lifecycle Management' },
@@ -471,12 +483,12 @@ const subServices = {
     { value: 'other-hardware',          label: 'Other / Not Listed' },
   ],
   digital: [
-    { value: 'soc-mdr',                 label: '24/7 SOC — Managed Detection & Response' },
+    { value: 'soc-mdr',                 label: 'Managed Detection & Response (Sentinel)' },
     { value: 'threat-hunting',          label: 'Threat Hunting' },
     { value: 'iam-lifecycle',           label: 'Identity Lifecycle Management (IAM)' },
     { value: 'mfa-conditional',         label: 'Phishing-Resistant MFA & Conditional Access' },
     { value: 'incident-response',       label: 'Incident Response & Malware Containment' },
-    { value: 'data-recovery-forensics', label: 'Urgent Data Recovery & Digital Forensics' },
+    { value: 'data-recovery-forensics', label: 'Data Recovery & Digital Forensics' },
     { value: 'encryption-dlp',          label: 'Encryption & Data Loss Prevention' },
     { value: 'rbac-abac',               label: 'Access Controls (RBAC / ABAC)' },
     { value: 'data-governance',         label: 'Data Governance & Compliance Auditing' },
@@ -505,8 +517,8 @@ const clearError = (field) => {
 
 const triggerUrgentEscalation = () => {
   selectCategory('digital');
-  form.specific_service = 'data-recovery-forensics';
-  form.details = 'URGENT: Experiencing a cybersecurity or data incident. Requesting immediate escalation to the incident response team.';
+  form.specific_service = 'incident-response';
+  form.details = 'URGENT: We are dealing with a security or data incident and need help as soon as possible.';
   
   // Smooth scroll down to the form
   const formCardEl = document.querySelector('.form-card');
@@ -560,10 +572,6 @@ const validateForm = () => {
     isValid = false;
   }
 
-  if (form.address.trim().length < 5) {
-    errors.address = true;
-    isValid = false;
-  }
 
   if (!form.service_category_raw) {
     errors.category = true;
@@ -595,6 +603,7 @@ const submitForm = async () => {
   }
 
   submitting.value = true;
+  submitError.value = '';
 
   // Map category code to backend expectations ("Hardware" or "IT Digital Services")
   const categoryMapped = form.service_category_raw === 'hardware' 
@@ -610,7 +619,7 @@ const submitForm = async () => {
     organisation: form.organisation,
     email: form.email,
     phone: form.phone,
-    address: form.address,
+    address: form.address.trim() || 'Not provided',
     service_category: categoryMapped,
     service_offering: offeringMapped,
     details: form.details
@@ -626,11 +635,14 @@ const submitForm = async () => {
       body: JSON.stringify(payload)
     });
 
-    const data = await response.json();
+    const data = await response.json().catch(() => ({}));
 
     if (response.ok) {
-      // Generate reference number
-      referenceNumber.value = 'ENQ-' + Math.random().toString(36).substr(2, 6).toUpperCase();
+      // Reference number comes from the saved lead, so it matches the team's records.
+      const leadId = data && data.data && data.data.id;
+      referenceNumber.value = leadId
+        ? 'ENQ-' + String(leadId).padStart(5, '0')
+        : 'ENQ-' + Date.now().toString(36).toUpperCase();
       submitted.value = true;
       // Fire the lead conversion (GA4 + Google Ads + LinkedIn) only on a real backend success.
       trackLead({ service: payload.service_offering, category: payload.service_category });
@@ -647,13 +659,15 @@ const submitForm = async () => {
             errors[field] = true;
           }
         });
+        submitError.value = 'Please check the highlighted fields and try again.';
+      } else {
+        submitError.value = 'Sorry, your enquiry could not be sent just now.';
       }
     }
   } catch (error) {
     console.error('Contact form submission failed:', error);
-    // Fallback locally in case backend is down so user experience isn't broken
-    referenceNumber.value = 'ENQ-' + Math.random().toString(36).substr(2, 6).toUpperCase();
-    submitted.value = true;
+    // Never show a fake success: the lead would be lost without anyone knowing.
+    submitError.value = 'Sorry, we could not reach our server to send your enquiry.';
   } finally {
     submitting.value = false;
   }
@@ -670,6 +684,7 @@ const resetForm = () => {
   form.details = '';
 
   Object.keys(errors).forEach(k => errors[k] = false);
+  submitError.value = '';
 
   submitted.value = false;
   nextTick(() => {
@@ -690,8 +705,8 @@ onMounted(() => {
   // Check query params for urgent or other actions
   if (route.query.service === 'recovery' || route.hash === '#urgent') {
     selectCategory('digital');
-    form.specific_service = 'data-recovery-forensics';
-    form.details = 'URGENT: Emergency recovery and incident response consultation requested.';
+    form.specific_service = 'incident-response';
+    form.details = 'URGENT: We are dealing with a security or data incident and need help as soon as possible.';
   } else if (route.hash === '#quote') {
     nextTick(() => {
       const formCardEl = document.querySelector('.form-card');
@@ -1404,6 +1419,29 @@ onMounted(() => {
 }
 
 /* Privacy note */
+.submit-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 11px 13px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #991b1b;
+  font-size: 12.5px;
+  line-height: 1.5;
+}
+.submit-error i {
+  font-size: 16px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.submit-error a {
+  color: #991b1b;
+  font-weight: 600;
+}
+
 .privacy-note {
   display: flex;
   align-items: flex-start;

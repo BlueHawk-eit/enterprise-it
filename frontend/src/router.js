@@ -19,15 +19,15 @@ import NotFound from './views/NotFound.vue';
 import { trackPageView } from './analytics';
 
 const SITE = 'enterprise IT';
-const BASE_DESC = "Adelaide's SA owned & operated ICT lifecycle, secure IT asset disposal (ITAD) and cyber defence provider. Practices aligned to NIST SP 800-88 & ISO 27001.";
+const BASE_DESC = "Adelaide-based, SA owned ICT lifecycle, secure IT asset disposal (ITAD) and cyber security services for organisations across Australia. Practices aligned to NIST SP 800-88 and ISO 27001.";
 
 const routes = [
   { path: '/', name: 'Home', component: Home,
     meta: { title: 'enterprise IT | Sovereignty. Security. Sustainability.', description: BASE_DESC } },
   { path: '/services', name: 'Services', component: Services,
-    meta: { title: 'IT Services — ICT Lifecycle, ITAD & Cyber Defence | enterprise IT', description: 'Hardware lifecycle, secure data sanitisation & IT asset disposal, cyber defence and analytics services for enterprise clients across Australia.' } },
+    meta: { title: 'IT Services: ICT Lifecycle, ITAD & Cyber Security | enterprise IT', description: 'Hardware lifecycle, secure data sanitisation & IT asset disposal, cyber defence and analytics services for enterprise clients across Australia.' } },
   { path: '/about', name: 'About', component: About,
-    meta: { title: 'About enterprise IT — SA Owned ICT & Cyber Specialists', description: 'Adelaide-based, SA owned and operated. Our practices are aligned to ISO 27001, NIST SP 800-88 and the Australian Privacy Act 1988.' } },
+    meta: { title: 'About Us | SA Owned ICT & Cyber Specialists | enterprise IT', description: 'Adelaide-based, SA owned and operated. Our practices are aligned to ISO 27001, NIST SP 800-88 and the Australian Privacy Act 1988.' } },
   { path: '/contact', name: 'Contact', component: Contact,
     meta: { title: 'Contact & Request a Quote | enterprise IT', description: 'Talk to an enterprise IT specialist about ICT lifecycle, secure ITAD, cyber defence or data governance. Response within 24 hours.' } },
   { path: '/login', name: 'PortalLogin', component: PortalLogin,
@@ -38,7 +38,7 @@ const routes = [
   { path: '/resources/sustainability', name: 'Sustainability', component: ResourcesSustainability,
     meta: { title: 'Sustainability & Circular ICT | enterprise IT', description: 'Responsible IT asset disposal, ESG reporting and circular-economy recovery for South Australian and national clients.' } },
   { path: '/resources/blog', name: 'Blog', component: ResourcesBlog,
-    meta: { title: 'Blog — Cybersecurity, ITAD & Data Insights | enterprise IT', description: 'Insights and guides on cybersecurity, IT asset disposition, data governance and ESG from the enterprise IT team.' } },
+    meta: { title: 'Blog: Cyber Security, ITAD & Data Insights | enterprise IT', description: 'Insights and guides on cybersecurity, IT asset disposition, data governance and ESG from the enterprise IT team.' } },
   { path: '/resources/news', name: 'News', component: ResourcesNews,
     meta: { title: 'News & Updates | enterprise IT', description: 'Company news and updates from enterprise IT, Adelaide.' } },
   { path: '/resources/blog/:slug', name: 'BlogPost', component: ResourcesBlogPost,
@@ -78,11 +78,11 @@ function setMeta(name, content, attr = 'name') {
   el.setAttribute('content', content);
 }
 
-// Per-route title, meta description, and Open Graph — plus SPA page-view tracking.
+// Per-route title, meta description and Open Graph, plus SPA page-view tracking.
 router.afterEach((to) => {
   const title = to.meta?.title || `${SITE}`;
   const description = to.meta?.description || BASE_DESC;
-  const url = 'https://enterpriseit.com.au' + to.fullPath;
+  const url = 'https://www.enterpriseit.com.au' + to.path;
 
   document.title = title;
   setMeta('description', description);
@@ -91,6 +91,13 @@ router.afterEach((to) => {
   setMeta('og:url', url, 'property');
   setMeta('twitter:title', title);
   setMeta('twitter:description', description);
+  let canonical = document.head.querySelector('link[rel="canonical"]');
+  if (!canonical) {
+    canonical = document.createElement('link');
+    canonical.setAttribute('rel', 'canonical');
+    document.head.appendChild(canonical);
+  }
+  canonical.setAttribute('href', 'https://www.enterpriseit.com.au' + to.path);
 
   // Fire after the tick so document.title is current for GA.
   setTimeout(() => trackPageView(to.fullPath), 0);

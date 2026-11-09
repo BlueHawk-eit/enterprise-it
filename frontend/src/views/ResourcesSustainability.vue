@@ -38,7 +38,7 @@
               <span class="accent">A greener future<br>for Australian enterprise.</span>
             </h1>
             <p class="page-sub">
-              At enterprise IT, sustainability is structural — not cosmetic. From responsible zero-landfill disposal and NIST 800-88 data eradication to ESG reporting, technology donation, and Employee Purchase Programs, we embed environmental responsibility into every stage of the technology lifecycle.
+              We build sustainability into every stage of the technology lifecycle: reuse-first disposal, NIST 800-88 data sanitisation, ESG reporting, technology donation and Employee Purchase Programs.
             </p>
             <div class="hero-ctas">
               <router-link to="/contact#quote" class="btn-green">
@@ -50,20 +50,20 @@
             </div>
             <div class="hero-stats" aria-label="Sustainability highlights">
               <div class="hstat">
-                <div class="hstat-num">Zero</div>
-                <div class="hstat-label">Landfill disposal<br>commitment</div>
+                <div class="hstat-num">Reuse</div>
+                <div class="hstat-label">First choice for<br>every device</div>
               </div>
               <div class="hstat">
-                <div class="hstat-num">100%</div>
-                <div class="hstat-label">Assets through<br>documented pathways</div>
+                <div class="hstat-num">Tracked</div>
+                <div class="hstat-label">Every asset to its<br>final destination</div>
               </div>
               <div class="hstat">
                 <div class="hstat-num">ESG</div>
-                <div class="hstat-label">Board-ready reports<br>every cycle</div>
+                <div class="hstat-label">Board-ready<br>reporting</div>
               </div>
               <div class="hstat">
                 <div class="hstat-num">CoD</div>
-                <div class="hstat-label">Certificate of Destruction<br>every device</div>
+                <div class="hstat-label">Certificate per<br>data-bearing device</div>
               </div>
             </div>
           </div>
@@ -74,16 +74,16 @@
             <div class="esg-row">
               <div class="esg-row-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
               <div>
-                <div class="esg-row-label">Zero Landfill Pledge</div>
-                <div class="esg-row-val">Every asset reused, donated, recycled, or responsibly recovered</div>
-                <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>Active commitment</div>
+                <div class="esg-row-label">Reuse First</div>
+                <div class="esg-row-val">Devices are reused or donated where possible, then recycled responsibly</div>
+                <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>Our approach</div>
               </div>
             </div>
             <div class="esg-row">
               <div class="esg-row-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
               <div>
                 <div class="esg-row-label">ESG Reporting</div>
-                <div class="esg-row-val">Board-ready ESG documentation issued for every retirement cycle</div>
+                <div class="esg-row-val">Board-ready ESG documentation available for each retirement cycle</div>
                 <div class="green-pill"><span style="width:5px;height:5px;border-radius:50%;background:#4ade80;" aria-hidden="true"></span>ESG reporting</div>
               </div>
             </div>
@@ -91,7 +91,7 @@
               <div class="esg-row-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
               <div>
                 <div class="esg-row-label">Technology Donation</div>
-                <div class="esg-row-val">Securely data-wiped devices donated to vetted Australian nonprofits &amp; schools</div>
+                <div class="esg-row-val">Securely wiped devices donated to Australian nonprofits and schools</div>
               </div>
             </div>
             <div class="esg-row">
@@ -109,13 +109,13 @@
     <!-- TRUST BAR -->
     <div class="tbar" aria-label="Sustainability standards">
       <div class="tbar-in">
-        <span class="tbar-label">Green Credentials</span>
+        <span class="tbar-label">Our Approach</span>
         <div class="tbar-badges">
           <div class="tbadge green"><i class="ti ti-leaf" aria-hidden="true"></i>ESG reporting</div>
-          <div class="tbadge green"><i class="ti ti-recycle" aria-hidden="true"></i>Zero Landfill</div>
+          <div class="tbadge green"><i class="ti ti-recycle" aria-hidden="true"></i>Reuse First</div>
           <div class="tbadge"><i class="ti ti-certificate" aria-hidden="true"></i>ISO 27001-aligned</div>
           <div class="tbadge"><i class="ti ti-file-certificate" aria-hidden="true"></i>NIST 800-88</div>
-          <div class="tbadge green"><i class="ti ti-heart" aria-hidden="true"></i>Tech Donation Partner</div>
+          <div class="tbadge green"><i class="ti ti-heart" aria-hidden="true"></i>Tech Donation</div>
           <div class="tbadge"><i class="ti ti-map-pin" aria-hidden="true"></i>SA Owned &amp; Operated</div>
         </div>
       </div>
@@ -130,42 +130,42 @@
         <div class="impact-layout">
           <div class="impact-body fade-up" ref="fadeEl1">
             <p>
-              <strong>enterprise IT was founded on the belief that enterprise technology management and environmental responsibility are not mutually exclusive.</strong> In fact, they are inseparable. Every device that moves through our facility represents a choice: a choice about how that technology is retired, repurposed, or given a second life.
+              <strong>We believe good technology management and environmental responsibility go hand in hand.</strong> Every device you retire represents a choice about whether it is reused, repurposed or recycled, and that choice is worth getting right.
             </p>
             <div class="impact-pull">
               "We believe the way a company retires its technology says as much about its values as the technology it deploys."
             </div>
             <p>
-              Our sustainability framework covers the full lifecycle — from the moment a device is collected from your premises to the point at which it is documented and either rehomed, donated, or responsibly recycled. <strong>Not a single device goes to landfill.</strong> Not one.
+              Our framework covers the whole journey, from the moment a device is collected from your premises to the point where it is documented and either rehomed, donated or responsibly recycled. <strong>Landfill is the last resort, not the default.</strong>
             </p>
             <p>
-              Every engagement generates a comprehensive ESG report documenting your environmental outcomes — CO₂ saved, weight diverted from landfill, devices rehomed, and certificates issued. These are board-ready documents, designed for compliance reporting, ESG frameworks, and stakeholder communication.
+              Each engagement can include an ESG report documenting the outcomes: estimated CO₂ saved, weight diverted from landfill, devices rehomed and certificates issued. They are written for boards, auditors and stakeholders.
             </p>
           </div>
 
           <!-- Animated impact counters -->
-          <div class="impact-counters fade-up" ref="counterSection" style="transition-delay:.1s;" aria-label="Environmental impact metrics">
+          <div class="impact-counters fade-up" ref="counterSection" style="transition-delay:.1s;" aria-label="What our ESG reports measure">
             <div class="counter-card">
               <div class="counter-icon"><i class="ti ti-cloud" aria-hidden="true"></i></div>
-              <div><span class="counter-num">{{ c1Val }}</span><span class="counter-unit"> t</span></div>
-              <div class="counter-label">CO₂ equivalent saved through responsible disposal &amp; device reuse</div>
+              <div><span class="counter-num">CO₂e</span></div>
+              <div class="counter-label">Estimated emissions avoided through reuse, calculated for each retirement cycle</div>
             </div>
             <div class="counter-card">
               <div class="counter-icon"><i class="ti ti-trash-off" aria-hidden="true"></i></div>
-              <div><span class="counter-num">{{ c2Val }}</span><span class="counter-unit">%</span></div>
-              <div class="counter-label">Landfill rate — every asset processed through documented disposal pathways</div>
+              <div><span class="counter-num">kg</span></div>
+              <div class="counter-label">Weight of e-waste diverted from landfill, reported per cycle</div>
             </div>
             <div class="counter-card featured">
               <div class="counter-icon"><i class="ti ti-devices" aria-hidden="true"></i></div>
               <div>
-                <div><span class="counter-num">{{ c3Val }}</span><span class="counter-unit">+</span></div>
-                <div class="counter-label">Devices successfully rehomed through donation programs and EPP initiatives</div>
+                <div><span class="counter-num">Rehomed</span></div>
+                <div class="counter-label">Devices given a second life through donation and Employee Purchase Programs</div>
               </div>
             </div>
             <div class="counter-card">
               <div class="counter-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
-              <div><span class="counter-num">{{ c4Val }}</span><span class="counter-unit">%</span></div>
-              <div class="counter-label">Of retirement cycles delivered with a full ESG report and Certificate of Destruction</div>
+              <div><span class="counter-num">CoD</span></div>
+              <div class="counter-label">Certificates for every data-bearing device, indexed by serial number</div>
             </div>
           </div>
         </div>
@@ -177,7 +177,7 @@
       <div class="sec-in">
         <p class="stag stag-green">ESG Framework</p>
         <h2 class="sh2" id="esg-heading">Environmental. Social. Governance.<br>Three pillars, one framework.</h2>
-        <p class="sdesc">Our ESG commitment spans all three dimensions — with documented outcomes, recognised standards, and measurable impact at every stage.</p>
+        <p class="sdesc">Our approach covers all three dimensions, with documented outcomes and recognised standards at every stage.</p>
 
         <div class="pillars-grid">
           <!-- Environmental -->
@@ -188,12 +188,12 @@
               <div class="pillar-hbadge">E · ESG reporting</div>
             </div>
             <div class="pillar-card-body">
-              <p class="pillar-desc">Our environmental commitment covers the entire IT asset lifecycle — maximising reuse, eliminating landfill, and measuring our carbon footprint impact at every stage.</p>
+              <p class="pillar-desc">Our environmental approach covers the whole IT asset lifecycle: maximise reuse, minimise landfill, and measure the impact at every stage.</p>
               <ul class="pillar-points">
-                <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>Zero landfill disposal — every asset accounted for</li>
+                <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>Landfill avoided wherever possible, every asset accounted for</li>
                 <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>NIST 800-88 sanitisation before reuse or recycling</li>
                 <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>CO₂ offset tracking per retirement cycle</li>
-                <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>Responsible material recovery — batteries, boards, and rare earths</li>
+                <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>Responsible material recovery for batteries, boards and metals</li>
                 <li class="pillar-point"><i class="ti ti-check" aria-hidden="true"></i>E-waste diversion metrics reported per engagement</li>
               </ul>
             </div>
@@ -209,10 +209,10 @@
             <div class="pillar-card-body">
               <p class="pillar-desc">Technology should benefit communities, not just organisations. Our social programs ensure that enterprise devices reach the people who need them most.</p>
               <ul class="pillar-points">
-                <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Technology donation to vetted Australian nonprofits</li>
+                <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Technology donation to Australian nonprofits</li>
                 <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Educational institution device programs</li>
                 <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Employee Purchase Programs enabling affordable access for staff</li>
-                <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Donation certificates issued for tax and reporting purposes</li>
+                <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Donation records for your ESG reporting</li>
                 <li class="pillar-point navy"><i class="ti ti-check" aria-hidden="true"></i>Digital inclusion support through hardware accessibility</li>
               </ul>
             </div>
@@ -226,7 +226,7 @@
               <div class="pillar-hbadge">G · Audit-ready</div>
             </div>
             <div class="pillar-card-body">
-              <p class="pillar-desc">Robust governance ensures every sustainability claim we make is documented, auditable, and defensible — to your board, your auditors, and your stakeholders.</p>
+              <p class="pillar-desc">Good governance means every sustainability claim is documented and defensible to your board, your auditors and your stakeholders.</p>
               <ul class="pillar-points">
                 <li class="pillar-point slate"><i class="ti ti-check" aria-hidden="true"></i>Board-ready ESG reports per retirement cycle</li>
                 <li class="pillar-point slate"><i class="ti ti-check" aria-hidden="true"></i>Certificate of Destruction for every data-bearing device</li>
@@ -245,7 +245,7 @@
       <div class="sec-in">
         <p class="stag stag-light" style="color:#4ade80;">How It Works</p>
         <h2 class="sh2 sh2-light" id="lifecycle-heading">The sustainable IT lifecycle.</h2>
-        <p class="sdesc sdesc-light">Five steps from collection to completion — every one documented, every one auditable.</p>
+        <p class="sdesc sdesc-light">Five steps from collection to completion, each one documented and auditable.</p>
 
         <div class="lifecycle-track fade-up" ref="fadeEl5" aria-label="Sustainable lifecycle process steps">
           <div class="lc-step">
@@ -254,7 +254,7 @@
               <span class="lc-step-num" aria-hidden="true">1</span>
             </div>
             <div class="lc-title">Collect &amp; Audit</div>
-            <p class="lc-desc">GPS-tracked collection from your premises. Full asset audit and manifest created on pickup.</p>
+            <p class="lc-desc">Tracked collection from your premises, with a full asset audit and manifest created on pickup.</p>
           </div>
           <div class="lc-step">
             <div class="lc-num">
@@ -296,57 +296,57 @@
     <section class="sec sec-white" id="itad" aria-labelledby="itad-heading">
       <div class="sec-in">
         <p class="stag stag-green">Responsible Disposal</p>
-        <h2 class="sh2" id="itad-heading">Zero landfill.<br>Zero compromise.</h2>
-        <p class="sdesc">Every device that reaches end of life through enterprise IT is processed through our documented ITAD workflow — with a documented disposition pathway and zero landfill outcome, every single time.</p>
+        <h2 class="sh2" id="itad-heading">Reuse first.<br>No compromise on data.</h2>
+        <p class="sdesc">Every device that reaches end of life with us goes through a documented ITAD workflow, with a recorded outcome for each one.</p>
 
         <div class="itad-layout">
           <div class="impact-body fade-up" ref="fadeEl6">
             <p>
-              <strong>enterprise IT operates a strict zero-landfill policy</strong> across all IT asset retirement and disposition services. This is not a target or an aspiration — it is the operational standard against which every job is measured.
+              <strong>We aim to keep every retired device out of landfill.</strong> Reuse comes first, then donation or resale, then responsible recycling through e-waste recyclers. Each outcome is recorded.
             </p>
             <p>
-              All data-bearing devices are processed to <strong>NIST 800-88</strong> standards — the international benchmark for media sanitisation. For devices where software sanitisation is not viable (failed drives, physically damaged media), we apply <strong>physical destruction</strong> through degaussing or secure shredding.
+              All data-bearing devices are sanitised to <strong>NIST 800-88</strong>, the most widely used guideline for media sanitisation. For devices where software sanitisation is not viable (failed drives, physically damaged media), we apply <strong>physical destruction</strong> through degaussing or secure shredding.
             </p>
             <p>
-              Every device that passes through our facility exits with one of the following documented outcomes: <strong>rehomed via EPP</strong>, <strong>donated to a community organisation</strong>, <strong>sold to a vetted refurbisher</strong>, or <strong>dismantled for responsible material recovery</strong>. None go to landfill. All are documented.
+              Each device ends up with one documented outcome: <strong>rehomed via EPP</strong>, <strong>donated to a community organisation</strong>, <strong>sold to a refurbisher</strong>, or <strong>dismantled for responsible material recovery</strong>.
             </p>
             <p>
-              Clients receive a <strong>Certificate of Destruction</strong> for every data-bearing device processed — serialised, legally defensible, and delivered directly to their secure portal. ESG reports document the aggregate environmental outcome of each retirement cycle.
+              You receive a <strong>Certificate of Destruction</strong> for every data-bearing device we process, serialised and delivered to your secure portal. ESG reports document the aggregate environmental outcome of each retirement cycle.
             </p>
           </div>
 
           <div class="pledge-wrap fade-up" ref="fadeEl7" style="transition-delay:.1s;">
             <div class="itad-pledge">
               <div>
-                <div class="pledge-title">The enterprise IT Zero Landfill Pledge</div>
-                <p class="pledge-sub">Our operational commitment — documented on every job, every time.</p>
+                <div class="pledge-title">What every ITAD job includes</div>
+                <p class="pledge-sub">Documented on every job, every time.</p>
               </div>
               <div class="pledge-item">
                 <div class="pledge-icon"><i class="ti ti-database-off" aria-hidden="true"></i></div>
                 <div>
                   <div class="pledge-item-title">NIST 800-88 Data Eradication</div>
-                  <p class="pledge-item-desc">Military-grade DoD-compliant data sanitisation on every storage device — HDD, SSD, NVMe, mobile, and tape.</p>
+                  <p class="pledge-item-desc">Verified sanitisation for HDD, SSD, NVMe, mobile and tape, including cryptographic erase where supported.</p>
                 </div>
               </div>
               <div class="pledge-item">
                 <div class="pledge-icon"><i class="ti ti-certificate" aria-hidden="true"></i></div>
                 <div>
-                  <div class="pledge-item-title">Certificate of Destruction — Every Device</div>
-                  <p class="pledge-item-desc">Serialised CoDs issued per device or per batch — legally defensible, audit-ready, delivered to your secure portal.</p>
+                  <div class="pledge-item-title">Certificate for Every Device</div>
+                  <p class="pledge-item-desc">Serialised certificates per device or per batch, audit-ready and delivered to your secure portal.</p>
                 </div>
               </div>
               <div class="pledge-item">
                 <div class="pledge-icon"><i class="ti ti-recycle" aria-hidden="true"></i></div>
                 <div>
-                  <div class="pledge-item-title">100% Responsible Disposition</div>
-                  <p class="pledge-item-desc">Every asset exits our facility through a documented pathway — reuse, donation, resale, or responsible material recovery. Never landfill.</p>
+                  <div class="pledge-item-title">Responsible Disposition</div>
+                  <p class="pledge-item-desc">Every asset leaves through a documented pathway: reuse, donation, resale or responsible material recovery.</p>
                 </div>
               </div>
               <div class="pledge-item">
                 <div class="pledge-icon"><i class="ti ti-file-analytics" aria-hidden="true"></i></div>
                 <div>
                   <div class="pledge-item-title">Full Audit Trail</div>
-                  <p class="pledge-item-desc">Chain-of-custody documentation from collection to final disposition — every device, every step.</p>
+                  <p class="pledge-item-desc">Chain-of-custody records from collection to final disposition, for every device.</p>
                 </div>
               </div>
             </div>
@@ -360,7 +360,7 @@
       <div class="sec-in">
         <p class="stag stag-green">Social Programs</p>
         <h2 class="sh2" id="programs-heading">Giving technology a second life.</h2>
-        <p class="sdesc">Two programs that maximise the social value of enterprise hardware — putting securely data-wiped devices into the hands of employees and communities who need them most.</p>
+        <p class="sdesc">Two programs that put securely wiped devices into the hands of employees and communities who can use them.</p>
 
         <div class="program-grid">
           <!-- EPP -->
@@ -372,7 +372,7 @@
             </div>
             <div class="program-body">
               <p class="prog-desc">
-                The EPP enables employees within your organisation to purchase securely data-wiped and graded enterprise devices at significantly reduced prices — reducing e-waste while delivering genuine benefit to your workforce.
+                An EPP lets your employees buy securely wiped, graded devices at reduced prices. It cuts e-waste and gives your people a genuine benefit.
               </p>
               <div class="prog-steps">
                 <div class="prog-step">
@@ -381,7 +381,7 @@
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num">2</div>
-                  <div><strong>Each device is graded</strong> — cosmetically assessed and functionally tested</div>
+                  <div><strong>Each device is graded</strong>, cosmetically and functionally</div>
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num">3</div>
@@ -389,7 +389,7 @@
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num">4</div>
-                  <div><strong>Employees purchase</strong> via a dedicated portal — devices shipped directly</div>
+                  <div><strong>Employees purchase</strong> and devices are shipped to them directly</div>
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num">5</div>
@@ -411,7 +411,7 @@
             </div>
             <div class="program-body">
               <p class="prog-desc">
-                Enterprise devices that meet our donation criteria are matched with vetted Australian nonprofits, educational institutions, and community organisations — bridging the digital divide with securely data-wiped hardware.
+                Devices that meet our donation criteria are matched with Australian nonprofits, schools and community organisations, helping close the digital divide with securely wiped hardware.
               </p>
               <div class="prog-steps">
                 <div class="prog-step">
@@ -420,7 +420,7 @@
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num green">2</div>
-                  <div><strong>Recipients are identified</strong> from our network of vetted Australian community organisations</div>
+                  <div><strong>Recipients are identified</strong> and checked before any device is handed over</div>
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num green">3</div>
@@ -428,11 +428,11 @@
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num green">4</div>
-                  <div><strong>Donation certificates</strong> issued for your records — valid for tax and ESG reporting</div>
+                  <div><strong>Donation records</strong> provided for your ESG reporting</div>
                 </div>
                 <div class="prog-step">
                   <div class="prog-step-num green">5</div>
-                  <div><strong>Impact documented</strong> — recipient details, device count, and estimated community value in your ESG report</div>
+                  <div><strong>Impact documented</strong>: recipients, device count and estimated community value</div>
                 </div>
               </div>
               <router-link to="/contact#quote" class="prog-cta green">
@@ -449,15 +449,15 @@
       <div class="sec-in">
         <p class="stag stag-green">ESG Reporting</p>
         <h2 class="sh2" id="esg-report-heading">Board-ready sustainability<br>documentation, every cycle.</h2>
-        <p class="sdesc">Every enterprise IT retirement engagement generates a comprehensive ESG report — structured, branded, and ready for board presentation, auditor review, or regulatory submission.</p>
+        <p class="sdesc">Every retirement engagement can include an ESG report, structured and ready for your board or auditors.</p>
 
         <div class="esg-report-layout">
           <div>
             <p class="impact-body" style="font-size:14px;color:#555;line-height:1.72;margin-bottom:14px;">
-              <strong style="color:#002366;">Our ESG reports are not afterthoughts.</strong> They are integral deliverables, produced automatically at the conclusion of every asset retirement cycle — whether that's a single device or a fleet of thousands.
+              <strong style="color:#002366;">Our ESG reports are not an afterthought.</strong> They are prepared at the end of each retirement cycle, whether that's a handful of devices or a full fleet refresh.
             </p>
             <p style="font-size:14px;color:#555;line-height:1.72;margin-bottom:24px;">
-              Each report documents the measurable environmental and social outcomes of your engagement — in plain language, with verified metrics, designed for use by CFOs, sustainability officers, and ESG auditors alike. Delivered securely to your client portal.
+              Each report sets out the environmental and social outcomes in plain language, with the method behind each figure, so CFOs, sustainability officers and auditors can rely on it. Delivered securely to your client portal.
             </p>
 
             <div class="report-contents fade-up" ref="fadeEl10" aria-label="What's included in the ESG report">
@@ -479,7 +479,7 @@
                 <div class="report-item-icon"><i class="ti ti-devices" aria-hidden="true"></i></div>
                 <div>
                   <div class="report-item-text">Device Disposition Summary</div>
-                  <div class="report-item-sub">Breakdown by pathway — reused, donated, recycled, destroyed</div>
+                  <div class="report-item-sub">Breakdown by pathway: reused, donated, recycled, destroyed</div>
                 </div>
               </div>
               <div class="report-item">
@@ -509,7 +509,7 @@
           <!-- Sample report visual -->
           <div class="sample-report fade-up" ref="fadeEl11" style="transition-delay:.1s;" aria-label="Sample ESG report metrics">
             <div class="sr-inner">
-              <div class="sr-tag">Sample ESG Report — Illustrative</div>
+              <div class="sr-tag">Sample ESG Report (Illustrative)</div>
               <div class="sr-title">Acme Corporation · Q2 2025<br>Technology Retirement Cycle</div>
               <div class="sr-metrics">
                 <div class="sr-metric">
@@ -565,7 +565,7 @@
       <div class="sec-in">
         <p class="stag stag-green">Standards &amp; Alignment</p>
         <h2 class="sh2" id="certs-heading">Standards we hold ourselves to.</h2>
-        <p class="sdesc">Our sustainability practices are backed by recognised international and Australian standards — not marketing language.</p>
+        <p class="sdesc">Our sustainability practices follow recognised international and Australian standards.</p>
 
         <div class="cert-grid">
           <div class="cert-card fade-up" ref="fadeEl12">
@@ -576,7 +576,7 @@
                 <div class="cert-full">Environmental, Social &amp; Governance</div>
               </div>
             </div>
-            <p class="cert-desc">ESG reporting framework aligned to Australian environmental standards — every report is structured, verifiable, and board-ready.</p>
+            <p class="cert-desc">ESG reporting aligned to Australian environmental frameworks, structured and board-ready.</p>
             <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Board-ready documentation</div>
           </div>
           <div class="cert-card fade-up" ref="fadeEl13" style="transition-delay:.07s;">
@@ -587,7 +587,7 @@
                 <div class="cert-full">Media Sanitisation Guidelines</div>
               </div>
             </div>
-            <p class="cert-desc">US federal standard for secure media sanitisation — applied to every device we retire. DoD-grade overwrite and cryptographic erase across all storage types.</p>
+            <p class="cert-desc">US federal guidelines for secure media sanitisation, applied to every device we retire, including cryptographic erase for modern storage.</p>
             <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Applied to every device</div>
           </div>
           <div class="cert-card fade-up" ref="fadeEl14" style="transition-delay:.14s;">
@@ -605,12 +605,12 @@
             <div class="cert-top">
               <div class="cert-badge"><i class="ti ti-recycle" aria-hidden="true"></i></div>
               <div>
-                <div class="cert-name">Zero Landfill Pledge</div>
-                <div class="cert-full">Operational Commitment</div>
+                <div class="cert-name">Full Asset Tracking</div>
+                <div class="cert-full">Chain of Custody</div>
               </div>
             </div>
-            <p class="cert-desc">Our zero landfill pledge is enforced operationally — not just policy. Every asset is tracked to its final disposition, and no device exits our facility without a documented pathway.</p>
-            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>100% asset tracking</div>
+            <p class="cert-desc">Every asset is tracked to its final disposition, and no device leaves our care without a documented pathway.</p>
+            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Every asset accounted for</div>
           </div>
           <div class="cert-card fade-up" ref="fadeEl16" style="transition-delay:.11s;">
             <div class="cert-top">
@@ -620,58 +620,31 @@
                 <div class="cert-full">Privacy Act 1988 (Cth)</div>
               </div>
             </div>
-            <p class="cert-desc">All data handling and disposal practices align with the Australian Privacy Act 1988 — ensuring personal and sensitive data is handled and destroyed lawfully.</p>
-            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Privacy Act compliant</div>
+            <p class="cert-desc">Our data handling and disposal practices align with the Australian Privacy Act 1988, so personal information is handled and destroyed lawfully.</p>
+            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Privacy Act aligned</div>
           </div>
           <div class="cert-card fade-up" ref="fadeEl17" style="transition-delay:.18s;">
             <div class="cert-top">
               <div class="cert-badge"><i class="ti ti-heart" aria-hidden="true"></i></div>
               <div>
-                <div class="cert-name">Tech Donation Partner</div>
+                <div class="cert-name">Technology Donation</div>
                 <div class="cert-full">Community &amp; Education Programs</div>
               </div>
             </div>
-            <p class="cert-desc">Formal partnership arrangements with vetted Australian nonprofit and educational recipients — every donation is documented and reported in your ESG report.</p>
-            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Vetted recipient network</div>
+            <p class="cert-desc">Donations to Australian nonprofits and schools, with every donation documented in your ESG report.</p>
+            <div class="cert-proof"><i class="ti ti-check" aria-hidden="true"></i>Documented donations</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TESTIMONIAL -->
-    <section class="sec sec-dark" aria-labelledby="testi-heading">
-      <div class="sec-in">
-        <p class="stag" style="color:rgba(255,255,255,0.38);text-align:center;" id="testi-heading">Client Voice</p>
-        <h2 class="sh2 sh2-light" style="text-align:center;">What our clients say about<br>our ESG program.</h2>
-
-        <div class="testi-card fade-up" ref="fadeEl18" aria-label="Client testimonial">
-          <div class="testi-stars" aria-label="5 out of 5 stars">
-            <i class="ti ti-star-filled" aria-hidden="true"></i>
-            <i class="ti ti-star-filled" aria-hidden="true"></i>
-            <i class="ti ti-star-filled" aria-hidden="true"></i>
-            <i class="ti ti-star-filled" aria-hidden="true"></i>
-            <i class="ti ti-star-filled" aria-hidden="true"></i>
-          </div>
-          <blockquote class="testi-quote">
-            "The ESG reporting package alone justified the entire engagement. Our board now has clear, documented evidence of our technology sustainability commitments — CO₂ offsets, landfill diversion figures, donation outcomes — all in a single branded document produced automatically. It's transformed how we communicate our sustainability credentials to shareholders."
-          </blockquote>
-          <div class="testi-author">
-            <div class="testi-avatar" aria-hidden="true">DK</div>
-            <div>
-              <div class="testi-name">David K.</div>
-              <div class="testi-role">CFO · ASX-listed Professional Services Firm · Adelaide</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- CTA BAND -->
     <div class="ctaband" aria-label="Call to action">
       <div class="ctaband-in">
         <div class="ctaband-left">
           <h3>Ready to make your next IT retirement cycle sustainable?</h3>
-          <p>Request an ESG report, set up an EPP, or start a technology donation program — get a response within 24 hours.</p>
+          <p>Request an ESG report, set up an EPP or start a technology donation program. We reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
           <router-link to="/contact#quote" class="cta-green">Request an ESG Report →</router-link>
@@ -754,10 +727,6 @@ onMounted(() => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          animateCount(c1Val, 0, 1200);
-          animateCount(c2Val, 0, 800);
-          animateCount(c3Val, 5000, 1600);
-          animateCount(c4Val, 100, 1200);
           counterObserver.disconnect();
         }
       });

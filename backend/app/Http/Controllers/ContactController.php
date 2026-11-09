@@ -19,11 +19,14 @@ class ContactController extends Controller
             'organisation' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'phone' => 'required|string|max:50',
-            'address' => 'required|string|max:255',
+            'address' => 'nullable|string|max:255',
             'service_category' => 'required|string|in:Hardware,IT Digital Services',
             'service_offering' => 'required|string|max:255',
             'details' => 'nullable|string|max:1000',
         ]);
+
+        // Address is optional on the form; the column is NOT NULL, so store a marker.
+        $validated['address'] = trim((string) ($validated['address'] ?? '')) ?: 'Not provided';
 
         // Persist first so a lead is never lost, even if email delivery fails.
         $contact = Contact::create($validated);
@@ -83,7 +86,7 @@ HTML;
             . "Phone: {$c->phone}\nAddress: {$c->address}\nCategory: {$c->service_category}\n"
             . "Service: {$c->service_offering}\nDetails: " . (trim((string) $c->details) ?: 'None provided') . "\n";
 
-        PostmarkMailer::send($to, "New enquiry: {$c->service_offering} — {$c->organisation}", $html, $text, [
+        PostmarkMailer::send($to, "New enquiry: {$c->service_offering} ({$c->organisation})", $html, $text, [
             'reply_to' => $c->email,
         ]);
     }
@@ -112,8 +115,9 @@ HTML;
     <p style="margin:0;color:#6b7280">The enterprise IT team · Adelaide, South Australia<br>
        <a href="https://enterpriseit.com.au" style="color:#002366">enterpriseit.com.au</a></p>
   </div>
-  <div style="text-align:center;color:#9aa3b5;font-size:11px;margin-top:12px">
-    This is an automated confirmation of your enquiry. You're receiving it because you contacted us via enterpriseit.com.au.
+  <div style="text-align:center;color:#9aa3b5;font-size:11px;margin-top:12px;line-height:1.6">
+    This is an automated confirmation of your enquiry. You're receiving it because you contacted us via enterpriseit.com.au.<br>
+    ENTERPRISE IT PTY LTD · ABN 33 701 700 478 · Adelaide, South Australia
   </div>
 </div>
 HTML;
@@ -121,9 +125,10 @@ HTML;
         $text = "Hi {$name},\n\nThanks for reaching out to enterprise IT. We've received your enquiry about "
             . "{$c->service_offering} and a specialist will get back to you within 24 hours.\n\n"
             . "If it's urgent, reply to this email or call +61 494 614 221.\n\n"
-            . "Kind regards,\nThe enterprise IT team · Adelaide, South Australia\nenterpriseit.com.au";
+            . "Kind regards,\nThe enterprise IT team · Adelaide, South Australia\nenterpriseit.com.au\n\n"
+            . "ENTERPRISE IT PTY LTD · ABN 33 701 700 478";
 
-        PostmarkMailer::send($c->email, 'We\'ve received your enquiry — enterprise IT', $html, $text, [
+        PostmarkMailer::send($c->email, 'We\'ve received your enquiry | enterprise IT', $html, $text, [
             'reply_to' => $from,
         ]);
     }

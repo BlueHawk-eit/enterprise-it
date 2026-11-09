@@ -19,86 +19,66 @@
             SA Owned &amp; Operated · Adelaide CBD
           </div>
           <h1 class="hero-h1" id="hero-heading">
-            Australia's Enterprise IT<br />Partner —
-            <span class="accent">From<br />Device to Defence.</span>
+            One partner for your IT,
+            <span class="accent">from device to defence.</span>
           </h1>
           <p class="hero-sub">
-            End-to-end ICT lifecycle management and cyber defence. GPS-tracked logistics,
-            military-grade data sanitisation, and 24/7 SOC — one partner, full coverage.
+            We set up and manage your devices, secure your Microsoft 365 environment and
+            identities, watch for threats, and retire old hardware with NIST 800-88 data
+            sanitisation. Based in Adelaide, working with organisations across Australia.
           </p>
           <div class="hero-ctas">
             <router-link to="/contact#quote" class="btn-white"
-              ><i class="ti ti-file-invoice" aria-hidden="true"></i>Get 24-Hour
+              ><i class="ti ti-file-invoice" aria-hidden="true"></i>Get a 24-Hour
               Quote</router-link
             >
             <router-link to="/contact#urgent" class="btn-amber"
-              ><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Data
-              Recovery</router-link
+              ><i class="ti ti-alert-triangle" aria-hidden="true"></i>Urgent Incident
+              Help</router-link
             >
           </div>
-          <div class="hero-stats" aria-label="Key service metrics">
-            <div class="hstat">
-              <div class="hstat-num">24/7</div>
-              <div class="hstat-label">SOC Operations<br />SIEM/SOAR</div>
-            </div>
+          <div class="hero-stats" aria-label="How we work">
             <div class="hstat">
               <div class="hstat-num">NIST<br />800-88</div>
-              <div class="hstat-label">Data Sanitisation<br />Standard</div>
+              <div class="hstat-label">Data sanitisation<br />practices</div>
             </div>
             <div class="hstat">
-              <div class="hstat-num">ISO</div>
-              <div class="hstat-label">Compliant</div>
+              <div class="hstat-num">ISO 27001</div>
+              <div class="hstat-label">Aligned<br />controls</div>
+            </div>
+            <div class="hstat">
+              <div class="hstat-num">Microsoft</div>
+              <div class="hstat-label">Entra, Intune<br />&amp; Sentinel</div>
             </div>
             <div class="hstat">
               <div class="hstat-num">AUS-wide</div>
-              <div class="hstat-label">Device Shipping<br />&amp; Logistics</div>
+              <div class="hstat-label">Service<br />delivery</div>
             </div>
           </div>
         </div>
 
-        <!-- Status card -->
-        <aside class="hero-card" aria-label="Live service status">
-          <div class="hc-title">Live Services Status</div>
+        <!-- What to expect card -->
+        <aside class="hero-card" aria-label="What to expect when you contact us">
+          <div class="hc-title">What to expect</div>
           <div class="hc-item">
-            <div class="hc-icon"><i class="ti ti-radar" aria-hidden="true"></i></div>
+            <div class="hc-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
             <div>
-              <div class="hc-label">SOC Operations</div>
-              <div class="hc-sub">Threat monitoring active</div>
-              <div class="hc-badge">
-                <span
-                  style="width: 5px; height: 5px; border-radius: 50%; background: #4ade80"
-                  aria-hidden="true"
-                ></span
-                >Operational
-              </div>
+              <div class="hc-label">A reply within 24 hours</div>
+              <div class="hc-sub">From a specialist, not a ticket queue</div>
             </div>
           </div>
           <div class="hc-item">
-            <div class="hc-icon"><i class="ti ti-truck" aria-hidden="true"></i></div>
+            <div class="hc-icon"><i class="ti ti-file-text" aria-hidden="true"></i></div>
             <div>
-              <div class="hc-label">Logistics &amp; Fleet</div>
-              <div class="hc-sub">GPS tracking enabled</div>
-              <div class="hc-badge">
-                <span
-                  style="width: 5px; height: 5px; border-radius: 50%; background: #4ade80"
-                  aria-hidden="true"
-                ></span
-                >Active
-              </div>
+              <div class="hc-label">A fixed, written scope</div>
+              <div class="hc-sub">You know what you're paying for before work starts</div>
             </div>
           </div>
           <div class="hc-item">
-            <div class="hc-icon"><i class="ti ti-shield-check" aria-hidden="true"></i></div>
+            <div class="hc-icon"><i class="ti ti-certificate" aria-hidden="true"></i></div>
             <div>
-              <div class="hc-label">Data Sanitisation</div>
-              <div class="hc-sub">Secure ITAD processing</div>
-              <div class="hc-badge">
-                <span
-                  style="width: 5px; height: 5px; border-radius: 50%; background: #4ade80"
-                  aria-hidden="true"
-                ></span
-                >Ready
-              </div>
+              <div class="hc-label">Documented outcomes</div>
+              <div class="hc-sub">Reports and certificates you can hand to an auditor</div>
             </div>
           </div>
           <div
@@ -108,11 +88,8 @@
               border-top: 0.5px solid rgba(255, 255, 255, 0.08);
             "
           >
-            <div class="hc-resp-label">GUARANTEED RESPONSE TIME</div>
-            <div class="hc-resp-bar">
-              <div class="resp-track"><div class="resp-fill"></div></div>
-              <div class="resp-val">≤24 hrs</div>
-            </div>
+            <div class="hc-resp-label">ENTERPRISE IT PTY LTD</div>
+            <div class="hc-sub">ABN 33 701 700 478 · Adelaide, SA</div>
           </div>
         </aside>
       </div>
@@ -133,23 +110,23 @@
     </div>
 
     <!-- METRICS BAND -->
-    <div class="metrics" id="metrics-section" aria-label="Key performance metrics">
+    <div class="metrics" id="metrics-section" aria-label="Our commitments">
       <div class="metrics-in">
         <div class="metric">
-          <div><span class="metric-num">{{ metrics.m1 }}</span><span class="metric-unit">%</span></div>
-          <div class="metric-label">Data breach rate<br />on managed assets</div>
-        </div>
-        <div class="metric">
           <div><span class="metric-num">{{ metrics.m2 }}</span><span class="metric-unit"> hr</span></div>
-          <div class="metric-label">Guaranteed quote<br />response time</div>
+          <div class="metric-label">Quote and enquiry<br />response time</div>
         </div>
         <div class="metric">
-          <div><span class="metric-num">{{ metrics.m3 }}</span><span class="metric-unit">+</span></div>
-          <div class="metric-label">Enterprise clients<br />Australia-wide</div>
+          <div><span class="metric-num">1</span></div>
+          <div class="metric-label">Point of contact for<br />devices and security</div>
         </div>
         <div class="metric">
-          <div><span class="metric-num">{{ metrics.m4 }}</span><span class="metric-unit">/7</span></div>
-          <div class="metric-label">SOC monitoring<br />SIEM &amp; SOAR</div>
+          <div><span class="metric-num">E8</span></div>
+          <div class="metric-label">ASD Essential Eight<br />used as our baseline</div>
+        </div>
+        <div class="metric">
+          <div><span class="metric-num">SA</span></div>
+          <div class="metric-label">Owned and operated<br />in Adelaide</div>
         </div>
       </div>
     </div>
@@ -160,8 +137,7 @@
         <p class="stag">Core Services</p>
         <h2 class="sh2" id="services-heading">Two pillars. One trusted partner.</h2>
         <p class="sdesc">
-          Complete enterprise IT coverage — physical asset lifecycle through digital security and
-          compliance.
+          The physical side of your IT and the security side, handled by one accountable team.
         </p>
         <div class="svc-panels">
           <article class="svc-panel fade-up">
@@ -171,8 +147,8 @@
             </div>
             <div class="svc-pb">
               <div class="svc-kpi">
-                <div class="svc-kpi-val long-val">Data Sanitisation</div>
-                <div class="svc-kpi-label long-label">Military-grade<br />data eradication</div>
+                <div class="svc-kpi-val long-val">NIST 800-88</div>
+                <div class="svc-kpi-label long-label">Data sanitisation<br />with certificates</div>
               </div>
               <ul class="svc-list">
                 <li class="svc-li">
@@ -180,12 +156,12 @@
                   deployment &amp; imaging
                 </li>
                 <li class="svc-li">
-                  <i class="ti ti-truck" aria-hidden="true"></i>Precision relocations, GPS-tracked
-                  logistics
+                  <i class="ti ti-truck" aria-hidden="true"></i>Office moves and tracked, chain-of-custody
+                  transport
                 </li>
                 <li class="svc-li">
-                  <i class="ti ti-recycle" aria-hidden="true"></i>Secure ITAD — military-grade
-                  data eradication
+                  <i class="ti ti-recycle" aria-hidden="true"></i>Secure IT asset disposal with
+                  verified data wiping
                 </li>
                 <li class="svc-li">
                   <i class="ti ti-leaf" aria-hidden="true"></i>ESG reporting &amp; Employee Purchase
@@ -208,16 +184,16 @@
             </div>
             <div class="svc-pb">
               <div class="svc-kpi" style="background: #edf0fb">
-                <div class="svc-kpi-val">24/7</div>
-                <div class="svc-kpi-label">Managed detection<br />SIEM / SOAR</div>
+                <div class="svc-kpi-val long-val">Sentinel</div>
+                <div class="svc-kpi-label long-label">Managed detection<br />&amp; response</div>
               </div>
               <ul class="svc-list">
                 <li class="svc-li">
-                  <i class="ti ti-radar" aria-hidden="true"></i>24/7 SOC — threat hunting &amp;
+                  <i class="ti ti-radar" aria-hidden="true"></i>Threat monitoring, hunting and
                   managed detection
                 </li>
                 <li class="svc-li">
-                  <i class="ti ti-users" aria-hidden="true"></i>IAM — full identity lifecycle &amp;
+                  <i class="ti ti-users" aria-hidden="true"></i>Identity management and
                   phishing-resistant MFA
                 </li>
                 <li class="svc-li">
@@ -246,37 +222,38 @@
     <section class="sec sec-bg" aria-labelledby="why-heading">
       <div class="sec-in">
         <p class="stag">Why enterprise IT</p>
-        <h2 class="sh2" id="why-heading">Built for enterprise. Proven in the field.</h2>
+        <h2 class="sh2" id="why-heading">Built for enterprise. Accountable locally.</h2>
         <p class="sdesc">
-          A single partner for the full technology lifecycle — from deployment through secure
-          decommission.
+          One partner for the whole technology lifecycle, from the day a device is deployed to
+          the day it's securely retired.
         </p>
         <div class="why-grid">
           <div class="why-card fade-up">
             <div class="why-ico"><i class="ti ti-world" aria-hidden="true"></i></div>
             <div class="why-title">National Scale</div>
             <p class="why-desc">
-              Australia-wide shipping and next-gen workspace deployment across all states and
-              territories.
+              We're based in Adelaide and deliver across Australia, on site or remotely,
+              depending on what the job needs.
             </p>
             <div class="why-proof">
-              <i class="ti ti-check" aria-hidden="true"></i>All states &amp; territories
+              <i class="ti ti-check" aria-hidden="true"></i>Remote and on-site delivery
             </div>
           </div>
           <div class="why-card fade-up">
             <div class="why-ico"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
-            <div class="why-title">Military-grade Security</div>
+            <div class="why-title">Security You Can Evidence</div>
             <p class="why-desc">
-              NIST 800-88 eradication and enterprise encryption to protect data at every stage.
+              NIST 800-88 data sanitisation, encryption and hardened configuration, with the
+              paperwork to prove it.
             </p>
-            <div class="why-proof"><i class="ti ti-check" aria-hidden="true"></i>Zero breach record</div>
+            <div class="why-proof"><i class="ti ti-check" aria-hidden="true"></i>Audit-ready records</div>
           </div>
           <div class="why-card fade-up">
             <div class="why-ico"><i class="ti ti-leaf" aria-hidden="true"></i></div>
             <div class="why-title">Sustainable Legacy</div>
             <p class="why-desc">
-              Full ESG reporting, green technology donation programs, and responsible sustainable
-              disposal.
+              Reuse first, responsible recycling second, with ESG reporting on what happened to
+              every device.
             </p>
             <div class="why-proof">
               <i class="ti ti-check" aria-hidden="true"></i>ESG reporting
@@ -286,16 +263,17 @@
             <div class="why-ico"><i class="ti ti-clock" aria-hidden="true"></i></div>
             <div class="why-title">24-Hour Response</div>
             <p class="why-desc">
-              Guaranteed response from an enterprise IT specialist within 24 hours — no bots, no
-              queues.
+              Every enquiry gets a reply from a specialist within 24 hours. No bots and no ticket
+              queue.
             </p>
-            <div class="why-proof"><i class="ti ti-check" aria-hidden="true"></i>Guaranteed SLA</div>
+            <div class="why-proof"><i class="ti ti-check" aria-hidden="true"></i>Real people, fast</div>
           </div>
           <div class="why-card fade-up">
             <div class="why-ico"><i class="ti ti-building" aria-hidden="true"></i></div>
             <div class="why-title">SA Owned &amp; Operated</div>
             <p class="why-desc">
-              Proudly headquartered in Adelaide CBD — local accountability, national capability.
+              Headquartered in Adelaide CBD. Decisions about your work are made here, by the
+              people doing it.
             </p>
             <div class="why-proof"><i class="ti ti-check" aria-hidden="true"></i>Adelaide CBD HQ</div>
           </div>
@@ -303,8 +281,7 @@
             <div class="why-ico"><i class="ti ti-file-certificate" aria-hidden="true"></i></div>
             <div class="why-title">Compliance-first</div>
             <p class="why-desc">
-              ISO, NIST and premier cybersecurity standards embedded across every service we
-              deliver.
+              We work to recognised frameworks: ISO 27001, NIST and the ASD Essential Eight.
             </p>
             <div class="why-proof">
               <i class="ti ti-check" aria-hidden="true"></i>ISO 27001 &amp; NIST aligned
@@ -320,19 +297,19 @@
         <p class="stag">How It Works</p>
         <h2 class="sh2" id="process-heading">Simple from day one.</h2>
         <p class="sdesc" style="margin-bottom: 40px">
-          From first contact to secure onboarding — fast, transparent, and easy.
+          From first contact to secure onboarding in four clear steps.
         </p>
         <div class="process-grid">
           <div class="pstep fade-up">
             <div class="pstep-num">01</div>
             <div class="pstep-title">Submit a quote</div>
-            <p class="pstep-desc">Fill in the 24-hour quote form — hardware, digital services, or both.</p>
+            <p class="pstep-desc">Fill in the quote form for hardware services, cyber security, or both.</p>
           </div>
           <div class="pstep fade-up">
             <div class="pstep-num">02</div>
             <div class="pstep-title">Specialist review</div>
             <p class="pstep-desc">
-              A dedicated enterprise IT specialist reviews your requirements within 24 hours.
+              A specialist reviews your requirements and gets back to you within 24 hours.
             </p>
           </div>
           <div class="pstep fade-up">
@@ -346,7 +323,7 @@
             <div class="pstep-num">04</div>
             <div class="pstep-title">Secure onboarding</div>
             <p class="pstep-desc">
-              Client portal access issued — documents, reports, and invoices in one secure place.
+              Your reports, certificates and documents are kept in one secure client portal.
             </p>
           </div>
         </div>
@@ -357,11 +334,11 @@
     <div class="ctaband">
       <div class="ctaband-in">
         <div class="ctaband-left">
-          <h3>Ready to talk to our team?</h3>
-          <p>Get a response from an enterprise IT specialist within 24 hours — guaranteed.</p>
+          <h3>Ready to talk?</h3>
+          <p>Tell us what you need and a specialist will reply within 24 hours.</p>
         </div>
         <div class="ctaband-btns">
-          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote →</router-link>
+          <router-link to="/contact#quote" class="cta-white">Request a 24-Hour Quote</router-link>
           <router-link to="/contact" class="cta-outline">Contact Us</router-link>
         </div>
       </div>
@@ -373,10 +350,7 @@
 import { ref, reactive, onMounted, onUnmounted } from 'vue';
 
 const metrics = reactive({
-  m1: 0,
   m2: 0,
-  m3: 0,
-  m4: 0,
 });
 
 let fadeObserver = null;
@@ -421,10 +395,7 @@ onMounted(() => {
     (entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) {
-          runCountUp('m1', 0, 800);
           runCountUp('m2', 24, 1200);
-          runCountUp('m3', 200, 1400);
-          runCountUp('m4', 24, 1000);
           metricsObserver.disconnect();
         }
       });

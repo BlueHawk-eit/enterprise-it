@@ -19,7 +19,7 @@
           <i class="ti ti-map-pin-off"></i>
         </div>
 
-        <p class="err-tag">Error 404 — Page not found</p>
+        <p class="err-tag">Error 404 · Page not found</p>
         <h1 class="err-h1">This page doesn't exist.</h1>
         <p class="err-desc">
           The page you're looking for may have moved, been renamed, or never existed. Try
@@ -64,10 +64,10 @@
             <div class="qc-icon"><i class="ti ti-file-invoice" aria-hidden="true"></i></div>
             <div>
               <div class="qc-name">Get a Quote</div>
-              <div class="qc-desc">24-hour response guaranteed</div>
+              <div class="qc-desc">Reply within 24 hours</div>
             </div>
           </router-link>
-          <router-link to="/contact#urgent" class="quick-card" aria-label="Urgent data recovery">
+          <router-link to="/contact#urgent" class="quick-card" aria-label="Urgent incident help">
             <div class="qc-icon" style="background: #fef3c7">
               <i
                 class="ti ti-alert-triangle"
@@ -76,8 +76,8 @@
               ></i>
             </div>
             <div>
-              <div class="qc-name">Urgent Recovery</div>
-              <div class="qc-desc">Data recovery &amp; incidents</div>
+              <div class="qc-name">Urgent Incident Help</div>
+              <div class="qc-desc">Security incidents &amp; data loss</div>
             </div>
           </router-link>
           <router-link to="/login" class="quick-card" aria-label="Client portal login">
@@ -95,7 +95,7 @@
             v-model="searchQuery"
             class="search-input"
             type="search"
-            placeholder="Search the site — e.g. NIST 800-88, SOC, ITAD…"
+            placeholder="Search the site, e.g. NIST 800-88, MFA, ITAD…"
             aria-label="Search enterprise IT"
             @keydown.enter="handleSearch"
           />
