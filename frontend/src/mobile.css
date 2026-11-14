@@ -1,0 +1,242 @@
+/*
+ * Mobile layout fixes (phones, <= 600px).
+ * Layout only: no content changes. Selectors are prefixed with #app so they
+ * win over the per-page scoped styles without needing !important.
+ */
+
+/* Anything wider than the screen should never push the page sideways. */
+html,
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  /* ── 1. One consistent 20px side gutter, matching the nav ───────────── */
+  #app .nav,
+  #app .hero,
+  #app .page-hero,
+  #app .post-hero,
+  #app .tbar,
+  #app .metrics,
+  #app .sec,
+  #app .testi-sec,
+  #app .ctaband,
+  #app .pillar-band,
+  #app .compliance-band,
+  #app .standards-strip,
+  #app .sustain-hero,
+  #app .contact-sec,
+  #app .faq-sec,
+  #app .blog-sec,
+  #app .news-sec,
+  #app .topics-sec,
+  #app .newsletter-band,
+  #app .related-sec,
+  #app .post-wrap,
+  #app .policy-wrap,
+  #app .ticker,
+  #app .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #app .footer {
+    padding-top: 36px;
+    padding-bottom: 32px;
+  }
+
+  /* ── 2. Hero badge pills: keep on one tidy line ──────────────────────── */
+  #app .hero-eyebrow,
+  #app .eyebrow {
+    max-width: 100%;
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    padding: 5px 11px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ── 3. Hero stat rows as an even 2 x 2 grid ─────────────────────────── */
+  #app .hero-stats {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 18px;
+  }
+
+  #app .hero-stats .hstat {
+    padding: 0 12px 0 0;
+    border-left: none;
+  }
+
+  #app .hero-stats .hstat:nth-child(even) {
+    padding-left: 16px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.12);
+  }
+
+  /* Blog and News show three short stats: keep them on one row. */
+  #app .hero-stats:has(> .hstat:nth-child(3):last-child) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #app .hero-stats:has(> .hstat:nth-child(3):last-child) .hstat {
+    padding: 0 10px;
+    border-left: 0.5px solid rgba(255, 255, 255, 0.12);
+  }
+
+  #app .hero-stats:has(> .hstat:nth-child(3):last-child) .hstat:first-child {
+    padding-left: 0;
+    border-left: none;
+  }
+
+  #app .hstat-num {
+    line-height: 1.15;
+  }
+
+  /* Contact page: three promises fit on one row. */
+  #app .hero-promise {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #app .hero-promise .hp-item {
+    padding: 0 10px;
+  }
+
+  #app .hero-promise .hp-item:first-child {
+    padding-left: 0;
+  }
+
+  #app .hero-promise .hp-num {
+    font-size: 17px;
+  }
+
+  /* ── 4. Full-width, stacked buttons ──────────────────────────────────── */
+  #app .hero-ctas {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #app .hero-ctas > a,
+  #app .hero-ctas > button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #app .ctaband-in {
+    align-items: stretch;
+  }
+
+  #app .ctaband-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    width: 100%;
+  }
+
+  #app .ctaband-btns > a,
+  #app .ctaband-btns > button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* 404 page buttons: same width, centred. */
+  #app .err-ctas {
+    align-items: stretch;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #app .err-ctas > a,
+  #app .err-ctas > button {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* 404 page: start below the nav instead of centring past the top. */
+  #app .main:has(> .err-wrap) {
+    justify-content: flex-start;
+  }
+
+  /* ── 5. Resources sub-menu (Sustainability / Blog / News) ────────────── */
+  #app .rn-inner {
+    padding: 0 20px;
+    justify-content: space-between;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  #app .rn-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  #app .rn-label {
+    display: none;
+  }
+
+  #app .rn-link {
+    padding: 13px 4px;
+  }
+
+  /* ── 6. Homepage metrics band: even 2 x 2 ────────────────────────────── */
+  #app .metrics-in {
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 12px;
+  }
+
+  #app .metric {
+    padding: 0;
+  }
+
+  /* ── 7. Grids that left a single orphan card ─────────────────────────── */
+  /* Blog topics: 5 cards in 2 columns, so the last one spans the row. */
+  #app .topics-grid > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  /* Sustainability lifecycle: 5 steps in 2 columns. */
+  #app .lifecycle-track > .lc-step:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+
+  /* Sustainability counters: the wide card was forcing a second column
+     and pushing the page sideways. One clean column instead. */
+  #app .impact-counters {
+    grid-template-columns: 1fr;
+  }
+
+  #app .counter-card.featured {
+    grid-column: auto;
+  }
+
+  /* ── 8. Footer bottom badges wrap evenly ─────────────────────────────── */
+  #app .fcerts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  #app .fcert {
+    margin: 0;
+  }
+
+  /* ── 9. Floating Client Portal button: compact so it stops covering
+         headings and cards. The label stays for screen readers. ───────── */
+  #app .portal-float {
+    right: 16px;
+    bottom: 16px;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    justify-content: center;
+    font-size: 0;
+    gap: 0;
+  }
+
+  #app .portal-float i {
+    font-size: 20px;
+  }
+}
