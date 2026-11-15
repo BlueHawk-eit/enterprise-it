@@ -75,7 +75,7 @@
                   <div class="aside-post-title">
                     <router-link :to="'/resources/blog/' + post.slug" style="color:inherit;">{{ post.title }}</router-link>
                   </div>
-                  <div class="aside-post-cat">{{ formatTopicName(getTopic(post)) }} · {{ post.readTime || '6 min read' }}</div>
+                  <div class="aside-post-cat">{{ formatTopicName(getTopic(post)) }} · {{ readTime(post) }}</div>
                 </div>
               </div>
             </div>
@@ -144,7 +144,7 @@
                     <span class="fp-dot" aria-hidden="true"></span>
                     <time class="fp-date" :datetime="featuredPost.published_at" itemprop="datePublished">{{ formatDate(featuredPost.published_at) }}</time>
                     <span class="fp-dot" aria-hidden="true"></span>
-                    <span class="fp-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ featuredPost.readTime || '8 min read' }}</span>
+                    <span class="fp-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(featuredPost) }}</span>
                   </div>
 
                   <h2 class="fp-h2" itemprop="headline">
@@ -195,7 +195,7 @@
                       <span class="pc-dot" aria-hidden="true"></span>
                       <time class="pc-date" :datetime="post.published_at">{{ formatDate(post.published_at) }}</time>
                       <span class="pc-dot" aria-hidden="true"></span>
-                      <span class="pc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ post.readTime || '6 min' }}</span>
+                      <span class="pc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(post, ' min') }}</span>
                     </div>
                     <h2 class="pc-h2" itemprop="headline">
                       <router-link :to="'/resources/blog/' + post.slug" itemprop="url">
@@ -272,7 +272,7 @@
                   <div class="pop-num">0{{ index + 1 }}</div>
                   <div>
                     <router-link :to="'/resources/blog/' + post.slug" class="pop-title">{{ post.title }}</router-link>
-                    <div class="pop-meta"><i class="ti ti-clock" aria-hidden="true"></i>{{ post.readTime || '6 min' }} · {{ formatTopicName(getTopic(post)) }}</div>
+                    <div class="pop-meta"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(post, ' min') }} · {{ formatTopicName(getTopic(post)) }}</div>
                   </div>
                 </div>
               </div>
@@ -385,6 +385,7 @@
 </template>
 
 <script setup>
+import { excerpt, readTime } from '../utils/text.js';
 import { ref, computed, onMounted } from 'vue';
 import { API_BASE_URL } from '../config';
 
@@ -536,11 +537,7 @@ const formatDate = (dateString) => {
   return date.toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
 };
 
-const truncateText = (text, length) => {
-  if (!text) return '';
-  if (text.length <= length) return text;
-  return text.substring(0, length) + '...';
-};
+const truncateText = (text, length) => excerpt(text, length);
 
 const handleNewsletter = () => {
   if (!newsletterEmail.value) return;

@@ -191,6 +191,16 @@ body {
     padding: 0;
   }
 
+  /* Contact form: two-column rows collapse to one column, so drop the
+     row gap that was doubling up with each field's bottom margin. */
+  #app .form-row {
+    gap: 0;
+  }
+
+  #app .form-row > .form-group:first-child {
+    margin-bottom: 16px;
+  }
+
   /* ── 7. Grids that left a single orphan card ─────────────────────────── */
   /* Blog topics: 5 cards in 2 columns, so the last one spans the row. */
   #app .topics-grid > :last-child:nth-child(odd) {

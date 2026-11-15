@@ -43,9 +43,7 @@
           <div class="post-meta" aria-label="Article metadata">
             <div class="pm-item"><i class="ti ti-calendar" aria-hidden="true"></i><time :datetime="post.published_at">{{ formatDate(post.published_at) }}</time></div>
             <div class="pm-sep" aria-hidden="true"></div>
-            <div class="pm-item"><i class="ti ti-clock" aria-hidden="true"></i>{{ post.readTime || '6 min read' }}</div>
-            <div class="pm-sep" aria-hidden="true"></div>
-            <div class="pm-item"><i class="ti ti-eye" aria-hidden="true"></i>{{ mockViews }} views</div>
+            <div class="pm-item"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(post) }}</div>
           </div>
           <div class="post-author-row" itemscope itemtype="https://schema.org/Person">
             <div class="pa-avatar" aria-hidden="true">EI</div>
@@ -113,7 +111,7 @@
             <div class="toc-card">
               <div class="toc-head">
                 <div class="toc-title">Article Navigation</div>
-                <span style="font-size:11px;color:#708090;">{{ post.readTime || '6 min read' }}</span>
+                <span style="font-size:11px;color:#708090;">{{ readTime(post) }}</span>
               </div>
               <nav class="toc-list" aria-label="Article sections">
                 <a href="#overview" class="toc-item active">Overview</a>
@@ -170,6 +168,7 @@
 </template>
 
 <script setup>
+import { readTime } from '../utils/text.js';
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import { useRoute } from 'vue-router';
 import { API_BASE_URL } from '../config';
@@ -180,7 +179,6 @@ const post = ref(null);
 const loading = ref(true);
 const relatedPosts = ref([]);
 const copyBtnText = ref('Copy link');
-const mockViews = ref(Math.floor(Math.random() * 300) + 120);
 
 // Reading progress
 const readProgress = ref(0);
