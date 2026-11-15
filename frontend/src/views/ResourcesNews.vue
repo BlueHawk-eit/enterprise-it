@@ -139,7 +139,7 @@
                     <span class="fc-dot" aria-hidden="true"></span>
                     <time class="fc-date" :datetime="featuredPost.published_at">{{ formatDate(featuredPost.published_at) }}</time>
                     <span class="fc-dot" aria-hidden="true"></span>
-                    <span class="fc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ featuredPost.readTime || '3 min read' }}</span>
+                    <span class="fc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(featuredPost) }}</span>
                   </div>
                   <h2 class="fc-h2" itemprop="headline">
                     <router-link :to="'/resources/news/' + featuredPost.slug">{{ featuredPost.title }}</router-link>
@@ -173,7 +173,7 @@
                     <div class="nc-meta">
                       <span class="nc-cat-l">{{ formatTopicName(getTopic(post)) }}</span><span class="nc-dot" aria-hidden="true"></span>
                       <time class="nc-date" :datetime="post.published_at">{{ formatDate(post.published_at) }}</time><span class="nc-dot" aria-hidden="true"></span>
-                      <span class="nc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ post.readTime || '3 min' }}</span>
+                      <span class="nc-read"><i class="ti ti-clock" aria-hidden="true"></i>{{ readTime(post, ' min') }}</span>
                     </div>
                     <h2 class="nc-h2" itemprop="headline">
                       <router-link :to="'/resources/news/' + post.slug">{{ post.title }}</router-link>
@@ -272,6 +272,7 @@
 </template>
 
 <script setup>
+import { excerpt, readTime } from '../utils/text.js';
 import { ref, computed, onMounted } from 'vue';
 import { API_BASE_URL } from '../config';
 
@@ -413,11 +414,7 @@ const formatDateShort = (dateString) => {
   return date.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
 };
 
-const truncateText = (text, length) => {
-  if (!text) return '';
-  if (text.length <= length) return text;
-  return text.substring(0, length) + '...';
-};
+const truncateText = (text, length) => excerpt(text, length);
 
 const handleNewsletter = () => {
   if (!newsletterEmail.value) return;
