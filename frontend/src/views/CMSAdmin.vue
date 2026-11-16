@@ -968,18 +968,11 @@ const checkSession = async () => {
       router.push('/login');
     }
   } catch (error) {
-    console.warn("Backend auth verification check failed, reading localStorage:", error);
-    const savedUser = localStorage.getItem('auth_user');
-    if (savedUser) {
-      const parsed = JSON.parse(savedUser);
-      if (parsed.account_type === 'admin') {
-        adminUser.value = parsed;
-      } else {
-        router.push('/login');
-      }
-    } else {
-      router.push('/login');
-    }
+    // Fail closed: never show the admin panel on the strength of a value
+    // stored in the browser. No confirmed server session, no admin UI.
+    console.warn('Session check failed:', error);
+    localStorage.removeItem('auth_user');
+    router.push('/admin-login');
   }
 };
 
@@ -988,7 +981,8 @@ const logoutAdmin = async () => {
     await fetch(`${API_BASE_URL}/api/auth/logout`, { 
       method: 'POST',
       headers: {
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
       },
       credentials: 'include'
     });

@@ -342,7 +342,8 @@ const handleOnboarding = async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
       },
       credentials: 'include',
       body: JSON.stringify({

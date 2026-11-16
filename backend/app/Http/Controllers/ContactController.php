@@ -6,6 +6,7 @@ use App\Models\Contact;
 use App\Services\PostmarkMailer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 
 class ContactController extends Controller
 {
@@ -14,6 +15,16 @@ class ContactController extends Controller
      */
     public function submit(Request $request)
     {
+        // Honeypot: a hidden "website" field real visitors never see or fill.
+        // Bots that fill it get a normal-looking reply and nothing is stored or sent.
+        if (trim((string) $request->input('website', '')) !== '') {
+            Log::info('Contact form honeypot triggered', ['ip' => $request->ip()]);
+            return response()->json([
+                'success' => true,
+                'message' => 'An enterprise IT representative will contact you within 24 hours.',
+            ], 201);
+        }
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'organisation' => 'required|string|max:255',
@@ -35,7 +46,14 @@ class ContactController extends Controller
         // Fire the two emails; failures are logged but never break the response.
         try {
             $this->notifyTeam($contact);
-            $this->sendAutoReply($contact);
+
+            // Stop the form being used to spam a third party's inbox from our
+            // domain: at most 3 confirmation emails per address per day.
+            $replyKey = 'contact-reply:' . sha1(strtolower(trim($contact->email)));
+            if (!RateLimiter::tooManyAttempts($replyKey, 3)) {
+                RateLimiter::hit($replyKey, 86400);
+                $this->sendAutoReply($contact);
+            }
         } catch (\Throwable $e) {
             Log::error('Lead email dispatch error: ' . $e->getMessage(), ['id' => $contact->id]);
         }

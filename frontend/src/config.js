@@ -7,8 +7,9 @@ const getApiUrl = () => {
     if (origin.includes('localhost') || origin.includes('127.0.0.1')) {
       return 'http://localhost:8000';
     }
-    // Automatically point to the api subdomain (e.g., https://example.com -> https://api.example.com)
-    return origin.replace('://', '://api.');
+    // Never guess an API host from the page address: a guessed host could be
+    // one we don't own. Fall back to the known production API instead.
+    return 'https://enterprise-it-pub8.onrender.com';
   }
   return 'http://localhost:8000';
 };
