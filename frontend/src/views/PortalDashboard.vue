@@ -869,13 +869,11 @@ const checkSession = async () => {
       router.push('/login');
     }
   } catch (error) {
-    console.warn("Backend auth verification check failed, reading localStorage:", error);
-    const savedUser = localStorage.getItem('auth_user');
-    if (savedUser) {
-      user.value = JSON.parse(savedUser);
-    } else {
-      router.push('/login');
-    }
+    // Fail closed: if the server can't confirm the session, never trust a
+    // value stored in the browser. Send the user back to sign in.
+    console.warn('Session check failed:', error);
+    localStorage.removeItem('auth_user');
+    router.push('/login');
   }
 };
 
@@ -979,7 +977,8 @@ const logout = async () => {
     await fetch(`${API_BASE_URL}/api/auth/logout`, { 
       method: 'POST',
       headers: {
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'X-EIT-CSRF': '1'
       },
       credentials: 'include'
     });

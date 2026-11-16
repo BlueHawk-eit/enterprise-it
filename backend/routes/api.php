@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // Public Lead Capture & public CMS read routes
-Route::post('/contacts', [ContactController::class, 'submit'])->middleware('throttle:20,1');
+Route::post('/contacts', [ContactController::class, 'submit'])->middleware('throttle:5,10');
 Route::get('/resources', [CMSController::class, 'index']);
 Route::get('/resources/{slug}', [CMSController::class, 'show']);
 
@@ -27,8 +27,8 @@ Route::middleware([
     Route::post('/auth/admin/login', [AuthController::class, 'adminLogin'])->middleware(['csrfheader', 'throttle:10,1']);
     Route::post('/auth/admin/login/2fa', [AuthController::class, 'adminLoginTwoFactor'])->middleware(['csrfheader', 'throttle:10,1']);
     Route::get('/auth/user', [AuthController::class, 'user']);
-    Route::post('/auth/logout', [AuthController::class, 'logout']);
-    Route::post('/auth/onboard', [AuthController::class, 'onboard'])->middleware('throttle:10,1');
+    Route::post('/auth/logout', [AuthController::class, 'logout'])->middleware('csrfheader');
+    Route::post('/auth/onboard', [AuthController::class, 'onboard'])->middleware(['csrfheader', 'throttle:5,10']);
 
     // Secure Document Repository
     Route::get('/documents', [DocumentController::class, 'index']);

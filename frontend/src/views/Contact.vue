@@ -175,6 +175,11 @@
             <!-- FORM BODY -->
             <div v-show="!submitted" class="form-body" id="form-body">
               <form id="contact-form" @submit.prevent="submitForm" novalidate>
+                <!-- Spam trap: hidden from people and screen readers; bots fill it in. -->
+                <div style="position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden;" aria-hidden="true">
+                  <label for="f-website">Website</label>
+                  <input id="f-website" type="text" name="website" v-model="honeypot" tabindex="-1" autocomplete="off" />
+                </div>
                 <!-- Row 1: Name + Organisation -->
                 <div class="form-row">
                   <div class="form-group">
@@ -465,6 +470,7 @@ const phoneErrorMsg = ref('Please enter a valid phone number.');
 
 const submitting = ref(false);
 const submitError = ref('');
+const honeypot = ref('');
 const submitted = ref(false);
 const referenceNumber = ref('');
 const successRef = ref(null);
@@ -622,7 +628,8 @@ const submitForm = async () => {
     address: form.address.trim() || 'Not provided',
     service_category: categoryMapped,
     service_offering: offeringMapped,
-    details: form.details
+    details: form.details,
+    website: honeypot.value
   };
 
   try {

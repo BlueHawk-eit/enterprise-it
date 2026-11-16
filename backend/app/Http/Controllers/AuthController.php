@@ -4,8 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
@@ -51,7 +54,7 @@ class AuthController extends Controller
         $tokenEmail = strtolower(trim($tokenEmail));
         $displayName = $claims['name'] ?? $tokenEmail;
 
-        Log::info("Validating OIDC ID token for portal user: {$tokenEmail}");
+        Log::info('Validating Entra sign-in', ['email' => self::clean($tokenEmail)]);
 
         $user = User::whereRaw('LOWER(email) = ?', [$tokenEmail])->first();
 
@@ -60,7 +63,7 @@ class AuthController extends Controller
             // through the admin login (password + 2FA); an Entra token must never
             // bypass that stronger flow, even if the email matches an admin.
             if (!in_array($user->account_type, ['client', 'partner'], true)) {
-                Log::warning("Entra portal login refused for non-portal account: {$tokenEmail} ({$user->account_type})");
+                Log::warning('Entra portal login refused for non-portal account', ['email' => self::clean($tokenEmail), 'type' => $user->account_type]);
                 return response()->json([
                     'success' => false,
                     'message' => 'This account cannot sign in here.'
@@ -79,7 +82,7 @@ class AuthController extends Controller
                 'account_type' => 'client',
                 'password' => Hash::make(Str::random(64)),
             ]);
-            Log::info("JIT-provisioned portal user on first Entra sign-in: {$tokenEmail}");
+            Log::info('JIT-provisioned portal user on first Entra sign-in', ['email' => self::clean($tokenEmail)]);
         }
 
         // Establish a secure Laravel session; regenerate the ID to prevent fixation.
@@ -148,8 +151,8 @@ class AuthController extends Controller
             'account_type' => 'required|string|in:client,partner'
         ]);
 
-        $email = $request->input('email');
-        $organisation = $request->input('organisation');
+        $email = strtolower(trim($request->input('email')));
+        $organisation = trim($request->input('organisation'));
         $accountType = $request->input('account_type');
 
         // Check if onboarding request already exists
@@ -169,25 +172,9 @@ class AuthController extends Controller
             'status' => 'pending'
         ]);
 
-        // Log the event as an automated backend workflow trigger
-        Log::info("Onboarding Prompt Triggered: Onboarding request email for {$email} ({$accountType}) saved to database & support notification generated.");
-
-        // Here we simulate sending an email to support team.
-        // In production, Mail::raw(...) would send a real provisioning alert.
-        $emailContent = "
-        To: support@enterpriseit.com.au
-        Subject: Account Provisioning Request - {$accountType}
-        Body: 
-        A new account request has been submitted through the onboarding prompt.
-        User Email: {$email}
-        Organisation: {$organisation}
-        Account Type: {$accountType}
-        Action: Please provision a guest account in Microsoft Entra ID (External Identities) and send invitation.
-        ";
-
-        // Save to system storage or logs to simulate email sending
-        $logPath = storage_path('logs/onboarding_emails.log');
-        file_put_contents($logPath, $emailContent . "\n=========================================\n", FILE_APPEND);
+        // Requests are reviewed in the CMS admin. (The old ad-hoc text file that
+        // copied raw user input onto the server's disk has been removed.)
+        Log::info('Onboarding request received', ['email' => self::clean($email), 'type' => $accountType]);
 
         return response()->json([
             'success' => true,
@@ -235,7 +222,7 @@ class AuthController extends Controller
         $onboard->status = 'approved';
         $onboard->save();
 
-        Log::info("Onboarding Request Approved: User account registered for {$onboard->email} and request status set to approved.");
+        Log::info('Onboarding request approved', ['email' => self::clean($onboard->email), 'by' => Auth::id()]);
 
         return response()->json([
             'success' => true,
@@ -253,32 +240,44 @@ class AuthController extends Controller
             'password' => 'required|string'
         ]);
 
-        $email = $request->input('email');
+        $email = strtolower(trim($request->input('email')));
         $password = $request->input('password');
 
-        $user = User::where('email', $email)->first();
-
-        if (!$user || $user->account_type !== 'admin') {
+        // Per-account lockout (in addition to the per-IP route throttle), so a
+        // distributed attacker can't keep guessing one admin's password.
+        $lockKey = 'admin-login:' . sha1($email);
+        if (RateLimiter::tooManyAttempts($lockKey, 5)) {
+            Log::warning('Admin login locked out', ['email' => self::clean($email), 'ip' => $request->ip()]);
             return response()->json([
                 'success' => false,
-                'message' => 'Invalid admin credentials or account not found.'
-            ], 401);
+                'message' => 'Too many attempts. Please wait 15 minutes and try again.',
+            ], 429);
         }
 
-        if (!Hash::check($password, $user->password)) {
-            Log::warning("Admin login failed (bad password) for {$email}");
+        $user = User::whereRaw('LOWER(email) = ?', [$email])->first();
+
+        // Always run a hash check so response timing doesn't reveal whether the
+        // account exists, and always give the same message.
+        $hash = $user ? $user->password : '$2y$12$' . str_repeat('a', 53);
+        $passwordOk = Hash::check($password, $hash);
+
+        if (!$user || $user->account_type !== 'admin' || !$passwordOk) {
+            RateLimiter::hit($lockKey, 900);
+            Log::warning('Admin login failed', ['email' => self::clean($email), 'ip' => $request->ip()]);
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid email or password.'
             ], 401);
         }
 
+        RateLimiter::clear($lockKey);
+
         // If two-factor is enabled, do NOT establish the session yet. Stash a
         // short-lived challenge in the session and require the code next.
         if ($user->hasTwoFactorEnabled()) {
             $request->session()->put('2fa.pending_user_id', $user->id);
             $request->session()->put('2fa.pending_at', now()->timestamp);
-            Log::info("Admin login step 1 ok, 2FA required for {$email}");
+            Log::info('Admin login step 1 ok, 2FA required', ['email' => self::clean($email)]);
             return response()->json([
                 'success' => true,
                 'two_factor_required' => true,
@@ -289,7 +288,7 @@ class AuthController extends Controller
         // No 2FA — establish secure session directly.
         $request->session()->regenerate();
         Auth::login($user);
-        Log::info("Admin login success (no 2FA) for {$email}");
+        Log::info('Admin login success (no 2FA)', ['email' => self::clean($email), 'ip' => $request->ip()]);
 
         return response()->json([
             'success' => true,
@@ -325,21 +324,37 @@ class AuthController extends Controller
         }
 
         $code = trim($request->input('code'));
-        $ok = TotpService::verify($user->two_factor_secret, $code)
-            || $this->consumeRecoveryCode($user, $code);
+
+        // At most 5 wrong codes per account per 15 minutes.
+        $tfKey = 'admin-2fa:' . $user->id;
+        if (RateLimiter::tooManyAttempts($tfKey, 5)) {
+            $request->session()->forget(['2fa.pending_user_id', '2fa.pending_at']);
+            Log::warning('Admin 2FA locked out', ['user' => $user->id, 'ip' => $request->ip()]);
+            return response()->json([
+                'success' => false,
+                'message' => 'Too many attempts. Please wait 15 minutes and sign in again.',
+            ], 429);
+        }
+
+        // A TOTP code can only be used once, even inside its 30-second window.
+        $totpOk = TotpService::verify($user->two_factor_secret, $code)
+            && Cache::add('totp-used:' . $user->id . ':' . $code, 1, 120);
+        $ok = $totpOk || $this->consumeRecoveryCode($user, $code);
 
         if (!$ok) {
-            Log::warning("Admin 2FA failed for {$user->email}");
+            RateLimiter::hit($tfKey, 900);
+            Log::warning('Admin 2FA failed', ['user' => $user->id, 'ip' => $request->ip()]);
             return response()->json([
                 'success' => false,
                 'message' => 'Invalid authenticator code.',
             ], 401);
         }
 
+        RateLimiter::clear($tfKey);
         $request->session()->forget(['2fa.pending_user_id', '2fa.pending_at']);
         $request->session()->regenerate();
         Auth::login($user);
-        Log::info("Admin login success (2FA) for {$user->email}");
+        Log::info('Admin login success (2FA)', ['user' => $user->id, 'ip' => $request->ip()]);
 
         return response()->json([
             'success' => true,
@@ -371,9 +386,13 @@ class AuthController extends Controller
         $user->password_changed_at = now();
         $user->save();
 
-        // Keep the current session valid after the password change.
+        // Keep this session, but sign out every other device (database sessions).
+        DB::table('sessions')
+            ->where('user_id', $user->id)
+            ->where('id', '!=', $request->session()->getId())
+            ->delete();
         Auth::login($user);
-        Log::info("Password changed for {$user->email}");
+        Log::info('Password changed; other sessions signed out', ['user' => $user->id]);
 
         return response()->json(['success' => true, 'message' => 'Password updated.']);
     }
@@ -394,6 +413,15 @@ class AuthController extends Controller
     public function setupTwoFactor(Request $request)
     {
         $user = Auth::user();
+
+        // Never let setup silently replace (and so switch off) an active 2FA.
+        // Disabling requires the password, so a stolen session alone can't do it.
+        if ($user->hasTwoFactorEnabled()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Two-factor is already on. Disable it first to set up a new device.',
+            ], 409);
+        }
 
         $secret = TotpService::generateSecret();
         $recovery = TotpService::generateRecoveryCodes();
@@ -429,7 +457,7 @@ class AuthController extends Controller
 
         $user->two_factor_confirmed_at = now();
         $user->save();
-        Log::info("2FA enabled for {$user->email}");
+        Log::info('2FA enabled', ['user' => $user->id]);
 
         return response()->json(['success' => true, 'message' => 'Two-factor authentication enabled.']);
     }
@@ -450,7 +478,7 @@ class AuthController extends Controller
         $user->two_factor_recovery_codes = null;
         $user->two_factor_confirmed_at = null;
         $user->save();
-        Log::warning("2FA disabled for {$user->email}");
+        Log::warning('2FA disabled', ['user' => $user->id, 'ip' => $request->ip()]);
 
         return response()->json(['success' => true, 'message' => 'Two-factor authentication disabled.']);
     }
@@ -466,11 +494,20 @@ class AuthController extends Controller
                 unset($codes[$i]);
                 $user->two_factor_recovery_codes = json_encode(array_values($codes));
                 $user->save();
-                Log::info("Recovery code used for {$user->email}");
+                Log::warning('Recovery code used', ['user' => $user->id]);
                 return true;
             }
         }
         return false;
+    }
+
+    /**
+     * Strip control characters (e.g. newlines) from user-supplied values before
+     * they are written to logs, so log lines can't be forged.
+     */
+    private static function clean(?string $value): string
+    {
+        return mb_substr(preg_replace('/[\x00-\x1F\x7F]/u', ' ', (string) $value), 0, 200);
     }
 
     /**
